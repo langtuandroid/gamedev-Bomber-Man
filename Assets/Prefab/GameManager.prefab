@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1321521840969277
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4171583063054877}
+  - component: {fileID: 114071342205097609}
+  - component: {fileID: 114681216864808841}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4171583063054877
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321521840969277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.722928, y: 16.705336, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114071342205097609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321521840969277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67def3218cd847a012e8333128c5525a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wallCount:
+    minimum: 20
+    maximum: 30
+  boxCount:
+    minimum: 100
+    maximum: 110
+  floorTiles:
+  - {fileID: 1204339251955668, guid: 049f1e161f3f2354fb39829eb55138d5, type: 2}
+  - {fileID: 1151693462092730, guid: 5732f4197e154014fa437bfd3291ca96, type: 2}
+  - {fileID: 1039059828417595, guid: 73c4add82cba36d40a1a09a732cb76b1, type: 2}
+  - {fileID: 1441624190629627, guid: 900967cde2279194fa31cf5478341e92, type: 2}
+  wallTiles:
+  - {fileID: 1323987112740303, guid: 612f0de53a5041047b4ddcca845d3f8d, type: 2}
+  outerTiles:
+  - {fileID: 1323987112740303, guid: 612f0de53a5041047b4ddcca845d3f8d, type: 2}
+  outerBotTiles:
+  - {fileID: 0}
+  boxTiles:
+  - {fileID: 1582640250287789, guid: 116bcb7d25578214c8d34b5627494967, type: 2}
+  zombieTiles:
+  - {fileID: 1888451313774359, guid: 749392698466b884cb871ffdfa8bf8dc, type: 2}
+  - {fileID: 1424356663798536, guid: a2f0a129223a2b646a2c604dc6f091da, type: 2}
+  - {fileID: 1177344508827061, guid: 35c0d52917746784aa24b2d01ddf3563, type: 2}
+  itemsTiles:
+  - {fileID: 1150035328138998, guid: 543218201572916438541c6e2a564480, type: 2}
+  - {fileID: 1134086166973437, guid: a1dad4b18070bca4b8637a320513fd32, type: 2}
+  - {fileID: 1691577085388748, guid: e32669f63f35c334fbdbc3fc5204d0c8, type: 2}
+  - {fileID: 1886623694838546, guid: 40641e6117291ca4ab558b4b85143426, type: 2}
+  - {fileID: 1189557198508734, guid: 32dfd5a331e97134ab04759c2461da36, type: 2}
+  zombieCount: 0
+  wallPositions: []
+  itemPosition: []
+--- !u!114 &114681216864808841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321521840969277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627c79030f2fe241bb098cfd27127c19, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  playerTurn: 1
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1321521840969277}
+  m_IsPrefabParent: 1

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ZombieGray
+  m_Controller: {fileID: 9100000, guid: 669768bbbbcab0342810ac75ac3744bf, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7b79790437c21744f98247005bc4e846, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f0bb5f1ef64b2454aa6d28cbf09c59c4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35af3735c41e7d242aeade7299fe50d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 42cb5c8b9ea50264a97eba5c1126dab2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03824bc2941376e499520fb292b6e523, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ba36e861eb184e14e92ce5398a57d9d6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a06a6c00de415f24fb834bebc1d4dbdc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: df334923f362590419840c01009ff111, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 071142c4b7bbc784cba7725dafc98bac, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: db61dbd8a8ac3a043ad9a9d36a191e3f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 773b106d11d96844c888d48360c30760, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6b26b3309f179274f96ad753c3d9e62c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: edc31a1170df91d4ab5d976f8e9d4d77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c477827014933c547bd13d1cb0f37ebb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 230367fcb423604468fa5e9b15036d6a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 49cc2cd05bebb4649be6f9f09d075392, type: 2}

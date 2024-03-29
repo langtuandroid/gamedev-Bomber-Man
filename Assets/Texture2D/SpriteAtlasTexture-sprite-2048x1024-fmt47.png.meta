@@ -1,0 +1,3344 @@
+fileFormatVersion: 2
+guid: 93bb032cb7be0c44ea4022cef485bff4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: zombie_blue_bot_0001
+  - first:
+      213: 21300002
+    second: zombie_green_left_0003 copy
+  - first:
+      213: 21300004
+    second: zombie_green_left_0004
+  - first:
+      213: 21300006
+    second: zombie_green_top_0004
+  - first:
+      213: 21300008
+    second: zombie_green_bot_0003
+  - first:
+      213: 21300010
+    second: zombie_green_right_0002
+  - first:
+      213: 21300012
+    second: zombie_green_right_0004
+  - first:
+      213: 21300014
+    second: boom_woodbox_0005
+  - first:
+      213: 21300016
+    second: boom_woodbox_0007
+  - first:
+      213: 21300018
+    second: zombie_green_left_0001
+  - first:
+      213: 21300020
+    second: zombie_green_right_0002
+  - first:
+      213: 21300022
+    second: zombie_green_left_0004
+  - first:
+      213: 21300024
+    second: zombie_green_bot_0004
+  - first:
+      213: 21300026
+    second: zombie_green_right_0001
+  - first:
+      213: 21300028
+    second: zombie_green_bot_0002
+  - first:
+      213: 21300030
+    second: zombie_green_left_0001
+  - first:
+      213: 21300032
+    second: zombie_green_left_0002
+  - first:
+      213: 21300034
+    second: zombie_green_left_0001
+  - first:
+      213: 21300036
+    second: zombie_green_right_0001
+  - first:
+      213: 21300038
+    second: boom_woodbox_0008
+  - first:
+      213: 21300040
+    second: zombie_green_bot_0003
+  - first:
+      213: 21300042
+    second: zombie_green_left_0004
+  - first:
+      213: 21300044
+    second: boom_woodbox_0002
+  - first:
+      213: 21300046
+    second: zombie_green_left_0004
+  - first:
+      213: 21300048
+    second: zombie_green_right_0004
+  - first:
+      213: 21300050
+    second: zombie_green_top_0004
+  - first:
+      213: 21300052
+    second: zombie_green_top_0001
+  - first:
+      213: 21300054
+    second: zombie_green_top_0002
+  - first:
+      213: 21300056
+    second: zombie_green_left_0003
+  - first:
+      213: 21300058
+    second: zombie_green_right_0001
+  - first:
+      213: 21300060
+    second: zombie_green_left_0001
+  - first:
+      213: 21300062
+    second: zombie_green_right_0004
+  - first:
+      213: 21300064
+    second: zombie_blue_bot_0002
+  - first:
+      213: 21300066
+    second: zombie_green_bot_0004
+  - first:
+      213: 21300068
+    second: zombie_green_left_0003
+  - first:
+      213: 21300070
+    second: nvccc_0
+  - first:
+      213: 21300072
+    second: zombie_green_top_0001
+  - first:
+      213: 21300074
+    second: zombie_green_top_0003
+  - first:
+      213: 21300076
+    second: zombie_green_right_0002
+  - first:
+      213: 21300078
+    second: zombie_green_bot_0001
+  - first:
+      213: 21300080
+    second: zombie_green_right_0003
+  - first:
+      213: 21300082
+    second: boom_woodbox_0003
+  - first:
+      213: 21300084
+    second: zombie_green_top_0004
+  - first:
+      213: 21300086
+    second: zombie_green_left_0003
+  - first:
+      213: 21300088
+    second: zombie_green_right_0003
+  - first:
+      213: 21300090
+    second: zombie_green_top_0003
+  - first:
+      213: 21300092
+    second: zombie_green_bot_0003
+  - first:
+      213: 21300094
+    second: zombie_green_right_0002
+  - first:
+      213: 21300096
+    second: zombie_green_bot_0002
+  - first:
+      213: 21300098
+    second: zombie_green_bot_0004
+  - first:
+      213: 21300100
+    second: zombie_green_right_0003
+  - first:
+      213: 21300102
+    second: zombie_green_left_0003
+  - first:
+      213: 21300104
+    second: zombie_green_top_0001
+  - first:
+      213: 21300106
+    second: zombie_green_top_0003
+  - first:
+      213: 21300108
+    second: zombie_green_right_0003
+  - first:
+      213: 21300110
+    second: boom_woodbox_0006
+  - first:
+      213: 21300112
+    second: zombie_green_right_0004
+  - first:
+      213: 21300114
+    second: zombie_green_bot_0001
+  - first:
+      213: 21300116
+    second: zombie_green_top_0001
+  - first:
+      213: 21300118
+    second: nvcc_0
+  - first:
+      213: 21300120
+    second: zombie_green_top_0002
+  - first:
+      213: 21300122
+    second: zombie_green_right_0001
+  - first:
+      213: 21300124
+    second: zombie_green_left_0002
+  - first:
+      213: 21300126
+    second: zombie_green_top_0002
+  - first:
+      213: 21300128
+    second: zombie_green_top_0004
+  - first:
+      213: 21300130
+    second: zombie_green_left_0002
+  - first:
+      213: 21300132
+    second: zombie_green_top_0002
+  - first:
+      213: 21300134
+    second: zombie_green_left_0002
+  - first:
+      213: 21300136
+    second: zombie_green_top_0003
+  - first:
+      213: 21300138
+    second: boom_woodbox_0004
+  - first:
+      213: 21300140
+    second: nvcc_1
+  - first:
+      213: 21300142
+    second: nvcc_2
+  - first:
+      213: 21300144
+    second: nvcc_3
+  - first:
+      213: 21300146
+    second: nvcc_4
+  - first:
+      213: 21300148
+    second: nvcc_5
+  - first:
+      213: 21300150
+    second: nvcc_6
+  - first:
+      213: 21300152
+    second: nvccc_7
+  - first:
+      213: 21300154
+    second: nvcc_7
+  - first:
+      213: 21300156
+    second: nvcc_8
+  - first:
+      213: 21300158
+    second: nvcc_9
+  - first:
+      213: 21300160
+    second: nvcc_11
+  - first:
+      213: 21300162
+    second: nvcc_12
+  - first:
+      213: 21300164
+    second: nvcc_14
+  - first:
+      213: 21300166
+    second: nvcc_15
+  - first:
+      213: 21300168
+    second: nvcc_16
+  - first:
+      213: 21300170
+    second: nvcc_17
+  - first:
+      213: 21300172
+    second: nvcc_18
+  - first:
+      213: 21300174
+    second: nvcc_19
+  - first:
+      213: 21300176
+    second: nvcc_20
+  - first:
+      213: 21300178
+    second: nvcc_21
+  - first:
+      213: 21300180
+    second: nvcc_22
+  - first:
+      213: 21300182
+    second: nvcc_23
+  - first:
+      213: 21300184
+    second: nvcc_24
+  - first:
+      213: 21300186
+    second: nvcc_25
+  - first:
+      213: 21300188
+    second: nvcc_26
+  - first:
+      213: 21300190
+    second: nvcc_27
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 16
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zombie_blue_bot_0001
+      rect:
+        serializedVersion: 2
+        x: 384.0761
+        y: 530
+        width: 57.897133
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51684564, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.024685, y: -36.986626}
+        - {x: -29.024685, y: -23.986626}
+        - {x: -29.024685, y: 8.013374}
+        - {x: -27.024685, y: 21.013374}
+        - {x: -13.024685, y: 37.013374}
+        - {x: 10.975315, y: 37.013374}
+        - {x: 15.975315, y: 36.013374}
+        - {x: 28.975315, y: 26.013374}
+        - {x: 28.975315, y: -29.986626}
+        - {x: 13.975315, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0003 copy
+      rect:
+        serializedVersion: 2
+        x: 192.07613
+        y: 551.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.000002, y: -36.995235}
+        - {x: -27.000002, y: -29.995235}
+        - {x: -27.000002, y: 21.004765}
+        - {x: -26.000002, y: 30.004765}
+        - {x: -17.000002, y: 37.004765}
+        - {x: 8.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -36.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0004
+      rect:
+        serializedVersion: 2
+        x: 190.07613
+        y: 873.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0004
+      rect:
+        serializedVersion: 2
+        x: 418.0761
+        y: 82.07612
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0003
+      rect:
+        serializedVersion: 2
+        x: 438.0429
+        y: 934
+        width: 57.880974
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.48301005, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.983395, y: -36.986626}
+        - {x: -28.983395, y: -27.986626}
+        - {x: -28.983395, y: 37.013374}
+        - {x: 20.016605, y: 37.013374}
+        - {x: 25.016605, y: 25.013374}
+        - {x: 29.016605, y: 12.013374}
+        - {x: 29.016605, y: -29.986626}
+        - {x: 15.016605, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0002
+      rect:
+        serializedVersion: 2
+        x: 130.07613
+        y: 627.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0004
+      rect:
+        serializedVersion: 2
+        x: 62.07612
+        y: 699.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0005
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.076120496
+        width: 201
+        height: 199.92387
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4973087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98.5, y: -100.038055}
+        - {x: 3.5, y: -100.038055}
+        - {x: -93.5, y: -79.038055}
+        - {x: -98.5, y: -60.03806}
+        - {x: -100.5, y: -48.038055}
+        - {x: -100.5, y: 83.961945}
+        - {x: -75.5, y: 99.961945}
+        - {x: 100.5, y: 99.961945}
+        - {x: 100.5, y: -96.038055}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0007
+      rect:
+        serializedVersion: 2
+        x: 0.026752472
+        y: 208.07613
+        width: 122.897125
+        height: 139.89713
+      alignment: 9
+      pivot: {x: 0.49206397, y: 0.38187975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.475315, y: -35.024685}
+        - {x: -61.475315, y: -17.024685}
+        - {x: -61.475315, y: 46.975315}
+        - {x: -52.475315, y: 69.97531}
+        - {x: 14.524685, y: 69.97531}
+        - {x: 61.524685, y: 47.975315}
+        - {x: 61.524685, y: -33.024685}
+        - {x: 33.524685, y: -46.02468}
+        - {x: 7.524685, y: -49.024685}
+        - {x: 4.524685, y: -49.024685}
+        - {x: 4.524685, y: -52.024685}
+        - {x: 3.524685, y: -53.024685}
+        - {x: -0.4753151, y: -53.024685}
+        - {x: -2.475315, y: -52.024685}
+        - {x: -2.475315, y: -49.024685}
+        - {x: -22.475315, y: -49.024685}
+        - {x: -21.475315, y: -51.024685}
+        - {x: -21.475315, y: -56.024685}
+        - {x: -25.475315, y: -58.024685}
+        - {x: -29.475315, y: -58.024685}
+        - {x: -29.475315, y: -49.024685}
+        - {x: -37.475315, y: -49.024685}
+        - {x: -46.475315, y: -37.024685}
+        - {x: -46.475315, y: -44.024685}
+        - {x: -53.47531, y: -44.024685}
+        - {x: -54.47532, y: -42.024685}
+        - {x: -54.47532, y: -36.024685}
+        - {x: -51.475315, y: -35.024685}
+      - - {x: 30.524685, y: -57.024685}
+        - {x: 28.524683, y: -54.024685}
+        - {x: 28.524683, y: -51.024685}
+        - {x: 32.524685, y: -48.024685}
+        - {x: 36.524685, y: -48.024685}
+        - {x: 37.524685, y: -50.024685}
+        - {x: 37.524685, y: -55.024685}
+        - {x: 33.524685, y: -57.024685}
+      - - {x: -6.475315, y: -70.02469}
+        - {x: -8.475315, y: -65.02469}
+        - {x: -6.475315, y: -63.024685}
+        - {x: -2.475315, y: -63.024685}
+        - {x: -0.4753151, y: -65.02469}
+        - {x: -0.4753151, y: -68.02469}
+        - {x: -2.475315, y: -70.02469}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0001
+      rect:
+        serializedVersion: 2
+        x: 128.07613
+        y: 937.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 19.004765}
+        - {x: -13.000002, y: 37.004765}
+        - {x: 19.999998, y: 37.004765}
+        - {x: 26.999998, y: 27.004765}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0002
+      rect:
+        serializedVersion: 2
+        x: 486.0761
+        y: 0.026751041
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70418627ce510cb60800000000000000
+      internalID: 7764229862862623751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0004
+      rect:
+        serializedVersion: 2
+        x: 254.07613
+        y: 475.02676
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444d86f0e35d9d90800000000000000
+      internalID: -7089418012737059768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0004
+      rect:
+        serializedVersion: 2
+        x: 0.0362854
+        y: 617
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0001
+      rect:
+        serializedVersion: 2
+        x: 62.07612
+        y: 781.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -22.000002, y: 36.98662}
+        - {x: 14.999998, y: 36.98662}
+        - {x: 26.999998, y: 32.98662}
+        - {x: 26.999998, y: -22.013378}
+        - {x: 11.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0002
+      rect:
+        serializedVersion: 2
+        x: 382.0363
+        y: 694
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0001
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 781.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 19.004765}
+        - {x: -13.000002, y: 37.004765}
+        - {x: 19.999998, y: 37.004765}
+        - {x: 26.999998, y: 27.004765}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc0d895df32182f0800000000000000
+      internalID: -972456473499202382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0002
+      rect:
+        serializedVersion: 2
+        x: 441.0761
+        y: 612.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0001
+      rect:
+        serializedVersion: 2
+        x: 154.07613
+        y: 393.02676
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 19.004765}
+        - {x: -13.000002, y: 37.004765}
+        - {x: 19.999998, y: 37.004765}
+        - {x: 26.999998, y: 27.004765}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc0d895df32182f0800000000000000
+      internalID: -972456473499202382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0001
+      rect:
+        serializedVersion: 2
+        x: 252.07613
+        y: 791.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -22.000002, y: 36.98662}
+        - {x: 14.999998, y: 36.98662}
+        - {x: 26.999998, y: 32.98662}
+        - {x: 26.999998, y: -22.013378}
+        - {x: 11.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807fe1e69a7492d0800000000000000
+      internalID: -3272856240737259383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0008
+      rect:
+        serializedVersion: 2
+        x: 321.02676
+        y: 209.07611
+        width: 122.897125
+        height: 117.89713
+      alignment: 9
+      pivot: {x: 0.49206397, y: 0.21564461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.524683, y: 58.975315}
+        - {x: 59.524685, y: 33.975315}
+        - {x: 61.524685, y: 8.975315}
+        - {x: 61.524685, y: -44.024685}
+        - {x: 41.524685, y: -59.024685}
+        - {x: -37.475315, y: -59.024685}
+        - {x: -61.475315, y: -34.024685}
+        - {x: -61.475315, y: 43.975315}
+        - {x: -56.475315, y: 51.975315}
+        - {x: -38.475315, y: 58.975315}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0003
+      rect:
+        serializedVersion: 2
+        x: 672.0429
+        y: 0
+        width: 57.880974
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.48301005, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.983395, y: -36.986626}
+        - {x: -28.983395, y: -27.986626}
+        - {x: -28.983395, y: 37.013374}
+        - {x: 20.016605, y: 37.013374}
+        - {x: 25.016605, y: 25.013374}
+        - {x: 29.016605, y: 12.013374}
+        - {x: 29.016605, y: -29.986626}
+        - {x: 15.016605, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee7bba43ebc448f0800000000000000
+      internalID: -557096276815282451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0004
+      rect:
+        serializedVersion: 2
+        x: 68.07612
+        y: 611.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444d86f0e35d9d90800000000000000
+      internalID: -7089418012737059768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0002
+      rect:
+        serializedVersion: 2
+        x: 321.0761
+        y: 335.0761
+        width: 122.84775
+        height: 104.84775
+      alignment: 9
+      pivot: {x: 0.5244205, y: 0.5381506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.5, y: -49.5}
+        - {x: -55.499996, y: 0.5000038}
+        - {x: -47.5, y: 2.5000038}
+        - {x: -57.5, y: 2.5000038}
+        - {x: -61.5, y: 4.500004}
+        - {x: -61.5, y: 28.500004}
+        - {x: -47.5, y: 52.500004}
+        - {x: 61.499996, y: 52.500004}
+        - {x: 61.499996, y: -52.499996}
+        - {x: -32.5, y: -52.499996}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0004
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 535.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444d86f0e35d9d90800000000000000
+      internalID: -7089418012737059768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0004
+      rect:
+        serializedVersion: 2
+        x: 452.0761
+        y: 158.02675
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe38d8f78156dd60800000000000000
+      internalID: 7914603039587581686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0004
+      rect:
+        serializedVersion: 2
+        x: 124.07612
+        y: 709.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0bf0cd0ec7cdbd0800000000000000
+      internalID: -2604069179320454918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0001
+      rect:
+        serializedVersion: 2
+        x: 186.07613
+        y: 715.05133
+        width: 54.847763
+        height: 67.87257
+      alignment: 9
+      pivot: {x: 0.47265154, y: 0.6033172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.500002, y: -33.987595}
+        - {x: -27.500002, y: -8.987595}
+        - {x: -27.500002, y: 27.012405}
+        - {x: -12.500002, y: 34.012405}
+        - {x: 16.499998, y: 34.012405}
+        - {x: 27.499998, y: 23.012405}
+        - {x: 27.499998, y: -18.987595}
+        - {x: 15.499998, y: -33.987595}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0002
+      rect:
+        serializedVersion: 2
+        x: 438.0761
+        y: 858.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0003
+      rect:
+        serializedVersion: 2
+        x: 444.0761
+        y: 448.02676
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.000002, y: -36.995235}
+        - {x: -27.000002, y: -29.995235}
+        - {x: -27.000002, y: 21.004765}
+        - {x: -26.000002, y: 30.004765}
+        - {x: -17.000002, y: 37.004765}
+        - {x: 8.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -36.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0001
+      rect:
+        serializedVersion: 2
+        x: 452.0761
+        y: 322.02676
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -22.000002, y: 36.98662}
+        - {x: 14.999998, y: 36.98662}
+        - {x: 26.999998, y: 32.98662}
+        - {x: 26.999998, y: -22.013378}
+        - {x: 11.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807fe1e69a7492d0800000000000000
+      internalID: -3272856240737259383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0001
+      rect:
+        serializedVersion: 2
+        x: 320.0761
+        y: 694.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 19.004765}
+        - {x: -13.000002, y: 37.004765}
+        - {x: 19.999998, y: 37.004765}
+        - {x: 26.999998, y: 27.004765}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc0d895df32182f0800000000000000
+      internalID: -972456473499202382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0004
+      rect:
+        serializedVersion: 2
+        x: 190.07613
+        y: 791.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe38d8f78156dd60800000000000000
+      internalID: 7914603039587581686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_blue_bot_0002
+      rect:
+        serializedVersion: 2
+        x: 418.0363
+        y: 0
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0004
+      rect:
+        serializedVersion: 2
+        x: 452.0363
+        y: 240
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa249a4ea5bb10430800000000000000
+      internalID: 3747482364006711983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0003
+      rect:
+        serializedVersion: 2
+        x: 548.0761
+        y: 0.026751041
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.000002, y: -36.995235}
+        - {x: -27.000002, y: -29.995235}
+        - {x: -27.000002, y: 21.004765}
+        - {x: -26.000002, y: 30.004765}
+        - {x: -17.000002, y: 37.004765}
+        - {x: 8.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -36.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00382a779a832a70800000000000000
+      internalID: 8801030480006230031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvccc_0
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 692
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0001
+      rect:
+        serializedVersion: 2
+        x: 378.0761
+        y: 612.05133
+        width: 54.847763
+        height: 67.87257
+      alignment: 9
+      pivot: {x: 0.47265154, y: 0.6033172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.500002, y: -33.987595}
+        - {x: -27.500002, y: -8.987595}
+        - {x: -27.500002, y: 27.012405}
+        - {x: -12.500002, y: 34.012405}
+        - {x: 16.499998, y: 34.012405}
+        - {x: 27.499998, y: 23.012405}
+        - {x: 27.499998, y: -18.987595}
+        - {x: 15.499998, y: -33.987595}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52bda9e2fcf7f3e0800000000000000
+      internalID: -2019867787619618213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0003
+      rect:
+        serializedVersion: 2
+        x: 154.07613
+        y: 475.0761
+        width: 57.876175
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.53431106, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.014208, y: -34.000004}
+        - {x: -29.014208, y: -21.000004}
+        - {x: -29.014208, y: 14.999996}
+        - {x: -17.014208, y: 33.999996}
+        - {x: 23.985792, y: 33.999996}
+        - {x: 28.985792, y: 20.999996}
+        - {x: 28.985792, y: -20.000004}
+        - {x: 24.985792, y: -34.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0002
+      rect:
+        serializedVersion: 2
+        x: 506.0761
+        y: 404.02676
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70418627ce510cb60800000000000000
+      internalID: 7764229862862623751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0001
+      rect:
+        serializedVersion: 2
+        x: 254.07613
+        y: 709
+        width: 57.897133
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51684564, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.024685, y: -36.986626}
+        - {x: -29.024685, y: -23.986626}
+        - {x: -29.024685, y: 8.013374}
+        - {x: -27.024685, y: 21.013374}
+        - {x: -13.024685, y: 37.013374}
+        - {x: 10.975315, y: 37.013374}
+        - {x: 15.975315, y: 36.013374}
+        - {x: 28.975315, y: 26.013374}
+        - {x: 28.975315, y: -29.986626}
+        - {x: 13.975315, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0003
+      rect:
+        serializedVersion: 2
+        x: 376.0761
+        y: 858.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.000002, y: -37.01338}
+        - {x: -27.000002, y: -24.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -16.000002, y: 36.98662}
+        - {x: 19.999998, y: 36.98662}
+        - {x: 26.999998, y: 19.986622}
+        - {x: 26.999998, y: -29.013378}
+        - {x: 23.999998, y: -34.01338}
+        - {x: 17.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0003
+      rect:
+        serializedVersion: 2
+        x: 0.051317215
+        y: 393.0761
+        width: 145.89737
+        height: 133.84775
+      alignment: 9
+      pivot: {x: 0.48286468, y: 0.52614915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58, y: -66.99999}
+        - {x: -73, y: -40.999992}
+        - {x: -73, y: 50.000008}
+        - {x: -44, y: 67.00001}
+        - {x: 28, y: 67.00001}
+        - {x: 73, y: 46.000008}
+        - {x: 73, y: -20.999992}
+        - {x: 66, y: -52.999992}
+        - {x: 29, y: -66.99999}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0004
+      rect:
+        serializedVersion: 2
+        x: 254.07613
+        y: 633.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0bf0cd0ec7cdbd0800000000000000
+      internalID: -2604069179320454918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0003
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 699.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.000002, y: -36.995235}
+        - {x: -27.000002, y: -29.995235}
+        - {x: -27.000002, y: 21.004765}
+        - {x: -26.000002, y: 30.004765}
+        - {x: -17.000002, y: 37.004765}
+        - {x: 8.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -36.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00382a779a832a70800000000000000
+      internalID: 8801030480006230031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0003
+      rect:
+        serializedVersion: 2
+        x: 610.0761
+        y: 0.026751041
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.000002, y: -37.01338}
+        - {x: -27.000002, y: -24.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -16.000002, y: 36.98662}
+        - {x: 19.999998, y: 36.98662}
+        - {x: 26.999998, y: 19.986622}
+        - {x: 26.999998, y: -29.013378}
+        - {x: 23.999998, y: -34.01338}
+        - {x: 17.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b3ca4d39d14be40800000000000000
+      internalID: 5671190351531752284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0003
+      rect:
+        serializedVersion: 2
+        x: 62.07612
+        y: 535.0761
+        width: 57.876175
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.53431106, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.014208, y: -34.000004}
+        - {x: -29.014208, y: -21.000004}
+        - {x: -29.014208, y: 14.999996}
+        - {x: -17.014208, y: 33.999996}
+        - {x: 23.985792, y: 33.999996}
+        - {x: 28.985792, y: 20.999996}
+        - {x: 28.985792, y: -20.000004}
+        - {x: 24.985792, y: -34.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9f9c6387a21a040800000000000000
+      internalID: 4657050185481451945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0003
+      rect:
+        serializedVersion: 2
+        x: 252.04291
+        y: 873
+        width: 57.880974
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.48301005, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.983395, y: -36.986626}
+        - {x: -28.983395, y: -27.986626}
+        - {x: -28.983395, y: 37.013374}
+        - {x: 20.016605, y: 37.013374}
+        - {x: 25.016605, y: 25.013374}
+        - {x: 29.016605, y: 12.013374}
+        - {x: 29.016605, y: -29.986626}
+        - {x: 15.016605, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee7bba43ebc448f0800000000000000
+      internalID: -557096276815282451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0002
+      rect:
+        serializedVersion: 2
+        x: 514.0761
+        y: 322.02676
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70418627ce510cb60800000000000000
+      internalID: 7764229862862623751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0002
+      rect:
+        serializedVersion: 2
+        x: 316.0363
+        y: 530
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24e50ddf05d7db60800000000000000
+      internalID: 7770913946160456751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0004
+      rect:
+        serializedVersion: 2
+        x: 376.0363
+        y: 776
+        width: 59.936966
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.49992046, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.004768, y: -36.986626}
+        - {x: -30.004768, y: -25.986626}
+        - {x: -30.004768, y: 8.013374}
+        - {x: -27.004768, y: 37.013374}
+        - {x: 24.995232, y: 37.013374}
+        - {x: 29.995232, y: 21.013374}
+        - {x: 29.995232, y: -29.986626}
+        - {x: 16.995232, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa249a4ea5bb10430800000000000000
+      internalID: 3747482364006711983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0003
+      rect:
+        serializedVersion: 2
+        x: 514.0761
+        y: 158.02675
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.000002, y: -37.01338}
+        - {x: -27.000002, y: -24.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -16.000002, y: 36.98662}
+        - {x: 19.999998, y: 36.98662}
+        - {x: 26.999998, y: 19.986622}
+        - {x: 26.999998, y: -29.013378}
+        - {x: 23.999998, y: -34.01338}
+        - {x: 17.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b3ca4d39d14be40800000000000000
+      internalID: 5671190351531752284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0003
+      rect:
+        serializedVersion: 2
+        x: 382.0761
+        y: 448.02676
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.000002, y: -36.995235}
+        - {x: -27.000002, y: -29.995235}
+        - {x: -27.000002, y: 21.004765}
+        - {x: -26.000002, y: 30.004765}
+        - {x: -17.000002, y: 37.004765}
+        - {x: 8.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -36.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00382a779a832a70800000000000000
+      internalID: 8801030480006230031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0001
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 939.05133
+        width: 54.847763
+        height: 67.87257
+      alignment: 9
+      pivot: {x: 0.47265154, y: 0.6033172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.500002, y: -33.987595}
+        - {x: -27.500002, y: -8.987595}
+        - {x: -27.500002, y: 27.012405}
+        - {x: -12.500002, y: 34.012405}
+        - {x: 16.499998, y: 34.012405}
+        - {x: 27.499998, y: 23.012405}
+        - {x: 27.499998, y: -18.987595}
+        - {x: 15.499998, y: -33.987595}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52bda9e2fcf7f3e0800000000000000
+      internalID: -2019867787619618213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0003
+      rect:
+        serializedVersion: 2
+        x: 0.07612038
+        y: 863.0761
+        width: 57.876175
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.53431106, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.014208, y: -34.000004}
+        - {x: -29.014208, y: -21.000004}
+        - {x: -29.014208, y: 14.999996}
+        - {x: -17.014208, y: 33.999996}
+        - {x: 23.985792, y: 33.999996}
+        - {x: 28.985792, y: 20.999996}
+        - {x: 28.985792, y: -20.000004}
+        - {x: 24.985792, y: -34.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9f9c6387a21a040800000000000000
+      internalID: 4657050185481451945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0003
+      rect:
+        serializedVersion: 2
+        x: 66.07612
+        y: 863.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.000002, y: -37.01338}
+        - {x: -27.000002, y: -24.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -16.000002, y: 36.98662}
+        - {x: 19.999998, y: 36.98662}
+        - {x: 26.999998, y: 19.986622}
+        - {x: 26.999998, y: -29.013378}
+        - {x: 23.999998, y: -34.01338}
+        - {x: 17.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b3ca4d39d14be40800000000000000
+      internalID: 5671190351531752284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0006
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 201
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80.5, y: 86.5}
+        - {x: -68.5, y: 72.5}
+        - {x: -46.5, y: 100.5}
+        - {x: 69.5, y: 100.5}
+        - {x: 100.5, y: 36.5}
+        - {x: 100.5, y: -100.5}
+        - {x: -100.5, y: -100.5}
+        - {x: -100.5, y: 31.5}
+        - {x: -84.5, y: 52.499996}
+        - {x: -88.5, y: 53.500004}
+        - {x: -100.5, y: 72.5}
+        - {x: -100.5, y: 88.5}
+        - {x: -87.5, y: 88.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0004
+      rect:
+        serializedVersion: 2
+        x: 316.0761
+        y: 612.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 28.986622}
+        - {x: -19.000002, y: 36.98662}
+        - {x: 17.999998, y: 36.98662}
+        - {x: 26.999998, y: 25.986622}
+        - {x: 26.999998, y: -28.013378}
+        - {x: 21.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe38d8f78156dd60800000000000000
+      internalID: 7914603039587581686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_bot_0001
+      rect:
+        serializedVersion: 2
+        x: 316.0761
+        y: 448
+        width: 57.897133
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51684564, y: 0.5677728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.024685, y: -36.986626}
+        - {x: -29.024685, y: -23.986626}
+        - {x: -29.024685, y: 8.013374}
+        - {x: -27.024685, y: 21.013374}
+        - {x: -13.024685, y: 37.013374}
+        - {x: 10.975315, y: 37.013374}
+        - {x: 15.975315, y: 36.013374}
+        - {x: 28.975315, y: 26.013374}
+        - {x: 28.975315, y: -29.986626}
+        - {x: 13.975315, y: -36.986626}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f4396269117b030800000000000000
+      internalID: 3510293771148545816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0001
+      rect:
+        serializedVersion: 2
+        x: 450.0761
+        y: 694.05133
+        width: 54.847763
+        height: 67.87257
+      alignment: 9
+      pivot: {x: 0.47265154, y: 0.6033172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.500002, y: -33.987595}
+        - {x: -27.500002, y: -8.987595}
+        - {x: -27.500002, y: 27.012405}
+        - {x: -12.500002, y: 34.012405}
+        - {x: 16.499998, y: 34.012405}
+        - {x: 27.499998, y: 23.012405}
+        - {x: 27.499998, y: -18.987595}
+        - {x: 15.499998, y: -33.987595}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52bda9e2fcf7f3e0800000000000000
+      internalID: -2019867787619618213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_0
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 0
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0002
+      rect:
+        serializedVersion: 2
+        x: 128.07613
+        y: 861.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baadc71f9882f780800000000000000
+      internalID: -8650701717344769359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_right_0001
+      rect:
+        serializedVersion: 2
+        x: 192.07613
+        y: 633.02673
+        width: 53.847763
+        height: 73.97325
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.52685595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.000002, y: -37.01338}
+        - {x: -27.000002, y: -27.013378}
+        - {x: -27.000002, y: 30.986622}
+        - {x: -22.000002, y: 36.98662}
+        - {x: 14.999998, y: 36.98662}
+        - {x: 26.999998, y: 32.98662}
+        - {x: 26.999998, y: -22.013378}
+        - {x: 11.999998, y: -37.01338}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807fe1e69a7492d0800000000000000
+      internalID: -3272856240737259383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0002
+      rect:
+        serializedVersion: 2
+        x: 314.0761
+        y: 791.02673
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e31e5929a63fc70800000000000000
+      internalID: 9003657257856089735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0002
+      rect:
+        serializedVersion: 2
+        x: 254.07613
+        y: 557.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baadc71f9882f780800000000000000
+      internalID: -8650701717344769359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0004
+      rect:
+        serializedVersion: 2
+        x: 124.07612
+        y: 785.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0bf0cd0ec7cdbd0800000000000000
+      internalID: -2604069179320454918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0002
+      rect:
+        serializedVersion: 2
+        x: 216.07613
+        y: 393.02676
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e31e5929a63fc70800000000000000
+      internalID: 9003657257856089735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0002
+      rect:
+        serializedVersion: 2
+        x: 130.07613
+        y: 551.0761
+        width: 53.880974
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.48113236, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.016607, y: -13.000004}
+        - {x: -17.016607, y: -12.000004}
+        - {x: -19.016607, y: -11.000004}
+        - {x: -23.016607, y: -11.000004}
+        - {x: -27.016607, y: -6.000004}
+        - {x: -27.016607, y: 31.999996}
+        - {x: -20.016607, y: 33.999996}
+        - {x: 21.983393, y: 33.999996}
+        - {x: 26.983393, y: 19.999996}
+        - {x: 26.983393, y: -10.000004}
+        - {x: 17.983393, y: -32.000004}
+        - {x: 8.983393, y: -34.000004}
+        - {x: -13.016607, y: -34.000004}
+        - {x: -24.016607, y: -25.000004}
+        - {x: -22.016607, y: -18.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baadc71f9882f780800000000000000
+      internalID: -8650701717344769359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_left_0002
+      rect:
+        serializedVersion: 2
+        x: 576.0761
+        y: 82.02675
+        width: 53.847763
+        height: 73.936966
+      alignment: 9
+      pivot: {x: 0.51857084, y: 0.5271145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.999998, y: -36.995235}
+        - {x: -27.000002, y: -36.995235}
+        - {x: -27.000002, y: 37.004765}
+        - {x: 9.999998, y: 37.004765}
+        - {x: 26.999998, y: 31.004765}
+        - {x: 26.999998, y: -33.995235}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e31e5929a63fc70800000000000000
+      internalID: 9003657257856089735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_green_top_0003
+      rect:
+        serializedVersion: 2
+        x: 480.0761
+        y: 82.07612
+        width: 57.876175
+        height: 67.84776
+      alignment: 9
+      pivot: {x: 0.53431106, y: 0.6031721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.014208, y: -34.000004}
+        - {x: -29.014208, y: -21.000004}
+        - {x: -29.014208, y: 14.999996}
+        - {x: -17.014208, y: 33.999996}
+        - {x: 23.985792, y: 33.999996}
+        - {x: 28.985792, y: 20.999996}
+        - {x: 28.985792, y: -20.000004}
+        - {x: 24.985792, y: -34.000004}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9f9c6387a21a040800000000000000
+      internalID: 4657050185481451945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom_woodbox_0004
+      rect:
+        serializedVersion: 2
+        x: 131.04291
+        y: 209.02675
+        width: 181.89497
+        height: 175.89713
+      alignment: 9
+      pivot: {x: 0.48081094, y: 0.49161264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.009605, y: -70.97531}
+        - {x: 51.009605, y: -78.97531}
+        - {x: 23.009604, y: -87.97531}
+        - {x: -4.9903946, y: -87.97531}
+        - {x: -86.990395, y: -68.97531}
+        - {x: -90.990395, y: -57.97531}
+        - {x: -90.990395, y: 74.02469}
+        - {x: -82.990395, y: 88.02469}
+        - {x: 91.009605, y: 88.02469}
+        - {x: 91.009605, y: -51.97531}
+        - {x: 85.009605, y: -55.97531}
+        - {x: 56.00961, y: -63.97531}
+        - {x: 60.009605, y: -67.97531}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_1
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 391
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.000002, y: -47.5}
+        - {x: -33, y: -26.5}
+        - {x: -33, y: 16.5}
+        - {x: -29, y: 25.5}
+        - {x: -16, y: 47.5}
+        - {x: 16, y: 47.5}
+        - {x: 33, y: 41.5}
+        - {x: 33, y: -42.5}
+        - {x: 27, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca305410000000000800000000000000
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 103
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea305410000000000800000000000000
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_3
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 391
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b305410000000000800000000000000
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 185
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b305410000000000800000000000000
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_5
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 185
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_6
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 288
+        width: 66
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -47.5}
+        - {x: -33, y: -30.5}
+        - {x: -33, y: 17.5}
+        - {x: -19, y: 47.5}
+        - {x: 26, y: 47.5}
+        - {x: 33, y: 44.5}
+        - {x: 33, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvccc_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 607
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 0
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_8
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 203
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb305410000000000800000000000000
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_11
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 916
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_12
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 813
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: -47.5}
+        - {x: -30.5, y: -43.5}
+        - {x: -30.5, y: 37.5}
+        - {x: -15.5, y: 47.5}
+        - {x: 17.5, y: 47.5}
+        - {x: 30.5, y: 26.5}
+        - {x: 30.5, y: -18.5}
+        - {x: 26.5, y: -36.5}
+        - {x: 19.5, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_14
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 610
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -46.5}
+        - {x: -32.5, y: -46.5}
+        - {x: -32.5, y: 42.5}
+        - {x: -31.5, y: 46.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 32.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_15
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 811
+        width: 65
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -46}
+        - {x: -32.5, y: -46}
+        - {x: -32.5, y: 46}
+        - {x: 32.5, y: 46}
+        - {x: 32.5, y: -38}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_16
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 509
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -46.5}
+        - {x: -32.5, y: -46.5}
+        - {x: -32.5, y: 42.5}
+        - {x: -31.5, y: 46.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 32.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_17
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 797
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -46.5}
+        - {x: -32.5, y: -46.5}
+        - {x: -32.5, y: 42.5}
+        - {x: -31.5, y: 46.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 32.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_18
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 711
+        width: 65
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -46}
+        - {x: -32.5, y: -46}
+        - {x: -32.5, y: 46}
+        - {x: 17.5, y: 46}
+        - {x: 32.5, y: 41}
+        - {x: 32.5, y: -44}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_19
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 303
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -46.5}
+        - {x: -32.5, y: -46.5}
+        - {x: -32.5, y: 42.5}
+        - {x: -31.5, y: 46.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 32.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_20
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 307
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -46.5}
+        - {x: -32.5, y: -46.5}
+        - {x: -32.5, y: 42.5}
+        - {x: -31.5, y: 46.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 32.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d305410000000000800000000000000
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_21
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 696
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.5}
+        - {x: -32.5, y: -32.5}
+        - {x: -32.5, y: 41.5}
+        - {x: -17.5, y: 46.5}
+        - {x: 15.5, y: 46.5}
+        - {x: 24.5, y: 37.5}
+        - {x: 32.5, y: 13.5}
+        - {x: 32.5, y: -38.5}
+        - {x: 29.5, y: -46.5}
+        - {x: -20.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_22
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 595
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.5}
+        - {x: -32.5, y: -32.5}
+        - {x: -32.5, y: 41.5}
+        - {x: -17.5, y: 46.5}
+        - {x: 15.5, y: 46.5}
+        - {x: 24.5, y: 37.5}
+        - {x: 32.5, y: 13.5}
+        - {x: 32.5, y: -38.5}
+        - {x: 29.5, y: -46.5}
+        - {x: -20.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_23
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 811
+        width: 65
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: -46}
+        - {x: -32.5, y: -46}
+        - {x: -32.5, y: 41}
+        - {x: -17.5, y: 46}
+        - {x: 21.5, y: 46}
+        - {x: 31.5, y: 40}
+        - {x: 32.5, y: 26}
+        - {x: 32.5, y: -45}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_24
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 202
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.5}
+        - {x: -32.5, y: -32.5}
+        - {x: -32.5, y: 41.5}
+        - {x: -17.5, y: 46.5}
+        - {x: 15.5, y: 46.5}
+        - {x: 24.5, y: 37.5}
+        - {x: 32.5, y: 13.5}
+        - {x: 32.5, y: -38.5}
+        - {x: 29.5, y: -46.5}
+        - {x: -20.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_25
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 408
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.5}
+        - {x: -32.5, y: -32.5}
+        - {x: -32.5, y: 41.5}
+        - {x: -17.5, y: 46.5}
+        - {x: 15.5, y: 46.5}
+        - {x: 24.5, y: 37.5}
+        - {x: 32.5, y: 13.5}
+        - {x: 32.5, y: -38.5}
+        - {x: 29.5, y: -46.5}
+        - {x: -20.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_26
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 0
+        width: 65
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -43}
+        - {x: -32.5, y: -39}
+        - {x: -32.5, y: 41}
+        - {x: -17.5, y: 46}
+        - {x: 21.5, y: 46}
+        - {x: 31.5, y: 40}
+        - {x: 32.5, y: 26}
+        - {x: 32.5, y: -41}
+        - {x: 22.5, y: -45}
+        - {x: 17.5, y: -46}
+        - {x: -20.5, y: -46}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nvcc_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 101
+        width: 65
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.5}
+        - {x: -32.5, y: -32.5}
+        - {x: -32.5, y: 41.5}
+        - {x: -17.5, y: 46.5}
+        - {x: 15.5, y: 46.5}
+        - {x: 24.5, y: 37.5}
+        - {x: 32.5, y: 13.5}
+        - {x: 32.5, y: -38.5}
+        - {x: 29.5, y: -46.5}
+        - {x: -20.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boom_woodbox_0002: 21300044
+      boom_woodbox_0003: 21300082
+      boom_woodbox_0004: 21300138
+      boom_woodbox_0005: 21300014
+      boom_woodbox_0006: 21300110
+      boom_woodbox_0007: 21300016
+      boom_woodbox_0008: 21300038
+      nvcc_0: 21300118
+      nvcc_1: 21300140
+      nvcc_11: 21300160
+      nvcc_12: 21300162
+      nvcc_14: 21300164
+      nvcc_15: 21300166
+      nvcc_16: 21300168
+      nvcc_17: 21300170
+      nvcc_18: 21300172
+      nvcc_19: 21300174
+      nvcc_2: 21300142
+      nvcc_20: 21300176
+      nvcc_21: 21300178
+      nvcc_22: 21300180
+      nvcc_23: 21300182
+      nvcc_24: 21300184
+      nvcc_25: 21300186
+      nvcc_26: 21300188
+      nvcc_27: 21300190
+      nvcc_3: 21300144
+      nvcc_4: 21300146
+      nvcc_5: 21300148
+      nvcc_6: 21300150
+      nvcc_7: 21300154
+      nvcc_8: 21300156
+      nvcc_9: 21300158
+      nvccc_0: 21300070
+      nvccc_7: 21300152
+      zombie_blue_bot_0001: 21300000
+      zombie_blue_bot_0002: 21300064
+      zombie_green_bot_0001: 21300078
+      zombie_green_bot_0002: 21300028
+      zombie_green_bot_0003: 21300008
+      zombie_green_bot_0004: 21300024
+      zombie_green_left_0001: 21300018
+      zombie_green_left_0002: 21300032
+      zombie_green_left_0003: 21300056
+      zombie_green_left_0003 copy: 21300002
+      zombie_green_left_0004: 21300004
+      zombie_green_right_0001: 21300026
+      zombie_green_right_0002: 21300010
+      zombie_green_right_0003: 21300080
+      zombie_green_right_0004: 21300012
+      zombie_green_top_0001: 21300052
+      zombie_green_top_0002: 21300054
+      zombie_green_top_0003: 21300074
+      zombie_green_top_0004: 21300006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

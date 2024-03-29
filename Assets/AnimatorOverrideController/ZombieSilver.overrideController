@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ZombieSilver
+  m_Controller: {fileID: 9100000, guid: 669768bbbbcab0342810ac75ac3744bf, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7b79790437c21744f98247005bc4e846, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2103b17d0c6c4ae428c1999619a1cec3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35af3735c41e7d242aeade7299fe50d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b380124e33e883445bc5ef5d62488458, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03824bc2941376e499520fb292b6e523, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c4d760f88d523e54a93f0a4d8c8c636c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a06a6c00de415f24fb834bebc1d4dbdc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 84908983fd1d62e45a779825e65e9a3c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 071142c4b7bbc784cba7725dafc98bac, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 129013cc5d900f04d876b9703622a685, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 773b106d11d96844c888d48360c30760, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7aba9ca64810bb446a8bbff6bd13fe37, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: edc31a1170df91d4ab5d976f8e9d4d77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 87942d3ea4371694c8ecada2d1526335, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 230367fcb423604468fa5e9b15036d6a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 173c4e078059ffa4282e6cf8b7ce8307, type: 2}
