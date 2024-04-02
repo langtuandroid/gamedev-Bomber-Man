@@ -14,6 +14,5 @@ public class Hello : MonoBehaviour, IDragHandler, IEventSystemHandler
 	public void OnDrag(PointerEventData eventData)
 	{
 		scrollRect.horizontalNormalizedPosition -= eventData.delta.x / (float)Screen.width;
-		MonoBehaviour.print("con cac ahhihi");
 	}
 }
