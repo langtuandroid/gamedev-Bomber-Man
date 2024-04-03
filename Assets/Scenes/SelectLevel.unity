@@ -3458,7 +3458,7 @@ GameObject:
   - component: {fileID: 209}
   - component: {fileID: 215}
   - component: {fileID: 210}
-  - component: {fileID: 861}
+  - component: {fileID: 310614973}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12953,8 +12953,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -13295,8 +13295,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -13600,8 +13600,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -13686,8 +13686,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -13870,8 +13870,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14114,8 +14114,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14200,8 +14200,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14316,8 +14316,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14402,8 +14402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14609,8 +14609,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14695,8 +14695,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -14935,8 +14935,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15175,8 +15175,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15355,8 +15355,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15441,8 +15441,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15601,8 +15601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15717,8 +15717,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -15935,8 +15935,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16051,8 +16051,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16244,8 +16244,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16394,8 +16394,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16582,8 +16582,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16698,8 +16698,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16784,8 +16784,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -16870,8 +16870,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -17268,8 +17268,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -17388,8 +17388,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -17474,8 +17474,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -17658,8 +17658,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -17804,8 +17804,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18026,8 +18026,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18146,8 +18146,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18262,8 +18262,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18408,8 +18408,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18494,8 +18494,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18614,8 +18614,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18700,8 +18700,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -18884,8 +18884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19068,8 +19068,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19154,8 +19154,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19270,8 +19270,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19356,8 +19356,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19510,8 +19510,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19694,8 +19694,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19814,8 +19814,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -19900,8 +19900,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -20084,8 +20084,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -20264,8 +20264,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -20418,8 +20418,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: backMenu
         m_Mode: 1
         m_Arguments:
@@ -20632,8 +20632,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -20778,8 +20778,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -20928,8 +20928,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21048,8 +21048,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21392,8 +21392,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21585,8 +21585,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21705,8 +21705,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21791,8 +21791,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -21867,81 +21867,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 9
---- !u!114 &861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a17f28c26bb2c928eaf63793ac69295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allButton:
-  - {fileID: 656}
-  - {fileID: 767}
-  - {fileID: 713}
-  - {fileID: 635}
-  - {fileID: 665}
-  - {fileID: 760}
-  - {fileID: 626}
-  - {fileID: 725}
-  - {fileID: 637}
-  - {fileID: 747}
-  - {fileID: 789}
-  - {fileID: 856}
-  - {fileID: 651}
-  - {fileID: 795}
-  - {fileID: 784}
-  - {fileID: 829}
-  - {fileID: 709}
-  - {fileID: 874}
-  - {fileID: 718}
-  - {fileID: 679}
-  - {fileID: 858}
-  - {fileID: 721}
-  - {fileID: 836}
-  - {fileID: 868}
-  - {fileID: 723}
-  - {fileID: 751}
-  - {fileID: 663}
-  - {fileID: 791}
-  - {fileID: 742}
-  - {fileID: 870}
-  - {fileID: 684}
-  - {fileID: 703}
-  - {fileID: 825}
-  - {fileID: 686}
-  - {fileID: 694}
-  - {fileID: 853}
-  - {fileID: 757}
-  - {fileID: 740}
-  - {fileID: 774}
-  - {fileID: 642}
-  - {fileID: 779}
-  - {fileID: 769}
-  - {fileID: 833}
-  - {fileID: 800}
-  - {fileID: 786}
-  - {fileID: 847}
-  - {fileID: 737}
-  - {fileID: 649}
-  - {fileID: 616}
-  - {fileID: 805}
-  - {fileID: 815}
-  - {fileID: 862}
-  - {fileID: 672}
-  - {fileID: 700}
-  - {fileID: 763}
-  - {fileID: 803}
-  - {fileID: 810}
-  - {fileID: 691}
-  - {fileID: 654}
-  - {fileID: 772}
-  mScriptChangeMusic: {fileID: 850}
-  mScriptChangeSound: {fileID: 708}
 --- !u!114 &862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21986,8 +21911,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -22192,8 +22117,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -22278,8 +22203,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -22424,8 +22349,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 310614973}
+        m_TargetAssemblyTypeName: Managers.LevelManager, Assembly-CSharp
         m_MethodName: OnLevelCLick
         m_Mode: 3
         m_Arguments:
@@ -22626,6 +22551,81 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 1
   m_ConstraintCount: 5
+--- !u!114 &310614973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a17f28c26bb2c928eaf63793ac69295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allButton:
+  - {fileID: 656}
+  - {fileID: 767}
+  - {fileID: 713}
+  - {fileID: 635}
+  - {fileID: 665}
+  - {fileID: 760}
+  - {fileID: 626}
+  - {fileID: 725}
+  - {fileID: 637}
+  - {fileID: 747}
+  - {fileID: 789}
+  - {fileID: 856}
+  - {fileID: 651}
+  - {fileID: 795}
+  - {fileID: 784}
+  - {fileID: 829}
+  - {fileID: 709}
+  - {fileID: 874}
+  - {fileID: 718}
+  - {fileID: 679}
+  - {fileID: 858}
+  - {fileID: 721}
+  - {fileID: 836}
+  - {fileID: 868}
+  - {fileID: 723}
+  - {fileID: 751}
+  - {fileID: 663}
+  - {fileID: 791}
+  - {fileID: 742}
+  - {fileID: 870}
+  - {fileID: 684}
+  - {fileID: 703}
+  - {fileID: 825}
+  - {fileID: 686}
+  - {fileID: 694}
+  - {fileID: 853}
+  - {fileID: 757}
+  - {fileID: 740}
+  - {fileID: 774}
+  - {fileID: 642}
+  - {fileID: 779}
+  - {fileID: 769}
+  - {fileID: 833}
+  - {fileID: 800}
+  - {fileID: 786}
+  - {fileID: 847}
+  - {fileID: 737}
+  - {fileID: 649}
+  - {fileID: 616}
+  - {fileID: 805}
+  - {fileID: 815}
+  - {fileID: 862}
+  - {fileID: 672}
+  - {fileID: 700}
+  - {fileID: 763}
+  - {fileID: 803}
+  - {fileID: 810}
+  - {fileID: 691}
+  - {fileID: 654}
+  - {fileID: 772}
+  mScriptChangeMusic: {fileID: 850}
+  mScriptChangeSound: {fileID: 708}
 --- !u!114 &704444629
 MonoBehaviour:
   m_ObjectHideFlags: 0

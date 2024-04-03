@@ -194,10 +194,9 @@ namespace XX
 			FileManager.UpdateLevel(PlayerPrefs.GetInt(FileManager.KEY_CURRENT_LEVEL) + 1);
 			if (allLevelComplete[mId - 1].mCompleted)
 			{
-				MonoBehaviour.print("Say hi");
 				PlayerPrefs.SetInt(FileManager.KEY_CURRENT_LEVEL, mId + 1);
 				PlayerPrefs.Save();
-				Object.Destroy(xx.gameObject);
+				Destroy(xx.gameObject);
 				Application.LoadLevel("GamePlay");
 			}
 		}
@@ -205,7 +204,7 @@ namespace XX
 		public void ReTry()
 		{
 			mScriptChangeSound.PlayAudio();
-			Object.Destroy(xx.gameObject);
+			Destroy(xx.gameObject);
 			Application.LoadLevel("GamePlay");
 		}
 	}
