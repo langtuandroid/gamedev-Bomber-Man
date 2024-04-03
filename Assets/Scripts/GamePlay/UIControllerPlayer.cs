@@ -111,13 +111,6 @@ namespace XX
 		{
 			if (Singleton<Soldier>.Instance.heart < 1)
 			{
-				try
-				{
-					MyAdvertisement.ShowFullNormal();
-				}
-				catch
-				{
-				}
 				PanelGameOver.SetActive(true);
 				btn_Bomb.SetActive(false);
 				btn_Pause.SetActive(false);
@@ -130,13 +123,6 @@ namespace XX
 		{
 			if (map.zombieCount == 0)
 			{
-				try
-				{
-					MyAdvertisement.ShowFullNormal();
-				}
-				catch
-				{
-				}
 				PanelNextLevel.SetActive(true);
 				btn_Bomb.SetActive(false);
 				btn_Pause.SetActive(false);
@@ -152,7 +138,7 @@ namespace XX
 			int @int = PlayerPrefs.GetInt("dem");
 			if (@int == 0)
 			{
-				Fader.Instance.FadeIn().Pause().LoadLevel("Menu")
+				Faderbm.Instance.FadeIn().Pause().LoadLevel("Menu")
 					.FadeOut(0.5f);
 				@int++;
 				PlayerPrefs.SetInt("dem", @int);

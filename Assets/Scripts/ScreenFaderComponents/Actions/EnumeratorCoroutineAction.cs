@@ -6,7 +6,7 @@ namespace ScreenFaderComponents.Actions
 {
 	public class EnumeratorCoroutineAction : IParametrizedAction
 	{
-		private FaderCoroutine result;
+		private FaderCoroutinebm result;
 
 		public bool Completed { get; set; }
 
@@ -24,10 +24,10 @@ namespace ScreenFaderComponents.Actions
 			}
 			if (result == null)
 			{
-				result = new FaderCoroutine();
-				result.coroutine = monoBehaviour.StartCoroutine(result.IntCoroutine(enumerator));
+				result = new FaderCoroutinebm();
+				result.Coroutinebm = monoBehaviour.StartCoroutine(result.IntCoroutine(enumerator));
 			}
-			Completed = result.Completed;
+			Completed = result.IsCompleted;
 		}
 	}
 }

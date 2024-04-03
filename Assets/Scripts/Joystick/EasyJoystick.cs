@@ -695,7 +695,7 @@ public class EasyJoystick : MonoBehaviour
 		{
 			virtualJoystick = false;
 		}
-		VirtualScreen.ComputeVirtualScreen();
+		VirtualScreenbm.ComputeVirtualScreenbm();
 		startXLocalAngle = GetStartAutoStabAngle(xAxisTransform, xAI);
 		startYLocalAngle = GetStartAutoStabAngle(yAxisTransform, yAI);
 		RestrictArea = restrictArea;
@@ -858,10 +858,10 @@ public class EasyJoystick : MonoBehaviour
 			}
 			if (Application.isEditor && !Application.isPlaying)
 			{
-				VirtualScreen.ComputeVirtualScreen();
+				VirtualScreenbm.ComputeVirtualScreenbm();
 				ComputeJoystickAnchor(joyAnchor);
 			}
-			VirtualScreen.SetGuiScaleMatrix();
+			VirtualScreenbm.SetGuiScaleMatrixbm();
 			ComputeJoystickAnchor(joyAnchor);
 			if ((showZone && areaTexture != null && !dynamicJoystick) || (showZone && dynamicJoystick && virtualJoystick && areaTexture != null) || (dynamicJoystick && Application.isEditor && !Application.isPlaying))
 			{
@@ -1228,28 +1228,28 @@ public class EasyJoystick : MonoBehaviour
 			anchorPosition = new Vector2(zoneRadius + num, zoneRadius + num);
 			break;
 		case JoystickAnchor.UpperCenter:
-			anchorPosition = new Vector2(VirtualScreen.width / 2f, zoneRadius + num);
+			anchorPosition = new Vector2(VirtualScreenbm.width / 2f, zoneRadius + num);
 			break;
 		case JoystickAnchor.UpperRight:
-			anchorPosition = new Vector2(VirtualScreen.width - zoneRadius - num, zoneRadius + num);
+			anchorPosition = new Vector2(VirtualScreenbm.width - zoneRadius - num, zoneRadius + num);
 			break;
 		case JoystickAnchor.MiddleLeft:
-			anchorPosition = new Vector2(zoneRadius + num, VirtualScreen.height / 2f);
+			anchorPosition = new Vector2(zoneRadius + num, VirtualScreenbm.height / 2f);
 			break;
 		case JoystickAnchor.MiddleCenter:
-			anchorPosition = new Vector2(VirtualScreen.width / 2f, VirtualScreen.height / 2f);
+			anchorPosition = new Vector2(VirtualScreenbm.width / 2f, VirtualScreenbm.height / 2f);
 			break;
 		case JoystickAnchor.MiddleRight:
-			anchorPosition = new Vector2(VirtualScreen.width - zoneRadius - num, VirtualScreen.height / 2f);
+			anchorPosition = new Vector2(VirtualScreenbm.width - zoneRadius - num, VirtualScreenbm.height / 2f);
 			break;
 		case JoystickAnchor.LowerLeft:
-			anchorPosition = new Vector2(zoneRadius + num, VirtualScreen.height - zoneRadius - num);
+			anchorPosition = new Vector2(zoneRadius + num, VirtualScreenbm.height - zoneRadius - num);
 			break;
 		case JoystickAnchor.LowerCenter:
-			anchorPosition = new Vector2(VirtualScreen.width / 2f, VirtualScreen.height - zoneRadius - num);
+			anchorPosition = new Vector2(VirtualScreenbm.width / 2f, VirtualScreenbm.height - zoneRadius - num);
 			break;
 		case JoystickAnchor.LowerRight:
-			anchorPosition = new Vector2(VirtualScreen.width - zoneRadius - num, VirtualScreen.height - zoneRadius - num);
+			anchorPosition = new Vector2(VirtualScreenbm.width - zoneRadius - num, VirtualScreenbm.height - zoneRadius - num);
 			break;
 		case JoystickAnchor.None:
 			anchorPosition = Vector2.zero;
@@ -1259,18 +1259,18 @@ public class EasyJoystick : MonoBehaviour
 		deadRect = new Rect(anchorPosition.x + joystickCenter.x - deadZone, anchorPosition.y + joystickCenter.y - deadZone, deadZone * 2f, deadZone * 2f);
 	}
 
-	private void On_TouchStart(Gesture gesture)
+	private void On_TouchStart(Gesturebm gesturebm)
 	{
-		if (!visible || ((gesture.isHoverReservedArea || !dynamicJoystick) && dynamicJoystick) || !isActivated)
+		if (!visible || ((gesturebm.isHoverReservedArea || !dynamicJoystick) && dynamicJoystick) || !isActivated)
 		{
 			return;
 		}
 		if (!dynamicJoystick)
 		{
-			Vector2 vector = new Vector2((anchorPosition.x + joystickCenter.x) * VirtualScreen.xRatio, (VirtualScreen.height - anchorPosition.y - joystickCenter.y) * VirtualScreen.yRatio);
-			if ((gesture.position - vector).sqrMagnitude < zoneRadius * VirtualScreen.xRatio * (zoneRadius * VirtualScreen.xRatio))
+			Vector2 vector = new Vector2((anchorPosition.x + joystickCenter.x) * VirtualScreenbm.xRatio, (VirtualScreenbm.height - anchorPosition.y - joystickCenter.y) * VirtualScreenbm.yRatio);
+			if ((gesturebm.position - vector).sqrMagnitude < zoneRadius * VirtualScreenbm.xRatio * (zoneRadius * VirtualScreenbm.xRatio))
 			{
-				joystickIndex = gesture.fingerIndex;
+				joystickIndex = gesturebm.fingerIndex;
 				CreateEvent(MessageName.On_JoystickTouchStart);
 			}
 		}
@@ -1286,49 +1286,49 @@ public class EasyJoystick : MonoBehaviour
 				virtualJoystick = true;
 				break;
 			case DynamicArea.Bottom:
-				if (gesture.position.y < (float)(Screen.height / 2))
+				if (gesturebm.position.y < (float)(Screen.height / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.Top:
-				if (gesture.position.y > (float)(Screen.height / 2))
+				if (gesturebm.position.y > (float)(Screen.height / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.Right:
-				if (gesture.position.x > (float)(Screen.width / 2))
+				if (gesturebm.position.x > (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.Left:
-				if (gesture.position.x < (float)(Screen.width / 2))
+				if (gesturebm.position.x < (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.TopRight:
-				if (gesture.position.y > (float)(Screen.height / 2) && gesture.position.x > (float)(Screen.width / 2))
+				if (gesturebm.position.y > (float)(Screen.height / 2) && gesturebm.position.x > (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.TopLeft:
-				if (gesture.position.y > (float)(Screen.height / 2) && gesture.position.x < (float)(Screen.width / 2))
+				if (gesturebm.position.y > (float)(Screen.height / 2) && gesturebm.position.x < (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.BottomRight:
-				if (gesture.position.y < (float)(Screen.height / 2) && gesture.position.x > (float)(Screen.width / 2))
+				if (gesturebm.position.y < (float)(Screen.height / 2) && gesturebm.position.x > (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
 				break;
 			case DynamicArea.BottomLeft:
-				if (gesture.position.y < (float)(Screen.height / 2) && gesture.position.x < (float)(Screen.width / 2))
+				if (gesturebm.position.y < (float)(Screen.height / 2) && gesturebm.position.x < (float)(Screen.width / 2))
 				{
 					virtualJoystick = true;
 				}
@@ -1336,44 +1336,44 @@ public class EasyJoystick : MonoBehaviour
 			}
 			if (virtualJoystick)
 			{
-				joystickCenter = new Vector2(gesture.position.x / VirtualScreen.xRatio, VirtualScreen.height - gesture.position.y / VirtualScreen.yRatio);
+				joystickCenter = new Vector2(gesturebm.position.x / VirtualScreenbm.xRatio, VirtualScreenbm.height - gesturebm.position.y / VirtualScreenbm.yRatio);
 				JoyAnchor = JoystickAnchor.None;
-				joystickIndex = gesture.fingerIndex;
+				joystickIndex = gesturebm.fingerIndex;
 			}
 		}
 	}
 
-	private void On_SimpleTap(Gesture gesture)
+	private void On_SimpleTap(Gesturebm gesturebm)
 	{
-		if (visible && ((!gesture.isHoverReservedArea && dynamicJoystick) || !dynamicJoystick) && isActivated && gesture.fingerIndex == joystickIndex)
+		if (visible && ((!gesturebm.isHoverReservedArea && dynamicJoystick) || !dynamicJoystick) && isActivated && gesturebm.fingerIndex == joystickIndex)
 		{
 			CreateEvent(MessageName.On_JoystickTap);
 		}
 	}
 
-	private void On_DoubleTap(Gesture gesture)
+	private void On_DoubleTap(Gesturebm gesturebm)
 	{
-		if (visible && ((!gesture.isHoverReservedArea && dynamicJoystick) || !dynamicJoystick) && isActivated && gesture.fingerIndex == joystickIndex)
+		if (visible && ((!gesturebm.isHoverReservedArea && dynamicJoystick) || !dynamicJoystick) && isActivated && gesturebm.fingerIndex == joystickIndex)
 		{
 			CreateEvent(MessageName.On_JoystickDoubleTap);
 		}
 	}
 
-	private void On_TouchDown(Gesture gesture)
+	private void On_TouchDown(Gesturebm gesturebm)
 	{
-		if (!visible || ((gesture.isHoverReservedArea || !dynamicJoystick) && dynamicJoystick) || !isActivated)
+		if (!visible || ((gesturebm.isHoverReservedArea || !dynamicJoystick) && dynamicJoystick) || !isActivated)
 		{
 			return;
 		}
-		Vector2 vector = new Vector2((anchorPosition.x + joystickCenter.x) * VirtualScreen.xRatio, (VirtualScreen.height - (anchorPosition.y + joystickCenter.y)) * VirtualScreen.yRatio);
-		if (gesture.fingerIndex != joystickIndex)
+		Vector2 vector = new Vector2((anchorPosition.x + joystickCenter.x) * VirtualScreenbm.xRatio, (VirtualScreenbm.height - (anchorPosition.y + joystickCenter.y)) * VirtualScreenbm.yRatio);
+		if (gesturebm.fingerIndex != joystickIndex)
 		{
 			return;
 		}
-		if (((gesture.position - vector).sqrMagnitude < zoneRadius * VirtualScreen.xRatio * (zoneRadius * VirtualScreen.xRatio) && resetFingerExit) || !resetFingerExit)
+		if (((gesturebm.position - vector).sqrMagnitude < zoneRadius * VirtualScreenbm.xRatio * (zoneRadius * VirtualScreenbm.xRatio) && resetFingerExit) || !resetFingerExit)
 		{
-			joystickTouch = new Vector2(gesture.position.x, gesture.position.y) - vector;
-			joystickTouch = new Vector2(joystickTouch.x / VirtualScreen.xRatio, joystickTouch.y / VirtualScreen.yRatio);
+			joystickTouch = new Vector2(gesturebm.position.x, gesturebm.position.y) - vector;
+			joystickTouch = new Vector2(joystickTouch.x / VirtualScreenbm.xRatio, joystickTouch.y / VirtualScreenbm.yRatio);
 			if (!enableXaxis)
 			{
 				joystickTouch.x = 0f;
@@ -1390,13 +1390,13 @@ public class EasyJoystick : MonoBehaviour
 		}
 		else
 		{
-			On_TouchUp(gesture);
+			On_TouchUp(gesturebm);
 		}
 	}
 
-	private void On_TouchUp(Gesture gesture)
+	private void On_TouchUp(Gesturebm gesturebm)
 	{
-		if (visible && gesture.fingerIndex == joystickIndex)
+		if (visible && gesturebm.fingerIndex == joystickIndex)
 		{
 			joystickIndex = -1;
 			if (dynamicJoystick)

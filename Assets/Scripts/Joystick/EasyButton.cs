@@ -248,7 +248,7 @@ public class EasyButton : MonoBehaviour
 		currentTexture = normalTexture;
 		currentColor = buttonNormalColor;
 		buttonState = ButtonState.None;
-		VirtualScreen.ComputeVirtualScreen();
+		VirtualScreenbm.ComputeVirtualScreenbm();
 		ComputeButtonAnchor(anchor);
 	}
 
@@ -258,8 +258,8 @@ public class EasyButton : MonoBehaviour
 		{
 			GUI.depth = guiDepth;
 			base.useGUILayout = isUseGuiLayout;
-			VirtualScreen.ComputeVirtualScreen();
-			VirtualScreen.SetGuiScaleMatrix();
+			VirtualScreenbm.ComputeVirtualScreenbm();
+			VirtualScreenbm.SetGuiScaleMatrixbm();
 			if (!(normalTexture != null) || !(activeTexture != null))
 			{
 				return;
@@ -338,28 +338,28 @@ public class EasyButton : MonoBehaviour
 				vector2 = new Vector2(0f, 0f);
 				break;
 			case ButtonAnchor.UpperCenter:
-				vector2 = new Vector2(VirtualScreen.width / 2f - vector.x / 2f, offset.y);
+				vector2 = new Vector2(VirtualScreenbm.width / 2f - vector.x / 2f, offset.y);
 				break;
 			case ButtonAnchor.UpperRight:
-				vector2 = new Vector2(VirtualScreen.width - vector.x, 0f);
+				vector2 = new Vector2(VirtualScreenbm.width - vector.x, 0f);
 				break;
 			case ButtonAnchor.MiddleLeft:
-				vector2 = new Vector2(0f, VirtualScreen.height / 2f - vector.y / 2f);
+				vector2 = new Vector2(0f, VirtualScreenbm.height / 2f - vector.y / 2f);
 				break;
 			case ButtonAnchor.MiddleCenter:
-				vector2 = new Vector2(VirtualScreen.width / 2f - vector.x / 2f, VirtualScreen.height / 2f - vector.y / 2f);
+				vector2 = new Vector2(VirtualScreenbm.width / 2f - vector.x / 2f, VirtualScreenbm.height / 2f - vector.y / 2f);
 				break;
 			case ButtonAnchor.MiddleRight:
-				vector2 = new Vector2(VirtualScreen.width - vector.x, VirtualScreen.height / 2f - vector.y / 2f);
+				vector2 = new Vector2(VirtualScreenbm.width - vector.x, VirtualScreenbm.height / 2f - vector.y / 2f);
 				break;
 			case ButtonAnchor.LowerLeft:
-				vector2 = new Vector2(0f, VirtualScreen.height - vector.y);
+				vector2 = new Vector2(0f, VirtualScreenbm.height - vector.y);
 				break;
 			case ButtonAnchor.LowerCenter:
-				vector2 = new Vector2(VirtualScreen.width / 2f - vector.x / 2f, VirtualScreen.height - vector.y);
+				vector2 = new Vector2(VirtualScreenbm.width / 2f - vector.x / 2f, VirtualScreenbm.height - vector.y);
 				break;
 			case ButtonAnchor.LowerRight:
-				vector2 = new Vector2(VirtualScreen.width - vector.x, VirtualScreen.height - vector.y);
+				vector2 = new Vector2(VirtualScreenbm.width - vector.x, VirtualScreenbm.height - vector.y);
 				break;
 			}
 			buttonRect = new Rect(vector2.x + offset.x, vector2.y + offset.y, vector.x, vector.y);
@@ -431,11 +431,11 @@ public class EasyButton : MonoBehaviour
 		}
 	}
 
-	private void On_TouchStart(Gesture gesture)
+	private void On_TouchStart(Gesturebm gesturebm)
 	{
-		if (gesture.IsInRect(VirtualScreen.GetRealRect(buttonRect), true) && enable && isActivated)
+		if (gesturebm.IsInRect(VirtualScreenbm.GetRealRectbm(buttonRect), true) && enable && isActivated)
 		{
-			buttonFingerIndex = gesture.fingerIndex;
+			buttonFingerIndex = gesturebm.fingerIndex;
 			currentTexture = activeTexture;
 			currentColor = buttonActiveColor;
 			buttonState = ButtonState.Down;
@@ -444,13 +444,13 @@ public class EasyButton : MonoBehaviour
 		}
 	}
 
-	private void On_TouchDown(Gesture gesture)
+	private void On_TouchDown(Gesturebm gesturebm)
 	{
-		if (gesture.fingerIndex != buttonFingerIndex && (!isSwipeIn || buttonState != ButtonState.None))
+		if (gesturebm.fingerIndex != buttonFingerIndex && (!isSwipeIn || buttonState != ButtonState.None))
 		{
 			return;
 		}
-		if (gesture.IsInRect(VirtualScreen.GetRealRect(buttonRect), true) && enable && isActivated)
+		if (gesturebm.IsInRect(VirtualScreenbm.GetRealRectbm(buttonRect), true) && enable && isActivated)
 		{
 			currentTexture = activeTexture;
 			currentColor = buttonActiveColor;
@@ -462,7 +462,7 @@ public class EasyButton : MonoBehaviour
 			}
 			if (buttonState == ButtonState.None)
 			{
-				buttonFingerIndex = gesture.fingerIndex;
+				buttonFingerIndex = gesturebm.fingerIndex;
 				buttonState = ButtonState.Down;
 				frame = 0;
 				RaiseEvent(MessageName.On_ButtonDown);
@@ -482,11 +482,11 @@ public class EasyButton : MonoBehaviour
 		}
 	}
 
-	private void On_TouchUp(Gesture gesture)
+	private void On_TouchUp(Gesturebm gesturebm)
 	{
-		if (gesture.fingerIndex == buttonFingerIndex)
+		if (gesturebm.fingerIndex == buttonFingerIndex)
 		{
-			if ((gesture.IsInRect(VirtualScreen.GetRealRect(buttonRect), true) || (isSwipeOut && buttonState == ButtonState.Press)) && enable && isActivated)
+			if ((gesturebm.IsInRect(VirtualScreenbm.GetRealRectbm(buttonRect), true) || (isSwipeOut && buttonState == ButtonState.Press)) && enable && isActivated)
 			{
 				RaiseEvent(MessageName.On_ButtonUp);
 			}

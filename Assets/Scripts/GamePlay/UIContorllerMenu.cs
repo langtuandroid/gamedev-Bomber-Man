@@ -45,7 +45,7 @@ namespace XX
 			int @int = PlayerPrefs.GetInt("dem");
 			if (@int == 0)
 			{
-				Fader.Instance.FadeIn().Pause().LoadLevel("SelectLevel")
+				Faderbm.Instance.FadeIn().Pause().LoadLevel("SelectLevel")
 					.FadeOut(0.5f);
 				@int++;
 				PlayerPrefs.SetInt("dem", @int);
@@ -80,13 +80,6 @@ namespace XX
 			if (check)
 			{
 				bgExit.SetActive(true);
-				try
-				{
-					MyAdvertisement.ShowFullNormal();
-				}
-				catch
-				{
-				}
 				StartCoroutine(delay());
 			}
 			else

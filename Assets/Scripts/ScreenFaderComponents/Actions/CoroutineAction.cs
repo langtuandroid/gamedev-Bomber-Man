@@ -5,7 +5,7 @@ namespace ScreenFaderComponents.Actions
 {
 	public class CoroutineAction : IParametrizedAction
 	{
-		private FaderCoroutine result;
+		private FaderCoroutinebm result;
 
 		public bool Completed { get; set; }
 
@@ -23,8 +23,8 @@ namespace ScreenFaderComponents.Actions
 			}
 			if (result == null)
 			{
-				result = new FaderCoroutine();
-				result.coroutine = monoBehaviour.StartCoroutine(text);
+				result = new FaderCoroutinebm();
+				result.Coroutinebm = monoBehaviour.StartCoroutine(text);
 			}
 			Completed = true;
 		}

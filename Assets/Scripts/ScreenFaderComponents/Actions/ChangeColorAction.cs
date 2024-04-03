@@ -13,10 +13,10 @@ namespace ScreenFaderComponents.Actions
 			{
 				throw new ArgumentNullException();
 			}
-			Fader fader = args[1] as Fader;
-			if (fader != null && args[0] is Color)
+			Faderbm faderbm = args[1] as Faderbm;
+			if (faderbm != null && args[0] is Color)
 			{
-				fader.color = (Color)args[0];
+				faderbm.color = (Color)args[0];
 			}
 			Completed = true;
 		}

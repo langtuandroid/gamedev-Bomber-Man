@@ -7,75 +7,75 @@ using UnityEngine;
 
 public class EasyTouch : MonoBehaviour
 {
-	public delegate void TouchCancelHandler(Gesture gesture);
+	public delegate void TouchCancelHandler(Gesturebm gesturebm);
 
-	public delegate void Cancel2FingersHandler(Gesture gesture);
+	public delegate void Cancel2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TouchStartHandler(Gesture gesture);
+	public delegate void TouchStartHandler(Gesturebm gesturebm);
 
-	public delegate void TouchDownHandler(Gesture gesture);
+	public delegate void TouchDownHandler(Gesturebm gesturebm);
 
-	public delegate void TouchUpHandler(Gesture gesture);
+	public delegate void TouchUpHandler(Gesturebm gesturebm);
 
-	public delegate void SimpleTapHandler(Gesture gesture);
+	public delegate void SimpleTapHandler(Gesturebm gesturebm);
 
-	public delegate void DoubleTapHandler(Gesture gesture);
+	public delegate void DoubleTapHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapStartHandler(Gesture gesture);
+	public delegate void LongTapStartHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapHandler(Gesture gesture);
+	public delegate void LongTapHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapEndHandler(Gesture gesture);
+	public delegate void LongTapEndHandler(Gesturebm gesturebm);
 
-	public delegate void DragStartHandler(Gesture gesture);
+	public delegate void DragStartHandler(Gesturebm gesturebm);
 
-	public delegate void DragHandler(Gesture gesture);
+	public delegate void DragHandler(Gesturebm gesturebm);
 
-	public delegate void DragEndHandler(Gesture gesture);
+	public delegate void DragEndHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeStartHandler(Gesture gesture);
+	public delegate void SwipeStartHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeHandler(Gesture gesture);
+	public delegate void SwipeHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeEndHandler(Gesture gesture);
+	public delegate void SwipeEndHandler(Gesturebm gesturebm);
 
-	public delegate void TouchStart2FingersHandler(Gesture gesture);
+	public delegate void TouchStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TouchDown2FingersHandler(Gesture gesture);
+	public delegate void TouchDown2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TouchUp2FingersHandler(Gesture gesture);
+	public delegate void TouchUp2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void SimpleTap2FingersHandler(Gesture gesture);
+	public delegate void SimpleTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DoubleTap2FingersHandler(Gesture gesture);
+	public delegate void DoubleTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapStart2FingersHandler(Gesture gesture);
+	public delegate void LongTapStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTap2FingersHandler(Gesture gesture);
+	public delegate void LongTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapEnd2FingersHandler(Gesture gesture);
+	public delegate void LongTapEnd2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TwistHandler(Gesture gesture);
+	public delegate void TwistHandler(Gesturebm gesturebm);
 
-	public delegate void TwistEndHandler(Gesture gesture);
+	public delegate void TwistEndHandler(Gesturebm gesturebm);
 
-	public delegate void PinchInHandler(Gesture gesture);
+	public delegate void PinchInHandler(Gesturebm gesturebm);
 
-	public delegate void PinchOutHandler(Gesture gesture);
+	public delegate void PinchOutHandler(Gesturebm gesturebm);
 
-	public delegate void PinchEndHandler(Gesture gesture);
+	public delegate void PinchEndHandler(Gesturebm gesturebm);
 
-	public delegate void DragStart2FingersHandler(Gesture gesture);
+	public delegate void DragStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void Drag2FingersHandler(Gesture gesture);
+	public delegate void Drag2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DragEnd2FingersHandler(Gesture gesture);
+	public delegate void DragEnd2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeStart2FingersHandler(Gesture gesture);
+	public delegate void SwipeStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void Swipe2FingersHandler(Gesture gesture);
+	public delegate void Swipe2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeEnd2FingersHandler(Gesture gesture);
+	public delegate void SwipeEnd2FingersHandler(Gesturebm gesturebm);
 
 	public delegate void EasyTouchIsReadyHandler();
 
@@ -765,51 +765,51 @@ public class EasyTouch : MonoBehaviour
 		}
 		if (!isStartHoverNGUI)
 		{
-			Gesture gesture = new Gesture();
-			gesture.fingerIndex = finger.fingerIndex;
-			gesture.touchCount = finger.touchCount;
-			gesture.startPosition = finger.startPosition;
-			gesture.position = finger.position;
-			gesture.deltaPosition = finger.deltaPosition;
-			gesture.actionTime = actionTime;
-			gesture.deltaTime = finger.deltaTime;
-			gesture.swipe = swipe;
-			gesture.swipeLength = swipeLength;
-			gesture.swipeVector = swipeVector;
-			gesture.deltaPinch = 0f;
-			gesture.twistAngle = 0f;
-			gesture.pickObject = finger.pickedObject;
-			gesture.otherReceiver = receiverObject;
-			gesture.isHoverReservedArea = IsTouchReservedArea(touchIndex);
-			gesture.pickCamera = finger.pickedCamera;
-			gesture.isGuiCamera = finger.isGuiCamera;
+			Gesturebm gesturebm = new Gesturebm();
+			gesturebm.fingerIndex = finger.fingerIndex;
+			gesturebm.touchCount = finger.touchCount;
+			gesturebm.startPosition = finger.startPosition;
+			gesturebm.position = finger.position;
+			gesturebm.deltaPosition = finger.deltaPosition;
+			gesturebm.actionTime = actionTime;
+			gesturebm.deltaTime = finger.deltaTime;
+			gesturebm.swipe = swipe;
+			gesturebm.swipeLength = swipeLength;
+			gesturebm.swipeVector = swipeVector;
+			gesturebm.deltaPinch = 0f;
+			gesturebm.twistAngle = 0f;
+			gesturebm.pickObject = finger.pickedObject;
+			gesturebm.otherReceiver = receiverObject;
+			gesturebm.isHoverReservedArea = IsTouchReservedArea(touchIndex);
+			gesturebm.pickCamera = finger.pickedCamera;
+			gesturebm.isGuiCamera = finger.isGuiCamera;
 			if (useBroadcastMessage)
 			{
-				SendGesture(message, gesture);
+				SendGesture(message, gesturebm);
 			}
 			if (!useBroadcastMessage || isExtension)
 			{
-				RaiseEvent(message, gesture);
+				RaiseEvent(message, gesturebm);
 			}
 		}
 		isStartHoverNGUI = false;
 	}
 
-	private void SendGesture(EventName message, Gesture gesture)
+	private void SendGesture(EventName message, Gesturebm gesturebm)
 	{
 		if (useBroadcastMessage)
 		{
-			if (receiverObject != null && receiverObject != gesture.pickObject)
+			if (receiverObject != null && receiverObject != gesturebm.pickObject)
 			{
-				receiverObject.SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+				receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 			}
-			if ((bool)gesture.pickObject)
+			if ((bool)gesturebm.pickObject)
 			{
-				gesture.pickObject.SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+				gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 			}
 			else
 			{
-				SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+				SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	}
@@ -1051,83 +1051,83 @@ public class EasyTouch : MonoBehaviour
 		}
 		if (!isStartHoverNGUI)
 		{
-			Gesture gesture = new Gesture();
-			gesture.touchCount = 2;
-			gesture.fingerIndex = -1;
-			gesture.startPosition = startPosition;
-			gesture.position = position;
-			gesture.deltaPosition = deltaPosition;
-			gesture.actionTime = actionTime;
+			Gesturebm gesturebm = new Gesturebm();
+			gesturebm.touchCount = 2;
+			gesturebm.fingerIndex = -1;
+			gesturebm.startPosition = startPosition;
+			gesturebm.position = position;
+			gesturebm.deltaPosition = deltaPosition;
+			gesturebm.actionTime = actionTime;
 			if (fingers[twoFinger0] != null)
 			{
-				gesture.deltaTime = fingers[twoFinger0].deltaTime;
+				gesturebm.deltaTime = fingers[twoFinger0].deltaTime;
 			}
 			else if (fingers[twoFinger1] != null)
 			{
-				gesture.deltaTime = fingers[twoFinger1].deltaTime;
+				gesturebm.deltaTime = fingers[twoFinger1].deltaTime;
 			}
 			else
 			{
-				gesture.deltaTime = 0f;
+				gesturebm.deltaTime = 0f;
 			}
-			gesture.swipe = swipe;
-			gesture.swipeLength = swipeLength;
-			gesture.swipeVector = swipeVector;
-			gesture.deltaPinch = pinch;
-			gesture.twistAngle = twist;
-			gesture.twoFingerDistance = twoDistance;
+			gesturebm.swipe = swipe;
+			gesturebm.swipeLength = swipeLength;
+			gesturebm.swipeVector = swipeVector;
+			gesturebm.deltaPinch = pinch;
+			gesturebm.twistAngle = twist;
+			gesturebm.twoFingerDistance = twoDistance;
 			if (fingers[twoFinger0] != null)
 			{
-				gesture.pickCamera = fingers[twoFinger0].pickedCamera;
-				gesture.isGuiCamera = fingers[twoFinger0].isGuiCamera;
+				gesturebm.pickCamera = fingers[twoFinger0].pickedCamera;
+				gesturebm.isGuiCamera = fingers[twoFinger0].isGuiCamera;
 			}
 			else if (fingers[twoFinger1] != null)
 			{
-				gesture.pickCamera = fingers[twoFinger1].pickedCamera;
-				gesture.isGuiCamera = fingers[twoFinger1].isGuiCamera;
+				gesturebm.pickCamera = fingers[twoFinger1].pickedCamera;
+				gesturebm.isGuiCamera = fingers[twoFinger1].isGuiCamera;
 			}
 			if (message != EventName.On_Cancel2Fingers)
 			{
-				gesture.pickObject = pickObject2Finger;
+				gesturebm.pickObject = pickObject2Finger;
 			}
 			else
 			{
-				gesture.pickObject = oldPickObject2Finger;
+				gesturebm.pickObject = oldPickObject2Finger;
 			}
-			gesture.otherReceiver = receiverObject;
+			gesturebm.otherReceiver = receiverObject;
 			if (fingers[twoFinger0] != null)
 			{
-				gesture.isHoverReservedArea = IsTouchReservedArea(fingers[twoFinger0].fingerIndex);
+				gesturebm.isHoverReservedArea = IsTouchReservedArea(fingers[twoFinger0].fingerIndex);
 			}
 			if (fingers[twoFinger1] != null)
 			{
-				gesture.isHoverReservedArea = gesture.isHoverReservedArea || IsTouchReservedArea(fingers[twoFinger1].fingerIndex);
+				gesturebm.isHoverReservedArea = gesturebm.isHoverReservedArea || IsTouchReservedArea(fingers[twoFinger1].fingerIndex);
 			}
 			if (useBroadcastMessage)
 			{
-				SendGesture2Finger(message, gesture);
+				SendGesture2Finger(message, gesturebm);
 			}
 			else
 			{
-				RaiseEvent(message, gesture);
+				RaiseEvent(message, gesturebm);
 			}
 			isStartHoverNGUI = false;
 		}
 	}
 
-	private void SendGesture2Finger(EventName message, Gesture gesture)
+	private void SendGesture2Finger(EventName message, Gesturebm gesturebm)
 	{
-		if (receiverObject != null && receiverObject != gesture.pickObject)
+		if (receiverObject != null && receiverObject != gesturebm.pickObject)
 		{
-			receiverObject.SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+			receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 		}
-		if (gesture.pickObject != null)
+		if (gesturebm.pickObject != null)
 		{
-			gesture.pickObject.SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+			gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		{
-			SendMessage(message.ToString(), gesture, SendMessageOptions.DontRequireReceiver);
+			SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
 		}
 	}
 
@@ -1146,218 +1146,218 @@ public class EasyTouch : MonoBehaviour
 		}
 	}
 
-	private void RaiseEvent(EventName evnt, Gesture gesture)
+	private void RaiseEvent(EventName evnt, Gesturebm gesturebm)
 	{
 		switch (evnt)
 		{
 		case EventName.On_Cancel:
 			if (EasyTouch.On_Cancel != null)
 			{
-				EasyTouch.On_Cancel(gesture);
+				EasyTouch.On_Cancel(gesturebm);
 			}
 			break;
 		case EventName.On_Cancel2Fingers:
 			if (EasyTouch.On_Cancel2Fingers != null)
 			{
-				EasyTouch.On_Cancel2Fingers(gesture);
+				EasyTouch.On_Cancel2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_TouchStart:
 			if (EasyTouch.On_TouchStart != null)
 			{
-				EasyTouch.On_TouchStart(gesture);
+				EasyTouch.On_TouchStart(gesturebm);
 			}
 			break;
 		case EventName.On_TouchDown:
 			if (EasyTouch.On_TouchDown != null)
 			{
-				EasyTouch.On_TouchDown(gesture);
+				EasyTouch.On_TouchDown(gesturebm);
 			}
 			break;
 		case EventName.On_TouchUp:
 			if (EasyTouch.On_TouchUp != null)
 			{
-				EasyTouch.On_TouchUp(gesture);
+				EasyTouch.On_TouchUp(gesturebm);
 			}
 			break;
 		case EventName.On_SimpleTap:
 			if (EasyTouch.On_SimpleTap != null)
 			{
-				EasyTouch.On_SimpleTap(gesture);
+				EasyTouch.On_SimpleTap(gesturebm);
 			}
 			break;
 		case EventName.On_DoubleTap:
 			if (EasyTouch.On_DoubleTap != null)
 			{
-				EasyTouch.On_DoubleTap(gesture);
+				EasyTouch.On_DoubleTap(gesturebm);
 			}
 			break;
 		case EventName.On_LongTapStart:
 			if (EasyTouch.On_LongTapStart != null)
 			{
-				EasyTouch.On_LongTapStart(gesture);
+				EasyTouch.On_LongTapStart(gesturebm);
 			}
 			break;
 		case EventName.On_LongTap:
 			if (EasyTouch.On_LongTap != null)
 			{
-				EasyTouch.On_LongTap(gesture);
+				EasyTouch.On_LongTap(gesturebm);
 			}
 			break;
 		case EventName.On_LongTapEnd:
 			if (EasyTouch.On_LongTapEnd != null)
 			{
-				EasyTouch.On_LongTapEnd(gesture);
+				EasyTouch.On_LongTapEnd(gesturebm);
 			}
 			break;
 		case EventName.On_DragStart:
 			if (EasyTouch.On_DragStart != null)
 			{
-				EasyTouch.On_DragStart(gesture);
+				EasyTouch.On_DragStart(gesturebm);
 			}
 			break;
 		case EventName.On_Drag:
 			if (EasyTouch.On_Drag != null)
 			{
-				EasyTouch.On_Drag(gesture);
+				EasyTouch.On_Drag(gesturebm);
 			}
 			break;
 		case EventName.On_DragEnd:
 			if (EasyTouch.On_DragEnd != null)
 			{
-				EasyTouch.On_DragEnd(gesture);
+				EasyTouch.On_DragEnd(gesturebm);
 			}
 			break;
 		case EventName.On_SwipeStart:
 			if (EasyTouch.On_SwipeStart != null)
 			{
-				EasyTouch.On_SwipeStart(gesture);
+				EasyTouch.On_SwipeStart(gesturebm);
 			}
 			break;
 		case EventName.On_Swipe:
 			if (EasyTouch.On_Swipe != null)
 			{
-				EasyTouch.On_Swipe(gesture);
+				EasyTouch.On_Swipe(gesturebm);
 			}
 			break;
 		case EventName.On_SwipeEnd:
 			if (EasyTouch.On_SwipeEnd != null)
 			{
-				EasyTouch.On_SwipeEnd(gesture);
+				EasyTouch.On_SwipeEnd(gesturebm);
 			}
 			break;
 		case EventName.On_TouchStart2Fingers:
 			if (EasyTouch.On_TouchStart2Fingers != null)
 			{
-				EasyTouch.On_TouchStart2Fingers(gesture);
+				EasyTouch.On_TouchStart2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_TouchDown2Fingers:
 			if (EasyTouch.On_TouchDown2Fingers != null)
 			{
-				EasyTouch.On_TouchDown2Fingers(gesture);
+				EasyTouch.On_TouchDown2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_TouchUp2Fingers:
 			if (EasyTouch.On_TouchUp2Fingers != null)
 			{
-				EasyTouch.On_TouchUp2Fingers(gesture);
+				EasyTouch.On_TouchUp2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_SimpleTap2Fingers:
 			if (EasyTouch.On_SimpleTap2Fingers != null)
 			{
-				EasyTouch.On_SimpleTap2Fingers(gesture);
+				EasyTouch.On_SimpleTap2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_DoubleTap2Fingers:
 			if (EasyTouch.On_DoubleTap2Fingers != null)
 			{
-				EasyTouch.On_DoubleTap2Fingers(gesture);
+				EasyTouch.On_DoubleTap2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_LongTapStart2Fingers:
 			if (EasyTouch.On_LongTapStart2Fingers != null)
 			{
-				EasyTouch.On_LongTapStart2Fingers(gesture);
+				EasyTouch.On_LongTapStart2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_LongTap2Fingers:
 			if (EasyTouch.On_LongTap2Fingers != null)
 			{
-				EasyTouch.On_LongTap2Fingers(gesture);
+				EasyTouch.On_LongTap2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_LongTapEnd2Fingers:
 			if (EasyTouch.On_LongTapEnd2Fingers != null)
 			{
-				EasyTouch.On_LongTapEnd2Fingers(gesture);
+				EasyTouch.On_LongTapEnd2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_Twist:
 			if (EasyTouch.On_Twist != null)
 			{
-				EasyTouch.On_Twist(gesture);
+				EasyTouch.On_Twist(gesturebm);
 			}
 			break;
 		case EventName.On_TwistEnd:
 			if (EasyTouch.On_TwistEnd != null)
 			{
-				EasyTouch.On_TwistEnd(gesture);
+				EasyTouch.On_TwistEnd(gesturebm);
 			}
 			break;
 		case EventName.On_PinchIn:
 			if (EasyTouch.On_PinchIn != null)
 			{
-				EasyTouch.On_PinchIn(gesture);
+				EasyTouch.On_PinchIn(gesturebm);
 			}
 			break;
 		case EventName.On_PinchOut:
 			if (EasyTouch.On_PinchOut != null)
 			{
-				EasyTouch.On_PinchOut(gesture);
+				EasyTouch.On_PinchOut(gesturebm);
 			}
 			break;
 		case EventName.On_PinchEnd:
 			if (EasyTouch.On_PinchEnd != null)
 			{
-				EasyTouch.On_PinchEnd(gesture);
+				EasyTouch.On_PinchEnd(gesturebm);
 			}
 			break;
 		case EventName.On_DragStart2Fingers:
 			if (EasyTouch.On_DragStart2Fingers != null)
 			{
-				EasyTouch.On_DragStart2Fingers(gesture);
+				EasyTouch.On_DragStart2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_Drag2Fingers:
 			if (EasyTouch.On_Drag2Fingers != null)
 			{
-				EasyTouch.On_Drag2Fingers(gesture);
+				EasyTouch.On_Drag2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_DragEnd2Fingers:
 			if (EasyTouch.On_DragEnd2Fingers != null)
 			{
-				EasyTouch.On_DragEnd2Fingers(gesture);
+				EasyTouch.On_DragEnd2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_SwipeStart2Fingers:
 			if (EasyTouch.On_SwipeStart2Fingers != null)
 			{
-				EasyTouch.On_SwipeStart2Fingers(gesture);
+				EasyTouch.On_SwipeStart2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_Swipe2Fingers:
 			if (EasyTouch.On_Swipe2Fingers != null)
 			{
-				EasyTouch.On_Swipe2Fingers(gesture);
+				EasyTouch.On_Swipe2Fingers(gesturebm);
 			}
 			break;
 		case EventName.On_SwipeEnd2Fingers:
 			if (EasyTouch.On_SwipeEnd2Fingers != null)
 			{
-				EasyTouch.On_SwipeEnd2Fingers(gesture);
+				EasyTouch.On_SwipeEnd2Fingers(gesturebm);
 			}
 			break;
 		}
@@ -1499,7 +1499,7 @@ public class EasyTouch : MonoBehaviour
 			num = 0;
 			while (!flag && num < reservedVirtualAreas.Count)
 			{
-				rect = VirtualScreen.GetRealRect(reservedVirtualAreas[num]);
+				rect = VirtualScreenbm.GetRealRectbm(reservedVirtualAreas[num]);
 				flag = new Rect(rect.x, (float)Screen.height - rect.y - rect.height, rect.width, rect.height).Contains(fingers[touchIndex].position);
 				num++;
 			}

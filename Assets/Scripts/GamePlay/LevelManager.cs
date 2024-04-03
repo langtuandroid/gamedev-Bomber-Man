@@ -47,7 +47,7 @@ namespace XX
 				int @int = PlayerPrefs.GetInt("dem");
 				if (@int == 0)
 				{
-					Fader.Instance.FadeIn().Pause().LoadLevel("GamePlay")
+					Faderbm.Instance.FadeIn().Pause().LoadLevel("GamePlay")
 						.FadeOut(0.5f);
 					@int++;
 					PlayerPrefs.SetInt("dem", @int);
@@ -62,7 +62,7 @@ namespace XX
 			int @int = PlayerPrefs.GetInt("dem");
 			if (@int == 0)
 			{
-				Fader.Instance.FadeIn().Pause().LoadLevel("Menu")
+				Faderbm.Instance.FadeIn().Pause().LoadLevel("Menu")
 					.FadeOut(0.5f);
 				@int++;
 				PlayerPrefs.SetInt("dem", @int);
