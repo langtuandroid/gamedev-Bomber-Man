@@ -2,22 +2,60 @@ using UnityEngine;
 
 namespace GamePlay
 {
-    public class Box : MonoBehaviour
+    public class Itemsbm : MonoBehaviour
     {
-        public GameObject[] items;
+        public int bombs;
+
+        public int firePower;
+
+        public float speed;
+
+        public int heart;
+
+        public GameObject eff;
+
+        public GameObject audioSoundF;
+
+        private AudioClip _audioClip;
+
+        private AudioSource _audioSource;
+
+        private GameControllerbm _gameControllerbm;
+
+        private void Awake()
+        {
+            audioSoundF = GameObject.Find("SoundEatItem");
+            _audioSource = audioSoundF.GetComponent<AudioSource>();
+            _audioSource.Stop();
+        }
+
+        public void Start()
+        {
+            _gameControllerbm = GameObject.Find("GameController").GetComponent<GameControllerbm>();
+            _gameControllerbm.level[(int)transform.position.x, (int)transform.position.y] = gameObject;
+        }
 
         private void Update()
         {
             setOrderLayer();
         }
 
-        public void SpawnPowerUp()
+        public void OnTriggerEnter2D(Collider2D collision)
         {
-            if (Random.Range(0f, 1f) > 0.75f)
+            if (collision.gameObject.tag == "Player")
             {
-                var num = Random.Range(0, items.Length);
-                Instantiate(items[num], new Vector3(transform.position.x, transform.position.y - 0.12f, 0f),
-                    Quaternion.identity);
+                eff.SetActive(true);
+                var gameObject = Instantiate(eff, this.gameObject.transform.position, Quaternion.identity);
+                _audioSource.Play();
+                var component = collision.gameObject.GetComponent<Movebm>();
+                var component2 = collision.gameObject.GetComponent<BoomSpawnerbm>();
+                var component3 = collision.gameObject.GetComponent<Soldierbm>();
+                component3.heart += heart;
+                component.newspeed += speed;
+                component2.numberOfBombs += bombs;
+                component2.firePower += firePower;
+                Debug.Log("+Speed!!!" + collision.gameObject.GetComponent<Movebm>().newspeed);
+                Destroy(this.gameObject);
             }
         }
 

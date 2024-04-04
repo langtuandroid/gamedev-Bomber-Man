@@ -2,39 +2,37 @@ using UnityEngine;
 
 public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 {
-	private static T m_Instance;
+    private static T m_Instance;
 
-	public static T instance
-	{
-		get
-		{
-			if (m_Instance == null)
-			{
-				m_Instance = Object.FindObjectOfType(typeof(T)) as T;
-				if (m_Instance == null)
-				{
-					m_Instance = new GameObject("Singleton of " + typeof(T).ToString(), typeof(T)).GetComponent<T>();
-					m_Instance.Init();
-				}
-			}
-			return m_Instance;
-		}
-	}
+    public static T instance
+    {
+        get
+        {
+            if (m_Instance == null)
+            {
+                m_Instance = FindObjectOfType(typeof(T)) as T;
+                if (m_Instance == null)
+                {
+                    m_Instance = new GameObject("Singleton of " + typeof(T), typeof(T)).GetComponent<T>();
+                    m_Instance.Init();
+                }
+            }
 
-	private void Awake()
-	{
-		if (m_Instance == null)
-		{
-			m_Instance = this as T;
-		}
-	}
+            return m_Instance;
+        }
+    }
 
-	public virtual void Init()
-	{
-	}
+    private void Awake()
+    {
+        if (m_Instance == null) m_Instance = this as T;
+    }
 
-	private void OnApplicationQuit()
-	{
-		m_Instance = (T)null;
-	}
+    private void OnApplicationQuit()
+    {
+        m_Instance = null;
+    }
+
+    public virtual void Init()
+    {
+    }
 }

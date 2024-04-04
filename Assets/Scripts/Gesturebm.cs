@@ -2,67 +2,61 @@ using UnityEngine;
 
 public class Gesturebm
 {
-	public int fingerIndex;
+    public float actionTime;
 
-	public int touchCount;
+    public float deltaPinch;
 
-	public Vector2 startPosition;
+    public Vector2 deltaPosition;
 
-	public Vector2 position;
+    public float deltaTime;
+    public int fingerIndex;
 
-	public Vector2 deltaPosition;
+    public bool isGuiCamera;
 
-	public float actionTime;
+    public bool isHoverReservedArea;
 
-	public float deltaTime;
+    public GameObject otherReceiver;
 
-	public EasyTouch.SwipeType swipe;
+    public Camera pickCamera;
 
-	public float swipeLength;
+    public GameObject pickObject;
 
-	public Vector2 swipeVector;
+    public Vector2 position;
 
-	public float deltaPinch;
+    public Vector2 startPosition;
 
-	public float twistAngle;
+    public EasyTouch.SwipeType swipe;
 
-	public float twoFingerDistance;
+    public float swipeLength;
 
-	public GameObject pickObject;
+    public Vector2 swipeVector;
 
-	public Camera pickCamera;
+    public int touchCount;
 
-	public bool isGuiCamera;
+    public float twistAngle;
 
-	public GameObject otherReceiver;
+    public float twoFingerDistance;
 
-	public bool isHoverReservedArea;
+    public Vector3 GetTouchToWordlPoint(float z, bool worldZ = false)
+    {
+        if (!worldZ) return Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y, z));
+        return Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y,
+            z - Camera.main.transform.position.z));
+    }
 
-	public Vector3 GetTouchToWordlPoint(float z, bool worldZ = false)
-	{
-		if (!worldZ)
-		{
-			return Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y, z));
-		}
-		return Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y, z - Camera.main.transform.position.z));
-	}
+    public float GetSwipeOrDragAngle()
+    {
+        return Mathf.Atan2(swipeVector.normalized.y, swipeVector.normalized.x) * 57.29578f;
+    }
 
-	public float GetSwipeOrDragAngle()
-	{
-		return Mathf.Atan2(swipeVector.normalized.y, swipeVector.normalized.x) * 57.29578f;
-	}
+    public bool IsInRect(Rect rect, bool guiRect = false)
+    {
+        if (guiRect) rect = new Rect(rect.x, Screen.height - rect.y - rect.height, rect.width, rect.height);
+        return rect.Contains(position);
+    }
 
-	public bool IsInRect(Rect rect, bool guiRect = false)
-	{
-		if (guiRect)
-		{
-			rect = new Rect(rect.x, (float)Screen.height - rect.y - rect.height, rect.width, rect.height);
-		}
-		return rect.Contains(position);
-	}
-
-	public Vector2 NormalizedPosition()
-	{
-		return new Vector2(100f / (float)Screen.width * position.x / 100f, 100f / (float)Screen.height * position.y / 100f);
-	}
+    public Vector2 NormalizedPosition()
+    {
+        return new Vector2(100f / Screen.width * position.x / 100f, 100f / Screen.height * position.y / 100f);
+    }
 }

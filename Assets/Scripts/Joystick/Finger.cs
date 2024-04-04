@@ -2,31 +2,30 @@ using UnityEngine;
 
 public class Finger
 {
-	public int fingerIndex;
+    public Vector2 complexStartPosition;
 
-	public int touchCount;
+    public Vector2 deltaPosition;
 
-	public Vector2 startPosition;
+    public float deltaTime;
+    public int fingerIndex;
 
-	public Vector2 complexStartPosition;
+    public EasyTouch.GestureType gesture;
 
-	public Vector2 position;
+    public bool isGuiCamera;
 
-	public Vector2 deltaPosition;
+    public Vector2 oldPosition;
 
-	public Vector2 oldPosition;
+    public TouchPhase phase;
 
-	public int tapCount;
+    public Camera pickedCamera;
 
-	public float deltaTime;
+    public GameObject pickedObject;
 
-	public TouchPhase phase;
+    public Vector2 position;
 
-	public EasyTouch.GestureType gesture;
+    public Vector2 startPosition;
 
-	public GameObject pickedObject;
+    public int tapCount;
 
-	public Camera pickedCamera;
-
-	public bool isGuiCamera;
+    public int touchCount;
 }

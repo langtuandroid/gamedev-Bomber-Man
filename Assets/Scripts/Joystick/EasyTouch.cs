@@ -1,1771 +1,1523 @@
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using System.Threading;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class EasyTouch : MonoBehaviour
 {
-	public delegate void TouchCancelHandler(Gesturebm gesturebm);
+    public delegate void Cancel2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void Cancel2FingersHandler(Gesturebm gesturebm);
+    public delegate void DoubleTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TouchStartHandler(Gesturebm gesturebm);
+    public delegate void DoubleTapHandler(Gesturebm gesturebm);
 
-	public delegate void TouchDownHandler(Gesturebm gesturebm);
+    public delegate void Drag2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void TouchUpHandler(Gesturebm gesturebm);
+    public delegate void DragEnd2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void SimpleTapHandler(Gesturebm gesturebm);
+    public delegate void DragEndHandler(Gesturebm gesturebm);
 
-	public delegate void DoubleTapHandler(Gesturebm gesturebm);
+    public delegate void DragHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapStartHandler(Gesturebm gesturebm);
+    public delegate void DragStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapHandler(Gesturebm gesturebm);
+    public delegate void DragStartHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapEndHandler(Gesturebm gesturebm);
+    public delegate void EasyTouchIsReadyHandler();
 
-	public delegate void DragStartHandler(Gesturebm gesturebm);
+    public delegate void LongTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DragHandler(Gesturebm gesturebm);
+    public delegate void LongTapEnd2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DragEndHandler(Gesturebm gesturebm);
+    public delegate void LongTapEndHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeStartHandler(Gesturebm gesturebm);
+    public delegate void LongTapHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeHandler(Gesturebm gesturebm);
+    public delegate void LongTapStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeEndHandler(Gesturebm gesturebm);
+    public delegate void LongTapStartHandler(Gesturebm gesturebm);
 
-	public delegate void TouchStart2FingersHandler(Gesturebm gesturebm);
+    public delegate void PinchEndHandler(Gesturebm gesturebm);
 
-	public delegate void TouchDown2FingersHandler(Gesturebm gesturebm);
+    public delegate void PinchInHandler(Gesturebm gesturebm);
 
-	public delegate void TouchUp2FingersHandler(Gesturebm gesturebm);
+    public delegate void PinchOutHandler(Gesturebm gesturebm);
 
-	public delegate void SimpleTap2FingersHandler(Gesturebm gesturebm);
+    public delegate void SimpleTap2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DoubleTap2FingersHandler(Gesturebm gesturebm);
+    public delegate void SimpleTapHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapStart2FingersHandler(Gesturebm gesturebm);
+    public delegate void Swipe2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTap2FingersHandler(Gesturebm gesturebm);
+    public delegate void SwipeEnd2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void LongTapEnd2FingersHandler(Gesturebm gesturebm);
+    public delegate void SwipeEndHandler(Gesturebm gesturebm);
 
-	public delegate void TwistHandler(Gesturebm gesturebm);
+    public delegate void SwipeHandler(Gesturebm gesturebm);
 
-	public delegate void TwistEndHandler(Gesturebm gesturebm);
+    public delegate void SwipeStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void PinchInHandler(Gesturebm gesturebm);
+    public delegate void SwipeStartHandler(Gesturebm gesturebm);
 
-	public delegate void PinchOutHandler(Gesturebm gesturebm);
+    public delegate void TouchCancelHandler(Gesturebm gesturebm);
 
-	public delegate void PinchEndHandler(Gesturebm gesturebm);
+    public delegate void TouchDown2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DragStart2FingersHandler(Gesturebm gesturebm);
+    public delegate void TouchDownHandler(Gesturebm gesturebm);
 
-	public delegate void Drag2FingersHandler(Gesturebm gesturebm);
+    public delegate void TouchStart2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void DragEnd2FingersHandler(Gesturebm gesturebm);
+    public delegate void TouchStartHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeStart2FingersHandler(Gesturebm gesturebm);
+    public delegate void TouchUp2FingersHandler(Gesturebm gesturebm);
 
-	public delegate void Swipe2FingersHandler(Gesturebm gesturebm);
+    public delegate void TouchUpHandler(Gesturebm gesturebm);
 
-	public delegate void SwipeEnd2FingersHandler(Gesturebm gesturebm);
+    public delegate void TwistEndHandler(Gesturebm gesturebm);
 
-	public delegate void EasyTouchIsReadyHandler();
+    public delegate void TwistHandler(Gesturebm gesturebm);
 
-	public enum GestureType
-	{
-		Tap = 0,
-		Drag = 1,
-		Swipe = 2,
-		None = 3,
-		LongTap = 4,
-		Pinch = 5,
-		Twist = 6,
-		Cancel = 7,
-		Acquisition = 8
-	}
+    public enum GestureType
+    {
+        Tap = 0,
+        Drag = 1,
+        Swipe = 2,
+        None = 3,
+        LongTap = 4,
+        Pinch = 5,
+        Twist = 6,
+        Cancel = 7,
+        Acquisition = 8
+    }
 
-	public enum SwipeType
-	{
-		None = 0,
-		Left = 1,
-		Right = 2,
-		Up = 3,
-		Down = 4,
-		Other = 5
-	}
+    public enum SwipeType
+    {
+        None = 0,
+        Left = 1,
+        Right = 2,
+        Up = 3,
+        Down = 4,
+        Other = 5
+    }
 
-	private enum EventName
-	{
-		None = 0,
-		On_Cancel = 1,
-		On_Cancel2Fingers = 2,
-		On_TouchStart = 3,
-		On_TouchDown = 4,
-		On_TouchUp = 5,
-		On_SimpleTap = 6,
-		On_DoubleTap = 7,
-		On_LongTapStart = 8,
-		On_LongTap = 9,
-		On_LongTapEnd = 10,
-		On_DragStart = 11,
-		On_Drag = 12,
-		On_DragEnd = 13,
-		On_SwipeStart = 14,
-		On_Swipe = 15,
-		On_SwipeEnd = 16,
-		On_TouchStart2Fingers = 17,
-		On_TouchDown2Fingers = 18,
-		On_TouchUp2Fingers = 19,
-		On_SimpleTap2Fingers = 20,
-		On_DoubleTap2Fingers = 21,
-		On_LongTapStart2Fingers = 22,
-		On_LongTap2Fingers = 23,
-		On_LongTapEnd2Fingers = 24,
-		On_Twist = 25,
-		On_TwistEnd = 26,
-		On_PinchIn = 27,
-		On_PinchOut = 28,
-		On_PinchEnd = 29,
-		On_DragStart2Fingers = 30,
-		On_Drag2Fingers = 31,
-		On_DragEnd2Fingers = 32,
-		On_SwipeStart2Fingers = 33,
-		On_Swipe2Fingers = 34,
-		On_SwipeEnd2Fingers = 35,
-		On_EasyTouchIsReady = 36
-	}
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchCancelHandler m_On_Cancel;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static Cancel2FingersHandler m_On_Cancel2Fingers;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchStartHandler m_On_TouchStart;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchDownHandler m_On_TouchDown;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchUpHandler m_On_TouchUp;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SimpleTapHandler m_On_SimpleTap;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DoubleTapHandler m_On_DoubleTap;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTapStartHandler m_On_LongTapStart;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTapHandler m_On_LongTap;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTapEndHandler m_On_LongTapEnd;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DragStartHandler m_On_DragStart;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DragHandler m_On_Drag;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DragEndHandler m_On_DragEnd;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SwipeStartHandler m_On_SwipeStart;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SwipeHandler m_On_Swipe;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SwipeEndHandler m_On_SwipeEnd;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchStart2FingersHandler m_On_TouchStart2Fingers;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchDown2FingersHandler m_On_TouchDown2Fingers;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TouchUp2FingersHandler m_On_TouchUp2Fingers;
-
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SimpleTap2FingersHandler m_On_SimpleTap2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchCancelHandler m_On_Cancel;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DoubleTap2FingersHandler m_On_DoubleTap2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static Cancel2FingersHandler m_On_Cancel2Fingers;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTapStart2FingersHandler m_On_LongTapStart2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchStartHandler m_On_TouchStart;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTap2FingersHandler m_On_LongTap2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchDownHandler m_On_TouchDown;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static LongTapEnd2FingersHandler m_On_LongTapEnd2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchUpHandler m_On_TouchUp;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TwistHandler m_On_Twist;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SimpleTapHandler m_On_SimpleTap;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static TwistEndHandler m_On_TwistEnd;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DoubleTapHandler m_On_DoubleTap;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static PinchInHandler m_On_PinchIn;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTapStartHandler m_On_LongTapStart;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static PinchOutHandler m_On_PinchOut;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTapHandler m_On_LongTap;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static PinchEndHandler m_On_PinchEnd;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTapEndHandler m_On_LongTapEnd;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DragStart2FingersHandler m_On_DragStart2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DragStartHandler m_On_DragStart;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static Drag2FingersHandler m_On_Drag2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DragHandler m_On_Drag;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static DragEnd2FingersHandler m_On_DragEnd2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DragEndHandler m_On_DragEnd;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SwipeStart2FingersHandler m_On_SwipeStart2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SwipeStartHandler m_On_SwipeStart;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static Swipe2FingersHandler m_On_Swipe2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SwipeHandler m_On_Swipe;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static SwipeEnd2FingersHandler m_On_SwipeEnd2Fingers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SwipeEndHandler m_On_SwipeEnd;
 
-	[CompilerGenerated]
-	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
-	private static EasyTouchIsReadyHandler m_On_EasyTouchIsReady;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchStart2FingersHandler m_On_TouchStart2Fingers;
 
-	public static EasyTouch instance;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchDown2FingersHandler m_On_TouchDown2Fingers;
 
-	public bool enable = true;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TouchUp2FingersHandler m_On_TouchUp2Fingers;
 
-	public bool enableRemote;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SimpleTap2FingersHandler m_On_SimpleTap2Fingers;
 
-	public bool useBroadcastMessage = true;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DoubleTap2FingersHandler m_On_DoubleTap2Fingers;
 
-	public GameObject receiverObject;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTapStart2FingersHandler m_On_LongTapStart2Fingers;
 
-	public bool isExtension;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTap2FingersHandler m_On_LongTap2Fingers;
 
-	public bool enable2FingersGesture = true;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static LongTapEnd2FingersHandler m_On_LongTapEnd2Fingers;
 
-	public bool enableTwist = true;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TwistHandler m_On_Twist;
 
-	public bool enablePinch = true;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static TwistEndHandler m_On_TwistEnd;
 
-	public List<ECamera> touchCameras = new List<ECamera>();
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static PinchInHandler m_On_PinchIn;
 
-	public bool autoSelect;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static PinchOutHandler m_On_PinchOut;
 
-	public LayerMask pickableLayers;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static PinchEndHandler m_On_PinchEnd;
 
-	public bool enable2D;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DragStart2FingersHandler m_On_DragStart2Fingers;
 
-	public LayerMask pickableLayers2D;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static Drag2FingersHandler m_On_Drag2Fingers;
 
-	public float StationnaryTolerance = 25f;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static DragEnd2FingersHandler m_On_DragEnd2Fingers;
 
-	public float longTapTime = 1f;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SwipeStart2FingersHandler m_On_SwipeStart2Fingers;
 
-	public float swipeTolerance = 0.85f;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static Swipe2FingersHandler m_On_Swipe2Fingers;
 
-	public float minPinchLength;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static SwipeEnd2FingersHandler m_On_SwipeEnd2Fingers;
 
-	public float minTwistAngle = 1f;
+    [CompilerGenerated] [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private static EasyTouchIsReadyHandler m_On_EasyTouchIsReady;
 
-	public bool enabledNGuiMode;
+    public static EasyTouch instance;
 
-	public LayerMask nGUILayers;
+    public bool enable = true;
 
-	public List<Camera> nGUICameras = new List<Camera>();
+    public bool enableRemote;
 
-	private bool isStartHoverNGUI;
+    public bool useBroadcastMessage = true;
 
-	public List<Rect> reservedAreas = new List<Rect>();
+    public GameObject receiverObject;
 
-	public List<Rect> reservedVirtualAreas = new List<Rect>();
+    public bool isExtension;
 
-	public List<Rect> reservedGuiAreas = new List<Rect>();
+    public bool enable2FingersGesture = true;
 
-	public bool enableReservedArea = true;
+    public bool enableTwist = true;
 
-	public KeyCode twistKey = KeyCode.LeftAlt;
+    public bool enablePinch = true;
 
-	public KeyCode swipeKey = KeyCode.LeftControl;
+    public List<ECamera> touchCameras = new();
 
-	public bool showGeneral = true;
+    public bool autoSelect;
 
-	public bool showSelect = true;
+    public LayerMask pickableLayers;
 
-	public bool showGesture = true;
+    public bool enable2D;
 
-	public bool showTwoFinger = true;
+    public LayerMask pickableLayers2D;
 
-	public bool showSecondFinger = true;
+    public float StationnaryTolerance = 25f;
 
-	private EasyTouchInput input;
+    public float longTapTime = 1f;
 
-	private GestureType complexCurrentGesture = GestureType.None;
+    public float swipeTolerance = 0.85f;
 
-	private GestureType oldGesture = GestureType.None;
+    public float minPinchLength;
 
-	private float startTimeAction;
+    public float minTwistAngle = 1f;
 
-	private Finger[] fingers = new Finger[100];
+    public bool enabledNGuiMode;
 
-	private GameObject pickObject2Finger;
+    public LayerMask nGUILayers;
 
-	private GameObject oldPickObject2Finger;
+    public List<Camera> nGUICameras = new();
 
-	public Texture secondFingerTexture;
+    public List<Rect> reservedAreas = new();
 
-	private Vector2 startPosition2Finger;
+    public List<Rect> reservedVirtualAreas = new();
 
-	private int twoFinger0;
+    public List<Rect> reservedGuiAreas = new();
 
-	private int twoFinger1;
+    public bool enableReservedArea = true;
 
-	private Vector2 oldStartPosition2Finger;
+    public KeyCode twistKey = KeyCode.LeftAlt;
 
-	private float oldFingerDistance;
+    public KeyCode swipeKey = KeyCode.LeftControl;
 
-	private bool twoFingerDragStart;
+    public bool showGeneral = true;
 
-	private bool twoFingerSwipeStart;
+    public bool showSelect = true;
 
-	private int oldTouchCount;
+    public bool showGesture = true;
 
-	public static event TouchCancelHandler On_Cancel
-	;
+    public bool showTwoFinger = true;
 
-	public static event Cancel2FingersHandler On_Cancel2Fingers
-	;
+    public bool showSecondFinger = true;
 
-	public static event TouchStartHandler On_TouchStart
-	;
+    public Texture secondFingerTexture;
 
-	public static event TouchDownHandler On_TouchDown
-	;
+    private GestureType complexCurrentGesture = GestureType.None;
 
-	public static event TouchUpHandler On_TouchUp
-;
+    private readonly Finger[] fingers = new Finger[100];
 
-	public static event SimpleTapHandler On_SimpleTap
-	;
+    private EasyTouchInput input;
 
-	public static event DoubleTapHandler On_DoubleTap
-	;
+    private bool isStartHoverNGUI;
 
-	public static event LongTapStartHandler On_LongTapStart
-	;
+    private float oldFingerDistance;
 
-	public static event LongTapHandler On_LongTap
-	;
+    private GestureType oldGesture = GestureType.None;
 
-	public static event LongTapEndHandler On_LongTapEnd
-	;
+    private GameObject oldPickObject2Finger;
 
-	public static event DragStartHandler On_DragStart
-	;
+    private Vector2 oldStartPosition2Finger;
 
-	public static event DragHandler On_Drag
-	;
+    private int oldTouchCount;
 
-	public static event DragEndHandler On_DragEnd
-	;
+    private GameObject pickObject2Finger;
 
-	public static event SwipeStartHandler On_SwipeStart
-	;
+    private Vector2 startPosition2Finger;
 
-	public static event SwipeHandler On_Swipe
-;
+    private float startTimeAction;
 
-	public static event SwipeEndHandler On_SwipeEnd
-	;
+    private int twoFinger0;
 
-	public static event TouchStart2FingersHandler On_TouchStart2Fingers
-	;
+    private int twoFinger1;
 
-	public static event TouchDown2FingersHandler On_TouchDown2Fingers
-	;
+    private bool twoFingerDragStart;
 
-	public static event TouchUp2FingersHandler On_TouchUp2Fingers
-	;
+    private bool twoFingerSwipeStart;
 
-	public static event SimpleTap2FingersHandler On_SimpleTap2Fingers
-	;
+    public EasyTouch()
+    {
+        enable = true;
+        useBroadcastMessage = false;
+        enable2FingersGesture = true;
+        enableTwist = true;
+        enablePinch = true;
+        autoSelect = false;
+        StationnaryTolerance = 25f;
+        longTapTime = 1f;
+        swipeTolerance = 0.85f;
+        minPinchLength = 0f;
+        minTwistAngle = 1f;
+    }
 
-	public static event DoubleTap2FingersHandler On_DoubleTap2Fingers
-	;
+    private void Start()
+    {
+        var num = touchCameras.FindIndex(c => c.camera == Camera.main);
+        if (num < 0) touchCameras.Add(new ECamera(Camera.main, false));
+        InitEasyTouch();
+        RaiseReadyEvent();
+    }
 
-	public static event LongTapStart2FingersHandler On_LongTapStart2Fingers
-	;
+    private void Update()
+    {
+        if (!enable || !(instance == this)) return;
+        var num = input.TouchCount();
+        if (oldTouchCount == 2 && num != 2 && num > 0)
+            CreateGesture2Finger(EventName.On_Cancel2Fingers, Vector2.zero, Vector2.zero, Vector2.zero, 0f,
+                SwipeType.None, 0f, Vector2.zero, 0f, 0f, 0f);
+        UpdateTouches(true, num);
+        oldPickObject2Finger = pickObject2Finger;
+        if (enable2FingersGesture)
+        {
+            if (num == 2)
+            {
+                TwoFinger();
+            }
+            else
+            {
+                complexCurrentGesture = GestureType.None;
+                pickObject2Finger = null;
+                twoFingerSwipeStart = false;
+                twoFingerDragStart = false;
+            }
+        }
 
-	public static event LongTap2FingersHandler On_LongTap2Fingers
-	;
+        for (var i = 0; i < 10; i++)
+            if (fingers[i] != null)
+                OneFinger(i);
+        oldTouchCount = num;
+    }
 
-	public static event LongTapEnd2FingersHandler On_LongTapEnd2Fingers
-	;
-	public static event TwistHandler On_Twist
-	;
+    private void OnEnable()
+    {
+        if (Application.isPlaying && Application.isEditor) InitEasyTouch();
+    }
 
-	public static event TwistEndHandler On_TwistEnd
-	;
+    private void OnDrawGizmos()
+    {
+    }
 
-	public static event PinchInHandler On_PinchIn
-	;
+    public static event TouchCancelHandler On_Cancel;
 
-	public static event PinchOutHandler On_PinchOut
-	;
-	public static event PinchEndHandler On_PinchEnd
-	;
+    public static event Cancel2FingersHandler On_Cancel2Fingers;
 
-	public static event DragStart2FingersHandler On_DragStart2Fingers
-	;
+    public static event TouchStartHandler On_TouchStart;
 
-	public static event Drag2FingersHandler On_Drag2Fingers
-	;
+    public static event TouchDownHandler On_TouchDown;
 
-	public static event DragEnd2FingersHandler On_DragEnd2Fingers
-;
+    public static event TouchUpHandler On_TouchUp;
 
-	public static event SwipeStart2FingersHandler On_SwipeStart2Fingers
-	;
+    public static event SimpleTapHandler On_SimpleTap;
 
-	public static event Swipe2FingersHandler On_Swipe2Fingers
-	;
+    public static event DoubleTapHandler On_DoubleTap;
 
-	public static event SwipeEnd2FingersHandler On_SwipeEnd2Fingers
-	;
+    public static event LongTapStartHandler On_LongTapStart;
 
-	public static event EasyTouchIsReadyHandler On_EasyTouchIsReady
-	;
+    public static event LongTapHandler On_LongTap;
 
-	public EasyTouch()
-	{
-		enable = true;
-		useBroadcastMessage = false;
-		enable2FingersGesture = true;
-		enableTwist = true;
-		enablePinch = true;
-		autoSelect = false;
-		StationnaryTolerance = 25f;
-		longTapTime = 1f;
-		swipeTolerance = 0.85f;
-		minPinchLength = 0f;
-		minTwistAngle = 1f;
-	}
+    public static event LongTapEndHandler On_LongTapEnd;
 
-	private void OnEnable()
-	{
-		if (Application.isPlaying && Application.isEditor)
-		{
-			InitEasyTouch();
-		}
-	}
+    public static event DragStartHandler On_DragStart;
 
-	private void Start()
-	{
-		int num = touchCameras.FindIndex((ECamera c) => c.camera == Camera.main);
-		if (num < 0)
-		{
-			touchCameras.Add(new ECamera(Camera.main, false));
-		}
-		InitEasyTouch();
-		RaiseReadyEvent();
-	}
-
-	private void InitEasyTouch()
-	{
-		input = new EasyTouchInput();
-		if (instance == null)
-		{
-			instance = this;
-		}
-	}
-
-	private void OnDrawGizmos()
-	{
-	}
-
-	private void Update()
-	{
-		if (!enable || !(instance == this))
-		{
-			return;
-		}
-		int num = input.TouchCount();
-		if (oldTouchCount == 2 && num != 2 && num > 0)
-		{
-			CreateGesture2Finger(EventName.On_Cancel2Fingers, Vector2.zero, Vector2.zero, Vector2.zero, 0f, SwipeType.None, 0f, Vector2.zero, 0f, 0f, 0f);
-		}
-		UpdateTouches(true, num);
-		oldPickObject2Finger = pickObject2Finger;
-		if (enable2FingersGesture)
-		{
-			if (num == 2)
-			{
-				TwoFinger();
-			}
-			else
-			{
-				complexCurrentGesture = GestureType.None;
-				pickObject2Finger = null;
-				twoFingerSwipeStart = false;
-				twoFingerDragStart = false;
-			}
-		}
-		for (int i = 0; i < 10; i++)
-		{
-			if (fingers[i] != null)
-			{
-				OneFinger(i);
-			}
-		}
-		oldTouchCount = num;
-	}
-
-	private void UpdateTouches(bool realTouch, int touchCount)
-	{
-		Finger[] array = new Finger[100];
-		fingers.CopyTo(array, 0);
-		if (realTouch || enableRemote)
-		{
-			ResetTouches();
-			for (int i = 0; i < touchCount; i++)
-			{
-				Touch touch = Input.GetTouch(i);
-				for (int j = 0; j < 10; j++)
-				{
-					if (fingers[i] != null)
-					{
-						break;
-					}
-					if (array[j] != null && array[j].fingerIndex == touch.fingerId)
-					{
-						fingers[i] = array[j];
-					}
-				}
-				if (fingers[i] == null)
-				{
-					fingers[i] = new Finger();
-					fingers[i].fingerIndex = touch.fingerId;
-					fingers[i].gesture = GestureType.None;
-					fingers[i].phase = TouchPhase.Began;
-				}
-				else
-				{
-					fingers[i].phase = touch.phase;
-				}
-				fingers[i].position = touch.position;
-				fingers[i].deltaPosition = touch.deltaPosition;
-				fingers[i].tapCount = touch.tapCount;
-				fingers[i].deltaTime = touch.deltaTime;
-				fingers[i].touchCount = touchCount;
-			}
-		}
-		else
-		{
-			for (int k = 0; k < touchCount; k++)
-			{
-				fingers[k] = input.GetMouseTouch(k, fingers[k]);
-				fingers[k].touchCount = touchCount;
-			}
-		}
-	}
-
-	private void ResetTouches()
-	{
-		for (int i = 0; i < 100; i++)
-		{
-			fingers[i] = null;
-		}
-	}
-
-	private void OneFinger(int fingerIndex)
-	{
-		float num = 0f;
-		if (fingers[fingerIndex].gesture == GestureType.None)
-		{
-			startTimeAction = Time.realtimeSinceStartup;
-			fingers[fingerIndex].gesture = GestureType.Acquisition;
-			fingers[fingerIndex].startPosition = fingers[fingerIndex].position;
-			if (autoSelect)
-			{
-				GetPickeGameObject(ref fingers[fingerIndex]);
-			}
-			CreateGesture(fingerIndex, EventName.On_TouchStart, fingers[fingerIndex], 0f, SwipeType.None, 0f, Vector2.zero);
-		}
-		num = Time.realtimeSinceStartup - startTimeAction;
-		if (fingers[fingerIndex].phase == TouchPhase.Canceled)
-		{
-			fingers[fingerIndex].gesture = GestureType.Cancel;
-		}
-		if (fingers[fingerIndex].phase != TouchPhase.Ended && fingers[fingerIndex].phase != TouchPhase.Canceled)
-		{
-			if (fingers[fingerIndex].phase == TouchPhase.Stationary && num >= longTapTime && fingers[fingerIndex].gesture == GestureType.Acquisition)
-			{
-				fingers[fingerIndex].gesture = GestureType.LongTap;
-				CreateGesture(fingerIndex, EventName.On_LongTapStart, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-			}
-			if ((fingers[fingerIndex].gesture == GestureType.Acquisition || fingers[fingerIndex].gesture == GestureType.LongTap) && !FingerInTolerance(fingers[fingerIndex]))
-			{
-				if (fingers[fingerIndex].gesture == GestureType.LongTap)
-				{
-					fingers[fingerIndex].gesture = GestureType.Cancel;
-					CreateGesture(fingerIndex, EventName.On_LongTapEnd, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-					fingers[fingerIndex].gesture = GestureType.None;
-				}
-				else if ((bool)fingers[fingerIndex].pickedObject)
-				{
-					fingers[fingerIndex].gesture = GestureType.Drag;
-					CreateGesture(fingerIndex, EventName.On_DragStart, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				}
-				else
-				{
-					fingers[fingerIndex].gesture = GestureType.Swipe;
-					CreateGesture(fingerIndex, EventName.On_SwipeStart, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				}
-			}
-			EventName eventName = EventName.None;
-			switch (fingers[fingerIndex].gesture)
-			{
-			case GestureType.LongTap:
-				eventName = EventName.On_LongTap;
-				break;
-			case GestureType.Drag:
-				eventName = EventName.On_Drag;
-				break;
-			case GestureType.Swipe:
-				eventName = EventName.On_Swipe;
-				break;
-			}
-			SwipeType swipe = SwipeType.None;
-			if (eventName != 0)
-			{
-				swipe = GetSwipe(new Vector2(0f, 0f), fingers[fingerIndex].deltaPosition);
-				CreateGesture(fingerIndex, eventName, fingers[fingerIndex], num, swipe, 0f, fingers[fingerIndex].deltaPosition);
-			}
-			CreateGesture(fingerIndex, EventName.On_TouchDown, fingers[fingerIndex], num, swipe, 0f, fingers[fingerIndex].deltaPosition);
-			return;
-		}
-		bool flag = true;
-		switch (fingers[fingerIndex].gesture)
-		{
-		case GestureType.Acquisition:
-		{
-			if (FingerInTolerance(fingers[fingerIndex]))
-			{
-				if (fingers[fingerIndex].tapCount < 2)
-				{
-					CreateGesture(fingerIndex, EventName.On_SimpleTap, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				}
-				else
-				{
-					CreateGesture(fingerIndex, EventName.On_DoubleTap, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				}
-				break;
-			}
-			SwipeType swipe2 = GetSwipe(new Vector2(0f, 0f), fingers[fingerIndex].deltaPosition);
-			if ((bool)fingers[fingerIndex].pickedObject)
-			{
-				CreateGesture(fingerIndex, EventName.On_DragStart, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				CreateGesture(fingerIndex, EventName.On_Drag, fingers[fingerIndex], num, swipe2, 0f, fingers[fingerIndex].deltaPosition);
-				CreateGesture(fingerIndex, EventName.On_DragEnd, fingers[fingerIndex], num, GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position), (fingers[fingerIndex].startPosition - fingers[fingerIndex].position).magnitude, fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
-			}
-			else
-			{
-				CreateGesture(fingerIndex, EventName.On_SwipeStart, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-				CreateGesture(fingerIndex, EventName.On_Swipe, fingers[fingerIndex], num, swipe2, 0f, fingers[fingerIndex].deltaPosition);
-				CreateGesture(fingerIndex, EventName.On_SwipeEnd, fingers[fingerIndex], num, GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position), (fingers[fingerIndex].position - fingers[fingerIndex].startPosition).magnitude, fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
-			}
-			break;
-		}
-		case GestureType.LongTap:
-			CreateGesture(fingerIndex, EventName.On_LongTapEnd, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-			break;
-		case GestureType.Drag:
-			CreateGesture(fingerIndex, EventName.On_DragEnd, fingers[fingerIndex], num, GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position), (fingers[fingerIndex].startPosition - fingers[fingerIndex].position).magnitude, fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
-			break;
-		case GestureType.Swipe:
-			CreateGesture(fingerIndex, EventName.On_SwipeEnd, fingers[fingerIndex], num, GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position), (fingers[fingerIndex].position - fingers[fingerIndex].startPosition).magnitude, fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
-			break;
-		case GestureType.Cancel:
-			CreateGesture(fingerIndex, EventName.On_Cancel, fingers[fingerIndex], 0f, SwipeType.None, 0f, Vector2.zero);
-			break;
-		}
-		if (flag)
-		{
-			CreateGesture(fingerIndex, EventName.On_TouchUp, fingers[fingerIndex], num, SwipeType.None, 0f, Vector2.zero);
-			fingers[fingerIndex] = null;
-		}
-	}
-
-	private void CreateGesture(int touchIndex, EventName message, Finger finger, float actionTime, SwipeType swipe, float swipeLength, Vector2 swipeVector)
-	{
-		if (message == EventName.On_TouchStart || message == EventName.On_TouchUp)
-		{
-			isStartHoverNGUI = IsTouchHoverNGui(touchIndex);
-		}
-		if (message == EventName.On_Cancel || message == EventName.On_TouchUp)
-		{
-			isStartHoverNGUI = false;
-		}
-		if (!isStartHoverNGUI)
-		{
-			Gesturebm gesturebm = new Gesturebm();
-			gesturebm.fingerIndex = finger.fingerIndex;
-			gesturebm.touchCount = finger.touchCount;
-			gesturebm.startPosition = finger.startPosition;
-			gesturebm.position = finger.position;
-			gesturebm.deltaPosition = finger.deltaPosition;
-			gesturebm.actionTime = actionTime;
-			gesturebm.deltaTime = finger.deltaTime;
-			gesturebm.swipe = swipe;
-			gesturebm.swipeLength = swipeLength;
-			gesturebm.swipeVector = swipeVector;
-			gesturebm.deltaPinch = 0f;
-			gesturebm.twistAngle = 0f;
-			gesturebm.pickObject = finger.pickedObject;
-			gesturebm.otherReceiver = receiverObject;
-			gesturebm.isHoverReservedArea = IsTouchReservedArea(touchIndex);
-			gesturebm.pickCamera = finger.pickedCamera;
-			gesturebm.isGuiCamera = finger.isGuiCamera;
-			if (useBroadcastMessage)
-			{
-				SendGesture(message, gesturebm);
-			}
-			if (!useBroadcastMessage || isExtension)
-			{
-				RaiseEvent(message, gesturebm);
-			}
-		}
-		isStartHoverNGUI = false;
-	}
-
-	private void SendGesture(EventName message, Gesturebm gesturebm)
-	{
-		if (useBroadcastMessage)
-		{
-			if (receiverObject != null && receiverObject != gesturebm.pickObject)
-			{
-				receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-			}
-			if ((bool)gesturebm.pickObject)
-			{
-				gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-			}
-			else
-			{
-				SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-			}
-		}
-	}
-
-	private void TwoFinger()
-	{
-		float actionTime = 0f;
-		bool flag = false;
-		Vector2 zero = Vector2.zero;
-		Vector2 zero2 = Vector2.zero;
-		float num = 0f;
-		if (complexCurrentGesture == GestureType.None)
-		{
-			twoFinger0 = GetTwoFinger(-1);
-			twoFinger1 = GetTwoFinger(twoFinger0);
-			startTimeAction = Time.realtimeSinceStartup;
-			complexCurrentGesture = GestureType.Tap;
-			fingers[twoFinger0].complexStartPosition = fingers[twoFinger0].position;
-			fingers[twoFinger1].complexStartPosition = fingers[twoFinger1].position;
-			fingers[twoFinger0].oldPosition = fingers[twoFinger0].position;
-			fingers[twoFinger1].oldPosition = fingers[twoFinger1].position;
-			oldFingerDistance = Mathf.Abs(Vector2.Distance(fingers[twoFinger0].position, fingers[twoFinger1].position));
-			startPosition2Finger = new Vector2((fingers[twoFinger0].position.x + fingers[twoFinger1].position.x) / 2f, (fingers[twoFinger0].position.y + fingers[twoFinger1].position.y) / 2f);
-			zero2 = Vector2.zero;
-			if (autoSelect)
-			{
-				if (GetPickeGameObject(ref fingers[twoFinger0], true))
-				{
-					GetPickeGameObject(ref fingers[twoFinger1], true);
-					if (fingers[twoFinger0].pickedObject != fingers[twoFinger1].pickedObject)
-					{
-						pickObject2Finger = null;
-						fingers[twoFinger0].pickedObject = null;
-						fingers[twoFinger1].pickedObject = null;
-						fingers[twoFinger0].isGuiCamera = false;
-						fingers[twoFinger1].isGuiCamera = false;
-						fingers[twoFinger0].pickedCamera = null;
-						fingers[twoFinger1].pickedCamera = null;
-					}
-					else
-					{
-						pickObject2Finger = fingers[twoFinger0].pickedObject;
-					}
-				}
-				else
-				{
-					pickObject2Finger = null;
-				}
-			}
-			CreateGesture2Finger(EventName.On_TouchStart2Fingers, startPosition2Finger, startPosition2Finger, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, oldFingerDistance);
-		}
-		actionTime = Time.realtimeSinceStartup - startTimeAction;
-		zero = new Vector2((fingers[twoFinger0].position.x + fingers[twoFinger1].position.x) / 2f, (fingers[twoFinger0].position.y + fingers[twoFinger1].position.y) / 2f);
-		zero2 = zero - oldStartPosition2Finger;
-		num = Mathf.Abs(Vector2.Distance(fingers[twoFinger0].position, fingers[twoFinger1].position));
-		if (fingers[twoFinger0].phase == TouchPhase.Canceled || fingers[twoFinger1].phase == TouchPhase.Canceled)
-		{
-			complexCurrentGesture = GestureType.Cancel;
-		}
-		if (fingers[twoFinger0].phase != TouchPhase.Ended && fingers[twoFinger1].phase != TouchPhase.Ended && complexCurrentGesture != GestureType.Cancel)
-		{
-			if (complexCurrentGesture == GestureType.Tap && actionTime >= longTapTime && FingerInTolerance(fingers[twoFinger0]) && FingerInTolerance(fingers[twoFinger1]))
-			{
-				complexCurrentGesture = GestureType.LongTap;
-				CreateGesture2Finger(EventName.On_LongTapStart2Fingers, startPosition2Finger, zero, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
-			}
-			if (!FingerInTolerance(fingers[twoFinger0]) || !FingerInTolerance(fingers[twoFinger1]))
-			{
-				flag = true;
-			}
-			if (flag)
-			{
-				float num2 = Vector2.Dot(fingers[twoFinger0].deltaPosition.normalized, fingers[twoFinger1].deltaPosition.normalized);
-				if (num2 > 0f)
-				{
-					if ((bool)pickObject2Finger && !twoFingerDragStart)
-					{
-						if (complexCurrentGesture != 0)
-						{
-							CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime, false, num);
-							startTimeAction = Time.realtimeSinceStartup;
-						}
-						CreateGesture2Finger(EventName.On_DragStart2Fingers, startPosition2Finger, zero, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
-						twoFingerDragStart = true;
-					}
-					else if (!pickObject2Finger && !twoFingerSwipeStart)
-					{
-						if (complexCurrentGesture != 0)
-						{
-							CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime, false, num);
-							startTimeAction = Time.realtimeSinceStartup;
-						}
-						CreateGesture2Finger(EventName.On_SwipeStart2Fingers, startPosition2Finger, zero, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
-						twoFingerSwipeStart = true;
-					}
-				}
-				else if (num2 < 0f)
-				{
-					twoFingerDragStart = false;
-					twoFingerSwipeStart = false;
-				}
-				if (twoFingerDragStart)
-				{
-					CreateGesture2Finger(EventName.On_Drag2Fingers, startPosition2Finger, zero, zero2, actionTime, GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
-				}
-				if (twoFingerSwipeStart)
-				{
-					CreateGesture2Finger(EventName.On_Swipe2Fingers, startPosition2Finger, zero, zero2, actionTime, GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
-				}
-				if (enablePinch && num != oldFingerDistance)
-				{
-					if (Mathf.Abs(num - oldFingerDistance) >= minPinchLength)
-					{
-						complexCurrentGesture = GestureType.Pinch;
-					}
-					if (complexCurrentGesture == GestureType.Pinch)
-					{
-						if (num < oldFingerDistance)
-						{
-							if (oldGesture != GestureType.Pinch)
-							{
-								CreateStateEnd2Fingers(oldGesture, startPosition2Finger, zero, zero2, actionTime, false, num);
-								startTimeAction = Time.realtimeSinceStartup;
-							}
-							CreateGesture2Finger(EventName.On_PinchIn, startPosition2Finger, zero, zero2, actionTime, GetSwipe(fingers[twoFinger0].complexStartPosition, fingers[twoFinger0].position), 0f, Vector2.zero, 0f, Mathf.Abs(num - oldFingerDistance), num);
-							complexCurrentGesture = GestureType.Pinch;
-						}
-						else if (num > oldFingerDistance)
-						{
-							if (oldGesture != GestureType.Pinch)
-							{
-								CreateStateEnd2Fingers(oldGesture, startPosition2Finger, zero, zero2, actionTime, false, num);
-								startTimeAction = Time.realtimeSinceStartup;
-							}
-							CreateGesture2Finger(EventName.On_PinchOut, startPosition2Finger, zero, zero2, actionTime, GetSwipe(fingers[twoFinger0].complexStartPosition, fingers[twoFinger0].position), 0f, Vector2.zero, 0f, Mathf.Abs(num - oldFingerDistance), num);
-							complexCurrentGesture = GestureType.Pinch;
-						}
-					}
-				}
-				if (enableTwist)
-				{
-					if (Mathf.Abs(TwistAngle()) > 0f)
-					{
-						if (complexCurrentGesture != GestureType.Twist)
-						{
-							CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime, false, num);
-							startTimeAction = Time.realtimeSinceStartup;
-						}
-						complexCurrentGesture = GestureType.Twist;
-					}
-					if (complexCurrentGesture == GestureType.Twist)
-					{
-						CreateGesture2Finger(EventName.On_Twist, startPosition2Finger, zero, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, TwistAngle(), 0f, num);
-					}
-					fingers[twoFinger0].oldPosition = fingers[twoFinger0].position;
-					fingers[twoFinger1].oldPosition = fingers[twoFinger1].position;
-				}
-			}
-			else if (complexCurrentGesture == GestureType.LongTap)
-			{
-				CreateGesture2Finger(EventName.On_LongTap2Fingers, startPosition2Finger, zero, zero2, actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
-			}
-			CreateGesture2Finger(EventName.On_TouchDown2Fingers, startPosition2Finger, zero, zero2, actionTime, GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
-			oldFingerDistance = num;
-			oldStartPosition2Finger = zero;
-			oldGesture = complexCurrentGesture;
-		}
-		else
-		{
-			CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime, true, num);
-			complexCurrentGesture = GestureType.None;
-			pickObject2Finger = null;
-			twoFingerSwipeStart = false;
-			twoFingerDragStart = false;
-		}
-	}
-
-	private int GetTwoFinger(int index)
-	{
-		int i = index + 1;
-		bool flag = false;
-		for (; i < 10; i++)
-		{
-			if (flag)
-			{
-				break;
-			}
-			if (fingers[i] != null && i >= index)
-			{
-				flag = true;
-			}
-		}
-		return i - 1;
-	}
-
-	private void CreateStateEnd2Fingers(GestureType gesture, Vector2 startPosition, Vector2 position, Vector2 deltaPosition, float time, bool realEnd, float fingerDistance)
-	{
-		switch (gesture)
-		{
-		case GestureType.Tap:
-			if (fingers[twoFinger0].tapCount < 2 && fingers[twoFinger1].tapCount < 2)
-			{
-				CreateGesture2Finger(EventName.On_SimpleTap2Fingers, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-			}
-			else
-			{
-				CreateGesture2Finger(EventName.On_DoubleTap2Fingers, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-			}
-			break;
-		case GestureType.LongTap:
-			CreateGesture2Finger(EventName.On_LongTapEnd2Fingers, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-			break;
-		case GestureType.Pinch:
-			CreateGesture2Finger(EventName.On_PinchEnd, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-			break;
-		case GestureType.Twist:
-			CreateGesture2Finger(EventName.On_TwistEnd, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-			break;
-		}
-		if (realEnd)
-		{
-			if (twoFingerDragStart)
-			{
-				CreateGesture2Finger(EventName.On_DragEnd2Fingers, startPosition, position, deltaPosition, time, GetSwipe(startPosition, position), (position - startPosition).magnitude, position - startPosition, 0f, 0f, fingerDistance);
-			}
-			if (twoFingerSwipeStart)
-			{
-				CreateGesture2Finger(EventName.On_SwipeEnd2Fingers, startPosition, position, deltaPosition, time, GetSwipe(startPosition, position), (position - startPosition).magnitude, position - startPosition, 0f, 0f, fingerDistance);
-			}
-			CreateGesture2Finger(EventName.On_TouchUp2Fingers, startPosition, position, deltaPosition, time, SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
-		}
-	}
-
-	private void CreateGesture2Finger(EventName message, Vector2 startPosition, Vector2 position, Vector2 deltaPosition, float actionTime, SwipeType swipe, float swipeLength, Vector2 swipeVector, float twist, float pinch, float twoDistance)
-	{
-		if (message == EventName.On_TouchStart2Fingers)
-		{
-			isStartHoverNGUI = IsTouchHoverNGui(twoFinger1) && IsTouchHoverNGui(twoFinger0);
-		}
-		if (!isStartHoverNGUI)
-		{
-			Gesturebm gesturebm = new Gesturebm();
-			gesturebm.touchCount = 2;
-			gesturebm.fingerIndex = -1;
-			gesturebm.startPosition = startPosition;
-			gesturebm.position = position;
-			gesturebm.deltaPosition = deltaPosition;
-			gesturebm.actionTime = actionTime;
-			if (fingers[twoFinger0] != null)
-			{
-				gesturebm.deltaTime = fingers[twoFinger0].deltaTime;
-			}
-			else if (fingers[twoFinger1] != null)
-			{
-				gesturebm.deltaTime = fingers[twoFinger1].deltaTime;
-			}
-			else
-			{
-				gesturebm.deltaTime = 0f;
-			}
-			gesturebm.swipe = swipe;
-			gesturebm.swipeLength = swipeLength;
-			gesturebm.swipeVector = swipeVector;
-			gesturebm.deltaPinch = pinch;
-			gesturebm.twistAngle = twist;
-			gesturebm.twoFingerDistance = twoDistance;
-			if (fingers[twoFinger0] != null)
-			{
-				gesturebm.pickCamera = fingers[twoFinger0].pickedCamera;
-				gesturebm.isGuiCamera = fingers[twoFinger0].isGuiCamera;
-			}
-			else if (fingers[twoFinger1] != null)
-			{
-				gesturebm.pickCamera = fingers[twoFinger1].pickedCamera;
-				gesturebm.isGuiCamera = fingers[twoFinger1].isGuiCamera;
-			}
-			if (message != EventName.On_Cancel2Fingers)
-			{
-				gesturebm.pickObject = pickObject2Finger;
-			}
-			else
-			{
-				gesturebm.pickObject = oldPickObject2Finger;
-			}
-			gesturebm.otherReceiver = receiverObject;
-			if (fingers[twoFinger0] != null)
-			{
-				gesturebm.isHoverReservedArea = IsTouchReservedArea(fingers[twoFinger0].fingerIndex);
-			}
-			if (fingers[twoFinger1] != null)
-			{
-				gesturebm.isHoverReservedArea = gesturebm.isHoverReservedArea || IsTouchReservedArea(fingers[twoFinger1].fingerIndex);
-			}
-			if (useBroadcastMessage)
-			{
-				SendGesture2Finger(message, gesturebm);
-			}
-			else
-			{
-				RaiseEvent(message, gesturebm);
-			}
-			isStartHoverNGUI = false;
-		}
-	}
-
-	private void SendGesture2Finger(EventName message, Gesturebm gesturebm)
-	{
-		if (receiverObject != null && receiverObject != gesturebm.pickObject)
-		{
-			receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-		}
-		if (gesturebm.pickObject != null)
-		{
-			gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-		}
-		else
-		{
-			SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
-		}
-	}
-
-	private void RaiseReadyEvent()
-	{
-		if (useBroadcastMessage)
-		{
-			if (receiverObject != null)
-			{
-				base.gameObject.SendMessage("On_EasyTouchIsReady", SendMessageOptions.DontRequireReceiver);
-			}
-		}
-		else if (EasyTouch.On_EasyTouchIsReady != null)
-		{
-			EasyTouch.On_EasyTouchIsReady();
-		}
-	}
-
-	private void RaiseEvent(EventName evnt, Gesturebm gesturebm)
-	{
-		switch (evnt)
-		{
-		case EventName.On_Cancel:
-			if (EasyTouch.On_Cancel != null)
-			{
-				EasyTouch.On_Cancel(gesturebm);
-			}
-			break;
-		case EventName.On_Cancel2Fingers:
-			if (EasyTouch.On_Cancel2Fingers != null)
-			{
-				EasyTouch.On_Cancel2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_TouchStart:
-			if (EasyTouch.On_TouchStart != null)
-			{
-				EasyTouch.On_TouchStart(gesturebm);
-			}
-			break;
-		case EventName.On_TouchDown:
-			if (EasyTouch.On_TouchDown != null)
-			{
-				EasyTouch.On_TouchDown(gesturebm);
-			}
-			break;
-		case EventName.On_TouchUp:
-			if (EasyTouch.On_TouchUp != null)
-			{
-				EasyTouch.On_TouchUp(gesturebm);
-			}
-			break;
-		case EventName.On_SimpleTap:
-			if (EasyTouch.On_SimpleTap != null)
-			{
-				EasyTouch.On_SimpleTap(gesturebm);
-			}
-			break;
-		case EventName.On_DoubleTap:
-			if (EasyTouch.On_DoubleTap != null)
-			{
-				EasyTouch.On_DoubleTap(gesturebm);
-			}
-			break;
-		case EventName.On_LongTapStart:
-			if (EasyTouch.On_LongTapStart != null)
-			{
-				EasyTouch.On_LongTapStart(gesturebm);
-			}
-			break;
-		case EventName.On_LongTap:
-			if (EasyTouch.On_LongTap != null)
-			{
-				EasyTouch.On_LongTap(gesturebm);
-			}
-			break;
-		case EventName.On_LongTapEnd:
-			if (EasyTouch.On_LongTapEnd != null)
-			{
-				EasyTouch.On_LongTapEnd(gesturebm);
-			}
-			break;
-		case EventName.On_DragStart:
-			if (EasyTouch.On_DragStart != null)
-			{
-				EasyTouch.On_DragStart(gesturebm);
-			}
-			break;
-		case EventName.On_Drag:
-			if (EasyTouch.On_Drag != null)
-			{
-				EasyTouch.On_Drag(gesturebm);
-			}
-			break;
-		case EventName.On_DragEnd:
-			if (EasyTouch.On_DragEnd != null)
-			{
-				EasyTouch.On_DragEnd(gesturebm);
-			}
-			break;
-		case EventName.On_SwipeStart:
-			if (EasyTouch.On_SwipeStart != null)
-			{
-				EasyTouch.On_SwipeStart(gesturebm);
-			}
-			break;
-		case EventName.On_Swipe:
-			if (EasyTouch.On_Swipe != null)
-			{
-				EasyTouch.On_Swipe(gesturebm);
-			}
-			break;
-		case EventName.On_SwipeEnd:
-			if (EasyTouch.On_SwipeEnd != null)
-			{
-				EasyTouch.On_SwipeEnd(gesturebm);
-			}
-			break;
-		case EventName.On_TouchStart2Fingers:
-			if (EasyTouch.On_TouchStart2Fingers != null)
-			{
-				EasyTouch.On_TouchStart2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_TouchDown2Fingers:
-			if (EasyTouch.On_TouchDown2Fingers != null)
-			{
-				EasyTouch.On_TouchDown2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_TouchUp2Fingers:
-			if (EasyTouch.On_TouchUp2Fingers != null)
-			{
-				EasyTouch.On_TouchUp2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_SimpleTap2Fingers:
-			if (EasyTouch.On_SimpleTap2Fingers != null)
-			{
-				EasyTouch.On_SimpleTap2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_DoubleTap2Fingers:
-			if (EasyTouch.On_DoubleTap2Fingers != null)
-			{
-				EasyTouch.On_DoubleTap2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_LongTapStart2Fingers:
-			if (EasyTouch.On_LongTapStart2Fingers != null)
-			{
-				EasyTouch.On_LongTapStart2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_LongTap2Fingers:
-			if (EasyTouch.On_LongTap2Fingers != null)
-			{
-				EasyTouch.On_LongTap2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_LongTapEnd2Fingers:
-			if (EasyTouch.On_LongTapEnd2Fingers != null)
-			{
-				EasyTouch.On_LongTapEnd2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_Twist:
-			if (EasyTouch.On_Twist != null)
-			{
-				EasyTouch.On_Twist(gesturebm);
-			}
-			break;
-		case EventName.On_TwistEnd:
-			if (EasyTouch.On_TwistEnd != null)
-			{
-				EasyTouch.On_TwistEnd(gesturebm);
-			}
-			break;
-		case EventName.On_PinchIn:
-			if (EasyTouch.On_PinchIn != null)
-			{
-				EasyTouch.On_PinchIn(gesturebm);
-			}
-			break;
-		case EventName.On_PinchOut:
-			if (EasyTouch.On_PinchOut != null)
-			{
-				EasyTouch.On_PinchOut(gesturebm);
-			}
-			break;
-		case EventName.On_PinchEnd:
-			if (EasyTouch.On_PinchEnd != null)
-			{
-				EasyTouch.On_PinchEnd(gesturebm);
-			}
-			break;
-		case EventName.On_DragStart2Fingers:
-			if (EasyTouch.On_DragStart2Fingers != null)
-			{
-				EasyTouch.On_DragStart2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_Drag2Fingers:
-			if (EasyTouch.On_Drag2Fingers != null)
-			{
-				EasyTouch.On_Drag2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_DragEnd2Fingers:
-			if (EasyTouch.On_DragEnd2Fingers != null)
-			{
-				EasyTouch.On_DragEnd2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_SwipeStart2Fingers:
-			if (EasyTouch.On_SwipeStart2Fingers != null)
-			{
-				EasyTouch.On_SwipeStart2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_Swipe2Fingers:
-			if (EasyTouch.On_Swipe2Fingers != null)
-			{
-				EasyTouch.On_Swipe2Fingers(gesturebm);
-			}
-			break;
-		case EventName.On_SwipeEnd2Fingers:
-			if (EasyTouch.On_SwipeEnd2Fingers != null)
-			{
-				EasyTouch.On_SwipeEnd2Fingers(gesturebm);
-			}
-			break;
-		}
-	}
-
-	private bool GetPickeGameObject(ref Finger finger, bool twoFinger = false)
-	{
-		finger.isGuiCamera = false;
-		finger.pickedCamera = null;
-		finger.pickedObject = null;
-		if (touchCameras.Count > 0)
-		{
-			for (int i = 0; i < touchCameras.Count; i++)
-			{
-				if (!(touchCameras[i].camera != null) || !touchCameras[i].camera.enabled)
-				{
-					continue;
-				}
-				Vector2 zero = Vector2.zero;
-				zero = (twoFinger ? finger.complexStartPosition : finger.position);
-				Ray ray = touchCameras[i].camera.ScreenPointToRay(zero);
-				if (enable2D)
-				{
-					LayerMask layerMask = pickableLayers2D;
-					RaycastHit2D[] array = new RaycastHit2D[1];
-					if (Physics2D.GetRayIntersectionNonAlloc(ray, array, float.PositiveInfinity, layerMask) > 0)
-					{
-						finger.pickedCamera = touchCameras[i].camera;
-						finger.isGuiCamera = touchCameras[i].guiCamera;
-						finger.pickedObject = array[0].collider.gameObject;
-						return true;
-					}
-				}
-				LayerMask layerMask2 = pickableLayers;
-				RaycastHit hitInfo;
-				if (Physics.Raycast(ray, out hitInfo, float.MaxValue, layerMask2))
-				{
-					finger.pickedCamera = touchCameras[i].camera;
-					finger.isGuiCamera = touchCameras[i].guiCamera;
-					finger.pickedObject = hitInfo.collider.gameObject;
-					return true;
-				}
-			}
-		}
-		else
-		{
-			UnityEngine.Debug.LogWarning("No camera is assigned to EasyTouch");
-		}
-		return false;
-	}
-
-	private SwipeType GetSwipe(Vector2 start, Vector2 end)
-	{
-		Vector2 normalized = (end - start).normalized;
-		if (Mathf.Abs(normalized.y) > Mathf.Abs(normalized.x))
-		{
-			if (Vector2.Dot(normalized, Vector2.up) >= swipeTolerance)
-			{
-				return SwipeType.Up;
-			}
-			if (Vector2.Dot(normalized, -Vector2.up) >= swipeTolerance)
-			{
-				return SwipeType.Down;
-			}
-		}
-		else
-		{
-			if (Vector2.Dot(normalized, Vector2.right) >= swipeTolerance)
-			{
-				return SwipeType.Right;
-			}
-			if (Vector2.Dot(normalized, -Vector2.right) >= swipeTolerance)
-			{
-				return SwipeType.Left;
-			}
-		}
-		return SwipeType.Other;
-	}
-
-	private bool FingerInTolerance(Finger finger)
-	{
-		if ((finger.position - finger.startPosition).sqrMagnitude <= StationnaryTolerance * StationnaryTolerance)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	private float DeltaAngle(Vector2 start, Vector2 end)
-	{
-		float y = start.x * end.y - start.y * end.x;
-		return Mathf.Atan2(y, Vector2.Dot(start, end));
-	}
-
-	private float TwistAngle()
-	{
-		Vector2 end = fingers[twoFinger0].position - fingers[twoFinger1].position;
-		Vector2 start = fingers[twoFinger0].oldPosition - fingers[twoFinger1].oldPosition;
-		return 57.29578f * DeltaAngle(start, end);
-	}
-
-	private bool IsTouchHoverNGui(int touchIndex)
-	{
-		bool flag = false;
-		if (enabledNGuiMode)
-		{
-			LayerMask layerMask = nGUILayers;
-			int num = 0;
-			while (!flag && num < nGUICameras.Count)
-			{
-				Ray ray = nGUICameras[num].ScreenPointToRay(fingers[touchIndex].position);
-				RaycastHit hitInfo;
-				flag = Physics.Raycast(ray, out hitInfo, float.MaxValue, layerMask);
-				num++;
-			}
-		}
-		return flag;
-	}
-
-	private bool IsTouchReservedArea(int touchIndex)
-	{
-		bool flag = false;
-		if (enableReservedArea && fingers[touchIndex] != null)
-		{
-			int num = 0;
-			Rect rect = new Rect(0f, 0f, 0f, 0f);
-			while (!flag && num < reservedAreas.Count)
-			{
-				flag = reservedAreas[num].Contains(fingers[touchIndex].position);
-				num++;
-			}
-			num = 0;
-			while (!flag && num < reservedGuiAreas.Count)
-			{
-				rect = new Rect(reservedGuiAreas[num].x, (float)Screen.height - reservedGuiAreas[num].y - reservedGuiAreas[num].height, reservedGuiAreas[num].width, reservedGuiAreas[num].height);
-				flag = rect.Contains(fingers[touchIndex].position);
-				num++;
-			}
-			num = 0;
-			while (!flag && num < reservedVirtualAreas.Count)
-			{
-				rect = VirtualScreenbm.GetRealRectbm(reservedVirtualAreas[num]);
-				flag = new Rect(rect.x, (float)Screen.height - rect.y - rect.height, rect.width, rect.height).Contains(fingers[touchIndex].position);
-				num++;
-			}
-		}
-		return flag;
-	}
-
-	private Finger GetFinger(int finderId)
-	{
-		int i = 0;
-		Finger finger = null;
-		for (; i < 10; i++)
-		{
-			if (finger != null)
-			{
-				break;
-			}
-			if (fingers[i] != null && fingers[i].fingerIndex == finderId)
-			{
-				finger = fingers[i];
-			}
-		}
-		return finger;
-	}
-
-	public static void SetEnabled(bool enable)
-	{
-		instance.enable = enable;
-		if (enable)
-		{
-			instance.ResetTouches();
-		}
-	}
-
-	public static bool GetEnabled()
-	{
-		return instance.enable;
-	}
-
-	public static int GetTouchCount()
-	{
-		if (instance != null)
-		{
-			return instance.input.TouchCount();
-		}
-		return 0;
-	}
-
-	public static void SetCamera(Camera cam, bool guiCam = false)
-	{
-		instance.touchCameras.Add(new ECamera(cam, guiCam));
-	}
-
-	public static Camera GetCamera(int index = 0)
-	{
-		if (index < instance.touchCameras.Count)
-		{
-			return instance.touchCameras[index].camera;
-		}
-		return null;
-	}
-
-	public static void SetEnable2FingersGesture(bool enable)
-	{
-		instance.enable2FingersGesture = enable;
-	}
-
-	public static bool GetEnable2FingersGesture()
-	{
-		return instance.enable2FingersGesture;
-	}
-
-	public static void SetEnableTwist(bool enable)
-	{
-		instance.enableTwist = enable;
-	}
-
-	public static bool GetEnableTwist()
-	{
-		return instance.enableTwist;
-	}
-
-	public static void SetEnablePinch(bool enable)
-	{
-		instance.enablePinch = enable;
-	}
-
-	public static bool GetEnablePinch()
-	{
-		return instance.enablePinch;
-	}
-
-	public static void SetEnableAutoSelect(bool enable)
-	{
-		instance.autoSelect = enable;
-	}
-
-	public static bool GetEnableAutoSelect()
-	{
-		return instance.autoSelect;
-	}
-
-	public static void SetOtherReceiverObject(GameObject receiver)
-	{
-		instance.receiverObject = receiver;
-	}
-
-	public static GameObject GetOtherReceiverObject()
-	{
-		return instance.receiverObject;
-	}
-
-	public static void SetStationnaryTolerance(float tolerance)
-	{
-		instance.StationnaryTolerance = tolerance;
-	}
-
-	public static float GetStationnaryTolerance()
-	{
-		return instance.StationnaryTolerance;
-	}
-
-	public static void SetlongTapTime(float time)
-	{
-		instance.longTapTime = time;
-	}
-
-	public static float GetlongTapTime()
-	{
-		return instance.longTapTime;
-	}
-
-	public static void SetSwipeTolerance(float tolerance)
-	{
-		instance.swipeTolerance = tolerance;
-	}
-
-	public static float GetSwipeTolerance()
-	{
-		return instance.swipeTolerance;
-	}
-
-	public static void SetMinPinchLength(float length)
-	{
-		instance.minPinchLength = length;
-	}
-
-	public static float GetMinPinchLength()
-	{
-		return instance.minPinchLength;
-	}
-
-	public static void SetMinTwistAngle(float angle)
-	{
-		instance.minTwistAngle = angle;
-	}
-
-	public static float GetMinTwistAngle()
-	{
-		return instance.minTwistAngle;
-	}
-
-	public static GameObject GetCurrentPickedObject(int fingerIndex)
-	{
-		Finger finger = instance.GetFinger(fingerIndex);
-		if (instance.GetPickeGameObject(ref finger))
-		{
-			return finger.pickedObject;
-		}
-		return null;
-	}
-
-	public static bool IsRectUnderTouch(Rect rect, bool guiRect = false)
-	{
-		bool flag = false;
-		for (int i = 0; i < 10; i++)
-		{
-			if (instance.fingers[i] != null)
-			{
-				if (guiRect)
-				{
-					rect = new Rect(rect.x, (float)Screen.height - rect.y - rect.height, rect.width, rect.height);
-				}
-				flag = rect.Contains(instance.fingers[i].position);
-				if (flag)
-				{
-					break;
-				}
-			}
-		}
-		return flag;
-	}
-
-	public static Vector2 GetFingerPosition(int fingerIndex)
-	{
-		if (instance.fingers[fingerIndex] != null)
-		{
-			return instance.GetFinger(fingerIndex).position;
-		}
-		return Vector2.zero;
-	}
-
-	public static bool GetIsReservedArea()
-	{
-		if ((bool)instance)
-		{
-			return instance.enableReservedArea;
-		}
-		return false;
-	}
-
-	public static void SetIsReservedArea(bool enable)
-	{
-		instance.enableReservedArea = enable;
-	}
-
-	public static void AddReservedArea(Rect rec)
-	{
-		if ((bool)instance)
-		{
-			instance.reservedAreas.Add(rec);
-		}
-	}
-
-	public static void AddReservedGuiArea(Rect rec)
-	{
-		if ((bool)instance)
-		{
-			instance.reservedGuiAreas.Add(rec);
-		}
-	}
-
-	public static void RemoveReservedArea(Rect rec)
-	{
-		if ((bool)instance)
-		{
-			instance.reservedAreas.Remove(rec);
-		}
-	}
-
-	public static void RemoveReservedGuiArea(Rect rec)
-	{
-		if ((bool)instance)
-		{
-			instance.reservedGuiAreas.Remove(rec);
-		}
-	}
-
-	public static void ResetTouch(int fingerIndex)
-	{
-		if ((bool)instance)
-		{
-			instance.GetFinger(fingerIndex).gesture = GestureType.None;
-		}
-	}
-
-	public static void SetPickableLayer(LayerMask mask)
-	{
-		if ((bool)instance)
-		{
-			instance.pickableLayers = mask;
-		}
-	}
-
-	public static LayerMask GetPickableLayer()
-	{
-		return instance.pickableLayers;
-	}
+    public static event DragHandler On_Drag;
+
+    public static event DragEndHandler On_DragEnd;
+
+    public static event SwipeStartHandler On_SwipeStart;
+
+    public static event SwipeHandler On_Swipe;
+
+    public static event SwipeEndHandler On_SwipeEnd;
+
+    public static event TouchStart2FingersHandler On_TouchStart2Fingers;
+
+    public static event TouchDown2FingersHandler On_TouchDown2Fingers;
+
+    public static event TouchUp2FingersHandler On_TouchUp2Fingers;
+
+    public static event SimpleTap2FingersHandler On_SimpleTap2Fingers;
+
+    public static event DoubleTap2FingersHandler On_DoubleTap2Fingers;
+
+    public static event LongTapStart2FingersHandler On_LongTapStart2Fingers;
+
+    public static event LongTap2FingersHandler On_LongTap2Fingers;
+
+    public static event LongTapEnd2FingersHandler On_LongTapEnd2Fingers;
+
+    public static event TwistHandler On_Twist;
+
+    public static event TwistEndHandler On_TwistEnd;
+
+    public static event PinchInHandler On_PinchIn;
+
+    public static event PinchOutHandler On_PinchOut;
+
+    public static event PinchEndHandler On_PinchEnd;
+
+    public static event DragStart2FingersHandler On_DragStart2Fingers;
+
+    public static event Drag2FingersHandler On_Drag2Fingers;
+
+    public static event DragEnd2FingersHandler On_DragEnd2Fingers;
+
+    public static event SwipeStart2FingersHandler On_SwipeStart2Fingers;
+
+    public static event Swipe2FingersHandler On_Swipe2Fingers;
+
+    public static event SwipeEnd2FingersHandler On_SwipeEnd2Fingers;
+
+    public static event EasyTouchIsReadyHandler On_EasyTouchIsReady;
+
+    private void InitEasyTouch()
+    {
+        input = new EasyTouchInput();
+        if (instance == null) instance = this;
+    }
+
+    private void UpdateTouches(bool realTouch, int touchCount)
+    {
+        var array = new Finger[100];
+        fingers.CopyTo(array, 0);
+        if (realTouch || enableRemote)
+        {
+            ResetTouches();
+            for (var i = 0; i < touchCount; i++)
+            {
+                var touch = Input.GetTouch(i);
+                for (var j = 0; j < 10; j++)
+                {
+                    if (fingers[i] != null) break;
+                    if (array[j] != null && array[j].fingerIndex == touch.fingerId) fingers[i] = array[j];
+                }
+
+                if (fingers[i] == null)
+                {
+                    fingers[i] = new Finger();
+                    fingers[i].fingerIndex = touch.fingerId;
+                    fingers[i].gesture = GestureType.None;
+                    fingers[i].phase = TouchPhase.Began;
+                }
+                else
+                {
+                    fingers[i].phase = touch.phase;
+                }
+
+                fingers[i].position = touch.position;
+                fingers[i].deltaPosition = touch.deltaPosition;
+                fingers[i].tapCount = touch.tapCount;
+                fingers[i].deltaTime = touch.deltaTime;
+                fingers[i].touchCount = touchCount;
+            }
+        }
+        else
+        {
+            for (var k = 0; k < touchCount; k++)
+            {
+                fingers[k] = input.GetMouseTouch(k, fingers[k]);
+                fingers[k].touchCount = touchCount;
+            }
+        }
+    }
+
+    private void ResetTouches()
+    {
+        for (var i = 0; i < 100; i++) fingers[i] = null;
+    }
+
+    private void OneFinger(int fingerIndex)
+    {
+        var num = 0f;
+        if (fingers[fingerIndex].gesture == GestureType.None)
+        {
+            startTimeAction = Time.realtimeSinceStartup;
+            fingers[fingerIndex].gesture = GestureType.Acquisition;
+            fingers[fingerIndex].startPosition = fingers[fingerIndex].position;
+            if (autoSelect) GetPickeGameObject(ref fingers[fingerIndex]);
+            CreateGesture(fingerIndex, EventName.On_TouchStart, fingers[fingerIndex], 0f, SwipeType.None, 0f,
+                Vector2.zero);
+        }
+
+        num = Time.realtimeSinceStartup - startTimeAction;
+        if (fingers[fingerIndex].phase == TouchPhase.Canceled) fingers[fingerIndex].gesture = GestureType.Cancel;
+        if (fingers[fingerIndex].phase != TouchPhase.Ended && fingers[fingerIndex].phase != TouchPhase.Canceled)
+        {
+            if (fingers[fingerIndex].phase == TouchPhase.Stationary && num >= longTapTime &&
+                fingers[fingerIndex].gesture == GestureType.Acquisition)
+            {
+                fingers[fingerIndex].gesture = GestureType.LongTap;
+                CreateGesture(fingerIndex, EventName.On_LongTapStart, fingers[fingerIndex], num, SwipeType.None, 0f,
+                    Vector2.zero);
+            }
+
+            if ((fingers[fingerIndex].gesture == GestureType.Acquisition ||
+                 fingers[fingerIndex].gesture == GestureType.LongTap) && !FingerInTolerance(fingers[fingerIndex]))
+            {
+                if (fingers[fingerIndex].gesture == GestureType.LongTap)
+                {
+                    fingers[fingerIndex].gesture = GestureType.Cancel;
+                    CreateGesture(fingerIndex, EventName.On_LongTapEnd, fingers[fingerIndex], num, SwipeType.None, 0f,
+                        Vector2.zero);
+                    fingers[fingerIndex].gesture = GestureType.None;
+                }
+                else if ((bool)fingers[fingerIndex].pickedObject)
+                {
+                    fingers[fingerIndex].gesture = GestureType.Drag;
+                    CreateGesture(fingerIndex, EventName.On_DragStart, fingers[fingerIndex], num, SwipeType.None, 0f,
+                        Vector2.zero);
+                }
+                else
+                {
+                    fingers[fingerIndex].gesture = GestureType.Swipe;
+                    CreateGesture(fingerIndex, EventName.On_SwipeStart, fingers[fingerIndex], num, SwipeType.None, 0f,
+                        Vector2.zero);
+                }
+            }
+
+            var eventName = EventName.None;
+            switch (fingers[fingerIndex].gesture)
+            {
+                case GestureType.LongTap:
+                    eventName = EventName.On_LongTap;
+                    break;
+                case GestureType.Drag:
+                    eventName = EventName.On_Drag;
+                    break;
+                case GestureType.Swipe:
+                    eventName = EventName.On_Swipe;
+                    break;
+            }
+
+            var swipe = SwipeType.None;
+            if (eventName != 0)
+            {
+                swipe = GetSwipe(new Vector2(0f, 0f), fingers[fingerIndex].deltaPosition);
+                CreateGesture(fingerIndex, eventName, fingers[fingerIndex], num, swipe, 0f,
+                    fingers[fingerIndex].deltaPosition);
+            }
+
+            CreateGesture(fingerIndex, EventName.On_TouchDown, fingers[fingerIndex], num, swipe, 0f,
+                fingers[fingerIndex].deltaPosition);
+            return;
+        }
+
+        var flag = true;
+        switch (fingers[fingerIndex].gesture)
+        {
+            case GestureType.Acquisition:
+            {
+                if (FingerInTolerance(fingers[fingerIndex]))
+                {
+                    if (fingers[fingerIndex].tapCount < 2)
+                        CreateGesture(fingerIndex, EventName.On_SimpleTap, fingers[fingerIndex], num, SwipeType.None,
+                            0f, Vector2.zero);
+                    else
+                        CreateGesture(fingerIndex, EventName.On_DoubleTap, fingers[fingerIndex], num, SwipeType.None,
+                            0f, Vector2.zero);
+                    break;
+                }
+
+                var swipe2 = GetSwipe(new Vector2(0f, 0f), fingers[fingerIndex].deltaPosition);
+                if ((bool)fingers[fingerIndex].pickedObject)
+                {
+                    CreateGesture(fingerIndex, EventName.On_DragStart, fingers[fingerIndex], num, SwipeType.None, 0f,
+                        Vector2.zero);
+                    CreateGesture(fingerIndex, EventName.On_Drag, fingers[fingerIndex], num, swipe2, 0f,
+                        fingers[fingerIndex].deltaPosition);
+                    CreateGesture(fingerIndex, EventName.On_DragEnd, fingers[fingerIndex], num,
+                        GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position),
+                        (fingers[fingerIndex].startPosition - fingers[fingerIndex].position).magnitude,
+                        fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
+                }
+                else
+                {
+                    CreateGesture(fingerIndex, EventName.On_SwipeStart, fingers[fingerIndex], num, SwipeType.None, 0f,
+                        Vector2.zero);
+                    CreateGesture(fingerIndex, EventName.On_Swipe, fingers[fingerIndex], num, swipe2, 0f,
+                        fingers[fingerIndex].deltaPosition);
+                    CreateGesture(fingerIndex, EventName.On_SwipeEnd, fingers[fingerIndex], num,
+                        GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position),
+                        (fingers[fingerIndex].position - fingers[fingerIndex].startPosition).magnitude,
+                        fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
+                }
+
+                break;
+            }
+            case GestureType.LongTap:
+                CreateGesture(fingerIndex, EventName.On_LongTapEnd, fingers[fingerIndex], num, SwipeType.None, 0f,
+                    Vector2.zero);
+                break;
+            case GestureType.Drag:
+                CreateGesture(fingerIndex, EventName.On_DragEnd, fingers[fingerIndex], num,
+                    GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position),
+                    (fingers[fingerIndex].startPosition - fingers[fingerIndex].position).magnitude,
+                    fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
+                break;
+            case GestureType.Swipe:
+                CreateGesture(fingerIndex, EventName.On_SwipeEnd, fingers[fingerIndex], num,
+                    GetSwipe(fingers[fingerIndex].startPosition, fingers[fingerIndex].position),
+                    (fingers[fingerIndex].position - fingers[fingerIndex].startPosition).magnitude,
+                    fingers[fingerIndex].position - fingers[fingerIndex].startPosition);
+                break;
+            case GestureType.Cancel:
+                CreateGesture(fingerIndex, EventName.On_Cancel, fingers[fingerIndex], 0f, SwipeType.None, 0f,
+                    Vector2.zero);
+                break;
+        }
+
+        if (flag)
+        {
+            CreateGesture(fingerIndex, EventName.On_TouchUp, fingers[fingerIndex], num, SwipeType.None, 0f,
+                Vector2.zero);
+            fingers[fingerIndex] = null;
+        }
+    }
+
+    private void CreateGesture(int touchIndex, EventName message, Finger finger, float actionTime, SwipeType swipe,
+        float swipeLength, Vector2 swipeVector)
+    {
+        if (message == EventName.On_TouchStart || message == EventName.On_TouchUp)
+            isStartHoverNGUI = IsTouchHoverNGui(touchIndex);
+        if (message == EventName.On_Cancel || message == EventName.On_TouchUp) isStartHoverNGUI = false;
+        if (!isStartHoverNGUI)
+        {
+            var gesturebm = new Gesturebm();
+            gesturebm.fingerIndex = finger.fingerIndex;
+            gesturebm.touchCount = finger.touchCount;
+            gesturebm.startPosition = finger.startPosition;
+            gesturebm.position = finger.position;
+            gesturebm.deltaPosition = finger.deltaPosition;
+            gesturebm.actionTime = actionTime;
+            gesturebm.deltaTime = finger.deltaTime;
+            gesturebm.swipe = swipe;
+            gesturebm.swipeLength = swipeLength;
+            gesturebm.swipeVector = swipeVector;
+            gesturebm.deltaPinch = 0f;
+            gesturebm.twistAngle = 0f;
+            gesturebm.pickObject = finger.pickedObject;
+            gesturebm.otherReceiver = receiverObject;
+            gesturebm.isHoverReservedArea = IsTouchReservedArea(touchIndex);
+            gesturebm.pickCamera = finger.pickedCamera;
+            gesturebm.isGuiCamera = finger.isGuiCamera;
+            if (useBroadcastMessage) SendGesture(message, gesturebm);
+            if (!useBroadcastMessage || isExtension) RaiseEvent(message, gesturebm);
+        }
+
+        isStartHoverNGUI = false;
+    }
+
+    private void SendGesture(EventName message, Gesturebm gesturebm)
+    {
+        if (useBroadcastMessage)
+        {
+            if (receiverObject != null && receiverObject != gesturebm.pickObject)
+                receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+            if ((bool)gesturebm.pickObject)
+                gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+            else
+                SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    private void TwoFinger()
+    {
+        var actionTime = 0f;
+        var flag = false;
+        var zero = Vector2.zero;
+        var zero2 = Vector2.zero;
+        var num = 0f;
+        if (complexCurrentGesture == GestureType.None)
+        {
+            twoFinger0 = GetTwoFinger(-1);
+            twoFinger1 = GetTwoFinger(twoFinger0);
+            startTimeAction = Time.realtimeSinceStartup;
+            complexCurrentGesture = GestureType.Tap;
+            fingers[twoFinger0].complexStartPosition = fingers[twoFinger0].position;
+            fingers[twoFinger1].complexStartPosition = fingers[twoFinger1].position;
+            fingers[twoFinger0].oldPosition = fingers[twoFinger0].position;
+            fingers[twoFinger1].oldPosition = fingers[twoFinger1].position;
+            oldFingerDistance = Mathf.Abs(Vector2.Distance(fingers[twoFinger0].position, fingers[twoFinger1].position));
+            startPosition2Finger = new Vector2((fingers[twoFinger0].position.x + fingers[twoFinger1].position.x) / 2f,
+                (fingers[twoFinger0].position.y + fingers[twoFinger1].position.y) / 2f);
+            zero2 = Vector2.zero;
+            if (autoSelect)
+            {
+                if (GetPickeGameObject(ref fingers[twoFinger0], true))
+                {
+                    GetPickeGameObject(ref fingers[twoFinger1], true);
+                    if (fingers[twoFinger0].pickedObject != fingers[twoFinger1].pickedObject)
+                    {
+                        pickObject2Finger = null;
+                        fingers[twoFinger0].pickedObject = null;
+                        fingers[twoFinger1].pickedObject = null;
+                        fingers[twoFinger0].isGuiCamera = false;
+                        fingers[twoFinger1].isGuiCamera = false;
+                        fingers[twoFinger0].pickedCamera = null;
+                        fingers[twoFinger1].pickedCamera = null;
+                    }
+                    else
+                    {
+                        pickObject2Finger = fingers[twoFinger0].pickedObject;
+                    }
+                }
+                else
+                {
+                    pickObject2Finger = null;
+                }
+            }
+
+            CreateGesture2Finger(EventName.On_TouchStart2Fingers, startPosition2Finger, startPosition2Finger, zero2,
+                actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, oldFingerDistance);
+        }
+
+        actionTime = Time.realtimeSinceStartup - startTimeAction;
+        zero = new Vector2((fingers[twoFinger0].position.x + fingers[twoFinger1].position.x) / 2f,
+            (fingers[twoFinger0].position.y + fingers[twoFinger1].position.y) / 2f);
+        zero2 = zero - oldStartPosition2Finger;
+        num = Mathf.Abs(Vector2.Distance(fingers[twoFinger0].position, fingers[twoFinger1].position));
+        if (fingers[twoFinger0].phase == TouchPhase.Canceled || fingers[twoFinger1].phase == TouchPhase.Canceled)
+            complexCurrentGesture = GestureType.Cancel;
+        if (fingers[twoFinger0].phase != TouchPhase.Ended && fingers[twoFinger1].phase != TouchPhase.Ended &&
+            complexCurrentGesture != GestureType.Cancel)
+        {
+            if (complexCurrentGesture == GestureType.Tap && actionTime >= longTapTime &&
+                FingerInTolerance(fingers[twoFinger0]) && FingerInTolerance(fingers[twoFinger1]))
+            {
+                complexCurrentGesture = GestureType.LongTap;
+                CreateGesture2Finger(EventName.On_LongTapStart2Fingers, startPosition2Finger, zero, zero2, actionTime,
+                    SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
+            }
+
+            if (!FingerInTolerance(fingers[twoFinger0]) || !FingerInTolerance(fingers[twoFinger1])) flag = true;
+            if (flag)
+            {
+                var num2 = Vector2.Dot(fingers[twoFinger0].deltaPosition.normalized,
+                    fingers[twoFinger1].deltaPosition.normalized);
+                if (num2 > 0f)
+                {
+                    if ((bool)pickObject2Finger && !twoFingerDragStart)
+                    {
+                        if (complexCurrentGesture != 0)
+                        {
+                            CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime,
+                                false, num);
+                            startTimeAction = Time.realtimeSinceStartup;
+                        }
+
+                        CreateGesture2Finger(EventName.On_DragStart2Fingers, startPosition2Finger, zero, zero2,
+                            actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
+                        twoFingerDragStart = true;
+                    }
+                    else if (!pickObject2Finger && !twoFingerSwipeStart)
+                    {
+                        if (complexCurrentGesture != 0)
+                        {
+                            CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime,
+                                false, num);
+                            startTimeAction = Time.realtimeSinceStartup;
+                        }
+
+                        CreateGesture2Finger(EventName.On_SwipeStart2Fingers, startPosition2Finger, zero, zero2,
+                            actionTime, SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
+                        twoFingerSwipeStart = true;
+                    }
+                }
+                else if (num2 < 0f)
+                {
+                    twoFingerDragStart = false;
+                    twoFingerSwipeStart = false;
+                }
+
+                if (twoFingerDragStart)
+                    CreateGesture2Finger(EventName.On_Drag2Fingers, startPosition2Finger, zero, zero2, actionTime,
+                        GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
+                if (twoFingerSwipeStart)
+                    CreateGesture2Finger(EventName.On_Swipe2Fingers, startPosition2Finger, zero, zero2, actionTime,
+                        GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
+                if (enablePinch && num != oldFingerDistance)
+                {
+                    if (Mathf.Abs(num - oldFingerDistance) >= minPinchLength) complexCurrentGesture = GestureType.Pinch;
+                    if (complexCurrentGesture == GestureType.Pinch)
+                    {
+                        if (num < oldFingerDistance)
+                        {
+                            if (oldGesture != GestureType.Pinch)
+                            {
+                                CreateStateEnd2Fingers(oldGesture, startPosition2Finger, zero, zero2, actionTime, false,
+                                    num);
+                                startTimeAction = Time.realtimeSinceStartup;
+                            }
+
+                            CreateGesture2Finger(EventName.On_PinchIn, startPosition2Finger, zero, zero2, actionTime,
+                                GetSwipe(fingers[twoFinger0].complexStartPosition, fingers[twoFinger0].position), 0f,
+                                Vector2.zero, 0f, Mathf.Abs(num - oldFingerDistance), num);
+                            complexCurrentGesture = GestureType.Pinch;
+                        }
+                        else if (num > oldFingerDistance)
+                        {
+                            if (oldGesture != GestureType.Pinch)
+                            {
+                                CreateStateEnd2Fingers(oldGesture, startPosition2Finger, zero, zero2, actionTime, false,
+                                    num);
+                                startTimeAction = Time.realtimeSinceStartup;
+                            }
+
+                            CreateGesture2Finger(EventName.On_PinchOut, startPosition2Finger, zero, zero2, actionTime,
+                                GetSwipe(fingers[twoFinger0].complexStartPosition, fingers[twoFinger0].position), 0f,
+                                Vector2.zero, 0f, Mathf.Abs(num - oldFingerDistance), num);
+                            complexCurrentGesture = GestureType.Pinch;
+                        }
+                    }
+                }
+
+                if (enableTwist)
+                {
+                    if (Mathf.Abs(TwistAngle()) > 0f)
+                    {
+                        if (complexCurrentGesture != GestureType.Twist)
+                        {
+                            CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime,
+                                false, num);
+                            startTimeAction = Time.realtimeSinceStartup;
+                        }
+
+                        complexCurrentGesture = GestureType.Twist;
+                    }
+
+                    if (complexCurrentGesture == GestureType.Twist)
+                        CreateGesture2Finger(EventName.On_Twist, startPosition2Finger, zero, zero2, actionTime,
+                            SwipeType.None, 0f, Vector2.zero, TwistAngle(), 0f, num);
+                    fingers[twoFinger0].oldPosition = fingers[twoFinger0].position;
+                    fingers[twoFinger1].oldPosition = fingers[twoFinger1].position;
+                }
+            }
+            else if (complexCurrentGesture == GestureType.LongTap)
+            {
+                CreateGesture2Finger(EventName.On_LongTap2Fingers, startPosition2Finger, zero, zero2, actionTime,
+                    SwipeType.None, 0f, Vector2.zero, 0f, 0f, num);
+            }
+
+            CreateGesture2Finger(EventName.On_TouchDown2Fingers, startPosition2Finger, zero, zero2, actionTime,
+                GetSwipe(oldStartPosition2Finger, zero), 0f, zero2, 0f, 0f, num);
+            oldFingerDistance = num;
+            oldStartPosition2Finger = zero;
+            oldGesture = complexCurrentGesture;
+        }
+        else
+        {
+            CreateStateEnd2Fingers(complexCurrentGesture, startPosition2Finger, zero, zero2, actionTime, true, num);
+            complexCurrentGesture = GestureType.None;
+            pickObject2Finger = null;
+            twoFingerSwipeStart = false;
+            twoFingerDragStart = false;
+        }
+    }
+
+    private int GetTwoFinger(int index)
+    {
+        var i = index + 1;
+        var flag = false;
+        for (; i < 10; i++)
+        {
+            if (flag) break;
+            if (fingers[i] != null && i >= index) flag = true;
+        }
+
+        return i - 1;
+    }
+
+    private void CreateStateEnd2Fingers(GestureType gesture, Vector2 startPosition, Vector2 position,
+        Vector2 deltaPosition, float time, bool realEnd, float fingerDistance)
+    {
+        switch (gesture)
+        {
+            case GestureType.Tap:
+                if (fingers[twoFinger0].tapCount < 2 && fingers[twoFinger1].tapCount < 2)
+                    CreateGesture2Finger(EventName.On_SimpleTap2Fingers, startPosition, position, deltaPosition, time,
+                        SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+                else
+                    CreateGesture2Finger(EventName.On_DoubleTap2Fingers, startPosition, position, deltaPosition, time,
+                        SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+                break;
+            case GestureType.LongTap:
+                CreateGesture2Finger(EventName.On_LongTapEnd2Fingers, startPosition, position, deltaPosition, time,
+                    SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+                break;
+            case GestureType.Pinch:
+                CreateGesture2Finger(EventName.On_PinchEnd, startPosition, position, deltaPosition, time,
+                    SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+                break;
+            case GestureType.Twist:
+                CreateGesture2Finger(EventName.On_TwistEnd, startPosition, position, deltaPosition, time,
+                    SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+                break;
+        }
+
+        if (realEnd)
+        {
+            if (twoFingerDragStart)
+                CreateGesture2Finger(EventName.On_DragEnd2Fingers, startPosition, position, deltaPosition, time,
+                    GetSwipe(startPosition, position), (position - startPosition).magnitude, position - startPosition,
+                    0f, 0f, fingerDistance);
+            if (twoFingerSwipeStart)
+                CreateGesture2Finger(EventName.On_SwipeEnd2Fingers, startPosition, position, deltaPosition, time,
+                    GetSwipe(startPosition, position), (position - startPosition).magnitude, position - startPosition,
+                    0f, 0f, fingerDistance);
+            CreateGesture2Finger(EventName.On_TouchUp2Fingers, startPosition, position, deltaPosition, time,
+                SwipeType.None, 0f, Vector2.zero, 0f, 0f, fingerDistance);
+        }
+    }
+
+    private void CreateGesture2Finger(EventName message, Vector2 startPosition, Vector2 position, Vector2 deltaPosition,
+        float actionTime, SwipeType swipe, float swipeLength, Vector2 swipeVector, float twist, float pinch,
+        float twoDistance)
+    {
+        if (message == EventName.On_TouchStart2Fingers)
+            isStartHoverNGUI = IsTouchHoverNGui(twoFinger1) && IsTouchHoverNGui(twoFinger0);
+        if (!isStartHoverNGUI)
+        {
+            var gesturebm = new Gesturebm();
+            gesturebm.touchCount = 2;
+            gesturebm.fingerIndex = -1;
+            gesturebm.startPosition = startPosition;
+            gesturebm.position = position;
+            gesturebm.deltaPosition = deltaPosition;
+            gesturebm.actionTime = actionTime;
+            if (fingers[twoFinger0] != null)
+                gesturebm.deltaTime = fingers[twoFinger0].deltaTime;
+            else if (fingers[twoFinger1] != null)
+                gesturebm.deltaTime = fingers[twoFinger1].deltaTime;
+            else
+                gesturebm.deltaTime = 0f;
+            gesturebm.swipe = swipe;
+            gesturebm.swipeLength = swipeLength;
+            gesturebm.swipeVector = swipeVector;
+            gesturebm.deltaPinch = pinch;
+            gesturebm.twistAngle = twist;
+            gesturebm.twoFingerDistance = twoDistance;
+            if (fingers[twoFinger0] != null)
+            {
+                gesturebm.pickCamera = fingers[twoFinger0].pickedCamera;
+                gesturebm.isGuiCamera = fingers[twoFinger0].isGuiCamera;
+            }
+            else if (fingers[twoFinger1] != null)
+            {
+                gesturebm.pickCamera = fingers[twoFinger1].pickedCamera;
+                gesturebm.isGuiCamera = fingers[twoFinger1].isGuiCamera;
+            }
+
+            if (message != EventName.On_Cancel2Fingers)
+                gesturebm.pickObject = pickObject2Finger;
+            else
+                gesturebm.pickObject = oldPickObject2Finger;
+            gesturebm.otherReceiver = receiverObject;
+            if (fingers[twoFinger0] != null)
+                gesturebm.isHoverReservedArea = IsTouchReservedArea(fingers[twoFinger0].fingerIndex);
+            if (fingers[twoFinger1] != null)
+                gesturebm.isHoverReservedArea = gesturebm.isHoverReservedArea ||
+                                                IsTouchReservedArea(fingers[twoFinger1].fingerIndex);
+            if (useBroadcastMessage)
+                SendGesture2Finger(message, gesturebm);
+            else
+                RaiseEvent(message, gesturebm);
+            isStartHoverNGUI = false;
+        }
+    }
+
+    private void SendGesture2Finger(EventName message, Gesturebm gesturebm)
+    {
+        if (receiverObject != null && receiverObject != gesturebm.pickObject)
+            receiverObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+        if (gesturebm.pickObject != null)
+            gesturebm.pickObject.SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+        else
+            SendMessage(message.ToString(), gesturebm, SendMessageOptions.DontRequireReceiver);
+    }
+
+    private void RaiseReadyEvent()
+    {
+        if (useBroadcastMessage)
+        {
+            if (receiverObject != null)
+                gameObject.SendMessage("On_EasyTouchIsReady", SendMessageOptions.DontRequireReceiver);
+        }
+        else if (On_EasyTouchIsReady != null)
+        {
+            On_EasyTouchIsReady();
+        }
+    }
+
+    private void RaiseEvent(EventName evnt, Gesturebm gesturebm)
+    {
+        switch (evnt)
+        {
+            case EventName.On_Cancel:
+                if (On_Cancel != null) On_Cancel(gesturebm);
+                break;
+            case EventName.On_Cancel2Fingers:
+                if (On_Cancel2Fingers != null) On_Cancel2Fingers(gesturebm);
+                break;
+            case EventName.On_TouchStart:
+                if (On_TouchStart != null) On_TouchStart(gesturebm);
+                break;
+            case EventName.On_TouchDown:
+                if (On_TouchDown != null) On_TouchDown(gesturebm);
+                break;
+            case EventName.On_TouchUp:
+                if (On_TouchUp != null) On_TouchUp(gesturebm);
+                break;
+            case EventName.On_SimpleTap:
+                if (On_SimpleTap != null) On_SimpleTap(gesturebm);
+                break;
+            case EventName.On_DoubleTap:
+                if (On_DoubleTap != null) On_DoubleTap(gesturebm);
+                break;
+            case EventName.On_LongTapStart:
+                if (On_LongTapStart != null) On_LongTapStart(gesturebm);
+                break;
+            case EventName.On_LongTap:
+                if (On_LongTap != null) On_LongTap(gesturebm);
+                break;
+            case EventName.On_LongTapEnd:
+                if (On_LongTapEnd != null) On_LongTapEnd(gesturebm);
+                break;
+            case EventName.On_DragStart:
+                if (On_DragStart != null) On_DragStart(gesturebm);
+                break;
+            case EventName.On_Drag:
+                if (On_Drag != null) On_Drag(gesturebm);
+                break;
+            case EventName.On_DragEnd:
+                if (On_DragEnd != null) On_DragEnd(gesturebm);
+                break;
+            case EventName.On_SwipeStart:
+                if (On_SwipeStart != null) On_SwipeStart(gesturebm);
+                break;
+            case EventName.On_Swipe:
+                if (On_Swipe != null) On_Swipe(gesturebm);
+                break;
+            case EventName.On_SwipeEnd:
+                if (On_SwipeEnd != null) On_SwipeEnd(gesturebm);
+                break;
+            case EventName.On_TouchStart2Fingers:
+                if (On_TouchStart2Fingers != null) On_TouchStart2Fingers(gesturebm);
+                break;
+            case EventName.On_TouchDown2Fingers:
+                if (On_TouchDown2Fingers != null) On_TouchDown2Fingers(gesturebm);
+                break;
+            case EventName.On_TouchUp2Fingers:
+                if (On_TouchUp2Fingers != null) On_TouchUp2Fingers(gesturebm);
+                break;
+            case EventName.On_SimpleTap2Fingers:
+                if (On_SimpleTap2Fingers != null) On_SimpleTap2Fingers(gesturebm);
+                break;
+            case EventName.On_DoubleTap2Fingers:
+                if (On_DoubleTap2Fingers != null) On_DoubleTap2Fingers(gesturebm);
+                break;
+            case EventName.On_LongTapStart2Fingers:
+                if (On_LongTapStart2Fingers != null) On_LongTapStart2Fingers(gesturebm);
+                break;
+            case EventName.On_LongTap2Fingers:
+                if (On_LongTap2Fingers != null) On_LongTap2Fingers(gesturebm);
+                break;
+            case EventName.On_LongTapEnd2Fingers:
+                if (On_LongTapEnd2Fingers != null) On_LongTapEnd2Fingers(gesturebm);
+                break;
+            case EventName.On_Twist:
+                if (On_Twist != null) On_Twist(gesturebm);
+                break;
+            case EventName.On_TwistEnd:
+                if (On_TwistEnd != null) On_TwistEnd(gesturebm);
+                break;
+            case EventName.On_PinchIn:
+                if (On_PinchIn != null) On_PinchIn(gesturebm);
+                break;
+            case EventName.On_PinchOut:
+                if (On_PinchOut != null) On_PinchOut(gesturebm);
+                break;
+            case EventName.On_PinchEnd:
+                if (On_PinchEnd != null) On_PinchEnd(gesturebm);
+                break;
+            case EventName.On_DragStart2Fingers:
+                if (On_DragStart2Fingers != null) On_DragStart2Fingers(gesturebm);
+                break;
+            case EventName.On_Drag2Fingers:
+                if (On_Drag2Fingers != null) On_Drag2Fingers(gesturebm);
+                break;
+            case EventName.On_DragEnd2Fingers:
+                if (On_DragEnd2Fingers != null) On_DragEnd2Fingers(gesturebm);
+                break;
+            case EventName.On_SwipeStart2Fingers:
+                if (On_SwipeStart2Fingers != null) On_SwipeStart2Fingers(gesturebm);
+                break;
+            case EventName.On_Swipe2Fingers:
+                if (On_Swipe2Fingers != null) On_Swipe2Fingers(gesturebm);
+                break;
+            case EventName.On_SwipeEnd2Fingers:
+                if (On_SwipeEnd2Fingers != null) On_SwipeEnd2Fingers(gesturebm);
+                break;
+        }
+    }
+
+    private bool GetPickeGameObject(ref Finger finger, bool twoFinger = false)
+    {
+        finger.isGuiCamera = false;
+        finger.pickedCamera = null;
+        finger.pickedObject = null;
+        if (touchCameras.Count > 0)
+            for (var i = 0; i < touchCameras.Count; i++)
+            {
+                if (!(touchCameras[i].camera != null) || !touchCameras[i].camera.enabled) continue;
+                var zero = Vector2.zero;
+                zero = twoFinger ? finger.complexStartPosition : finger.position;
+                var ray = touchCameras[i].camera.ScreenPointToRay(zero);
+                if (enable2D)
+                {
+                    var layerMask = pickableLayers2D;
+                    var array = new RaycastHit2D[1];
+                    if (Physics2D.GetRayIntersectionNonAlloc(ray, array, float.PositiveInfinity, layerMask) > 0)
+                    {
+                        finger.pickedCamera = touchCameras[i].camera;
+                        finger.isGuiCamera = touchCameras[i].guiCamera;
+                        finger.pickedObject = array[0].collider.gameObject;
+                        return true;
+                    }
+                }
+
+                var layerMask2 = pickableLayers;
+                RaycastHit hitInfo;
+                if (Physics.Raycast(ray, out hitInfo, float.MaxValue, layerMask2))
+                {
+                    finger.pickedCamera = touchCameras[i].camera;
+                    finger.isGuiCamera = touchCameras[i].guiCamera;
+                    finger.pickedObject = hitInfo.collider.gameObject;
+                    return true;
+                }
+            }
+        else
+            Debug.LogWarning("No camera is assigned to EasyTouch");
+
+        return false;
+    }
+
+    private SwipeType GetSwipe(Vector2 start, Vector2 end)
+    {
+        var normalized = (end - start).normalized;
+        if (Mathf.Abs(normalized.y) > Mathf.Abs(normalized.x))
+        {
+            if (Vector2.Dot(normalized, Vector2.up) >= swipeTolerance) return SwipeType.Up;
+            if (Vector2.Dot(normalized, -Vector2.up) >= swipeTolerance) return SwipeType.Down;
+        }
+        else
+        {
+            if (Vector2.Dot(normalized, Vector2.right) >= swipeTolerance) return SwipeType.Right;
+            if (Vector2.Dot(normalized, -Vector2.right) >= swipeTolerance) return SwipeType.Left;
+        }
+
+        return SwipeType.Other;
+    }
+
+    private bool FingerInTolerance(Finger finger)
+    {
+        if ((finger.position - finger.startPosition).sqrMagnitude <=
+            StationnaryTolerance * StationnaryTolerance) return true;
+        return false;
+    }
+
+    private float DeltaAngle(Vector2 start, Vector2 end)
+    {
+        var y = start.x * end.y - start.y * end.x;
+        return Mathf.Atan2(y, Vector2.Dot(start, end));
+    }
+
+    private float TwistAngle()
+    {
+        var end = fingers[twoFinger0].position - fingers[twoFinger1].position;
+        var start = fingers[twoFinger0].oldPosition - fingers[twoFinger1].oldPosition;
+        return 57.29578f * DeltaAngle(start, end);
+    }
+
+    private bool IsTouchHoverNGui(int touchIndex)
+    {
+        var flag = false;
+        if (enabledNGuiMode)
+        {
+            var layerMask = nGUILayers;
+            var num = 0;
+            while (!flag && num < nGUICameras.Count)
+            {
+                var ray = nGUICameras[num].ScreenPointToRay(fingers[touchIndex].position);
+                RaycastHit hitInfo;
+                flag = Physics.Raycast(ray, out hitInfo, float.MaxValue, layerMask);
+                num++;
+            }
+        }
+
+        return flag;
+    }
+
+    private bool IsTouchReservedArea(int touchIndex)
+    {
+        var flag = false;
+        if (enableReservedArea && fingers[touchIndex] != null)
+        {
+            var num = 0;
+            var rect = new Rect(0f, 0f, 0f, 0f);
+            while (!flag && num < reservedAreas.Count)
+            {
+                flag = reservedAreas[num].Contains(fingers[touchIndex].position);
+                num++;
+            }
+
+            num = 0;
+            while (!flag && num < reservedGuiAreas.Count)
+            {
+                rect = new Rect(reservedGuiAreas[num].x,
+                    Screen.height - reservedGuiAreas[num].y - reservedGuiAreas[num].height, reservedGuiAreas[num].width,
+                    reservedGuiAreas[num].height);
+                flag = rect.Contains(fingers[touchIndex].position);
+                num++;
+            }
+
+            num = 0;
+            while (!flag && num < reservedVirtualAreas.Count)
+            {
+                rect = VirtualScreenbm.GetRealRectbm(reservedVirtualAreas[num]);
+                flag = new Rect(rect.x, Screen.height - rect.y - rect.height, rect.width, rect.height).Contains(
+                    fingers[touchIndex].position);
+                num++;
+            }
+        }
+
+        return flag;
+    }
+
+    private Finger GetFinger(int finderId)
+    {
+        var i = 0;
+        Finger finger = null;
+        for (; i < 10; i++)
+        {
+            if (finger != null) break;
+            if (fingers[i] != null && fingers[i].fingerIndex == finderId) finger = fingers[i];
+        }
+
+        return finger;
+    }
+
+    public static void SetEnabled(bool enable)
+    {
+        instance.enable = enable;
+        if (enable) instance.ResetTouches();
+    }
+
+    public static bool GetEnabled()
+    {
+        return instance.enable;
+    }
+
+    public static int GetTouchCount()
+    {
+        if (instance != null) return instance.input.TouchCount();
+        return 0;
+    }
+
+    public static void SetCamera(Camera cam, bool guiCam = false)
+    {
+        instance.touchCameras.Add(new ECamera(cam, guiCam));
+    }
+
+    public static Camera GetCamera(int index = 0)
+    {
+        if (index < instance.touchCameras.Count) return instance.touchCameras[index].camera;
+        return null;
+    }
+
+    public static void SetEnable2FingersGesture(bool enable)
+    {
+        instance.enable2FingersGesture = enable;
+    }
+
+    public static bool GetEnable2FingersGesture()
+    {
+        return instance.enable2FingersGesture;
+    }
+
+    public static void SetEnableTwist(bool enable)
+    {
+        instance.enableTwist = enable;
+    }
+
+    public static bool GetEnableTwist()
+    {
+        return instance.enableTwist;
+    }
+
+    public static void SetEnablePinch(bool enable)
+    {
+        instance.enablePinch = enable;
+    }
+
+    public static bool GetEnablePinch()
+    {
+        return instance.enablePinch;
+    }
+
+    public static void SetEnableAutoSelect(bool enable)
+    {
+        instance.autoSelect = enable;
+    }
+
+    public static bool GetEnableAutoSelect()
+    {
+        return instance.autoSelect;
+    }
+
+    public static void SetOtherReceiverObject(GameObject receiver)
+    {
+        instance.receiverObject = receiver;
+    }
+
+    public static GameObject GetOtherReceiverObject()
+    {
+        return instance.receiverObject;
+    }
+
+    public static void SetStationnaryTolerance(float tolerance)
+    {
+        instance.StationnaryTolerance = tolerance;
+    }
+
+    public static float GetStationnaryTolerance()
+    {
+        return instance.StationnaryTolerance;
+    }
+
+    public static void SetlongTapTime(float time)
+    {
+        instance.longTapTime = time;
+    }
+
+    public static float GetlongTapTime()
+    {
+        return instance.longTapTime;
+    }
+
+    public static void SetSwipeTolerance(float tolerance)
+    {
+        instance.swipeTolerance = tolerance;
+    }
+
+    public static float GetSwipeTolerance()
+    {
+        return instance.swipeTolerance;
+    }
+
+    public static void SetMinPinchLength(float length)
+    {
+        instance.minPinchLength = length;
+    }
+
+    public static float GetMinPinchLength()
+    {
+        return instance.minPinchLength;
+    }
+
+    public static void SetMinTwistAngle(float angle)
+    {
+        instance.minTwistAngle = angle;
+    }
+
+    public static float GetMinTwistAngle()
+    {
+        return instance.minTwistAngle;
+    }
+
+    public static GameObject GetCurrentPickedObject(int fingerIndex)
+    {
+        var finger = instance.GetFinger(fingerIndex);
+        if (instance.GetPickeGameObject(ref finger)) return finger.pickedObject;
+        return null;
+    }
+
+    public static bool IsRectUnderTouch(Rect rect, bool guiRect = false)
+    {
+        var flag = false;
+        for (var i = 0; i < 10; i++)
+            if (instance.fingers[i] != null)
+            {
+                if (guiRect) rect = new Rect(rect.x, Screen.height - rect.y - rect.height, rect.width, rect.height);
+                flag = rect.Contains(instance.fingers[i].position);
+                if (flag) break;
+            }
+
+        return flag;
+    }
+
+    public static Vector2 GetFingerPosition(int fingerIndex)
+    {
+        if (instance.fingers[fingerIndex] != null) return instance.GetFinger(fingerIndex).position;
+        return Vector2.zero;
+    }
+
+    public static bool GetIsReservedArea()
+    {
+        if ((bool)instance) return instance.enableReservedArea;
+        return false;
+    }
+
+    public static void SetIsReservedArea(bool enable)
+    {
+        instance.enableReservedArea = enable;
+    }
+
+    public static void AddReservedArea(Rect rec)
+    {
+        if ((bool)instance) instance.reservedAreas.Add(rec);
+    }
+
+    public static void AddReservedGuiArea(Rect rec)
+    {
+        if ((bool)instance) instance.reservedGuiAreas.Add(rec);
+    }
+
+    public static void RemoveReservedArea(Rect rec)
+    {
+        if ((bool)instance) instance.reservedAreas.Remove(rec);
+    }
+
+    public static void RemoveReservedGuiArea(Rect rec)
+    {
+        if ((bool)instance) instance.reservedGuiAreas.Remove(rec);
+    }
+
+    public static void ResetTouch(int fingerIndex)
+    {
+        if ((bool)instance) instance.GetFinger(fingerIndex).gesture = GestureType.None;
+    }
+
+    public static void SetPickableLayer(LayerMask mask)
+    {
+        if ((bool)instance) instance.pickableLayers = mask;
+    }
+
+    public static LayerMask GetPickableLayer()
+    {
+        return instance.pickableLayers;
+    }
+
+    private enum EventName
+    {
+        None = 0,
+        On_Cancel = 1,
+        On_Cancel2Fingers = 2,
+        On_TouchStart = 3,
+        On_TouchDown = 4,
+        On_TouchUp = 5,
+        On_SimpleTap = 6,
+        On_DoubleTap = 7,
+        On_LongTapStart = 8,
+        On_LongTap = 9,
+        On_LongTapEnd = 10,
+        On_DragStart = 11,
+        On_Drag = 12,
+        On_DragEnd = 13,
+        On_SwipeStart = 14,
+        On_Swipe = 15,
+        On_SwipeEnd = 16,
+        On_TouchStart2Fingers = 17,
+        On_TouchDown2Fingers = 18,
+        On_TouchUp2Fingers = 19,
+        On_SimpleTap2Fingers = 20,
+        On_DoubleTap2Fingers = 21,
+        On_LongTapStart2Fingers = 22,
+        On_LongTap2Fingers = 23,
+        On_LongTapEnd2Fingers = 24,
+        On_Twist = 25,
+        On_TwistEnd = 26,
+        On_PinchIn = 27,
+        On_PinchOut = 28,
+        On_PinchEnd = 29,
+        On_DragStart2Fingers = 30,
+        On_Drag2Fingers = 31,
+        On_DragEnd2Fingers = 32,
+        On_SwipeStart2Fingers = 33,
+        On_Swipe2Fingers = 34,
+        On_SwipeEnd2Fingers = 35,
+        On_EasyTouchIsReady = 36
+    }
 }

@@ -1,9 +1,9 @@
 namespace ScreenFaderComponents.Actions
 {
-	public interface IParametrizedAction
-	{
-		bool Completed { get; set; }
+    public interface IParametrizedAction
+    {
+        bool Completed { get; set; }
 
-		void Execute(params object[] args);
-	}
+        void Execute(params object[] args);
+    }
 }

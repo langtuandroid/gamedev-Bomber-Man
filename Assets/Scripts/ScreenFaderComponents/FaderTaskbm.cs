@@ -3,18 +3,17 @@ using ScreenFaderComponents.Enumerators;
 
 namespace ScreenFaderComponents
 {
-	public class FaderTaskbm
-	{
-		public FadeState State;
+    public class FaderTaskbm
+    {
+        public IAction action;
 
-		public float Time;
+        public IParametrizedAction pAction;
 
-		public float PostDelay;
+        public object[] pActionParameters;
 
-		public IAction action;
+        public float PostDelay;
+        public FadeState State;
 
-		public IParametrizedAction pAction;
-
-		public object[] pActionParameters;
-	}
+        public float Time;
+    }
 }

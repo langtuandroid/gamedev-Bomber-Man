@@ -1,50 +1,36 @@
-using System.Collections.Generic;
+using GamePlay;
 using UnityEngine;
+using XX;
 
-namespace XX
+namespace Managers
 {
-	public class GameManager : Singleton<GameManager>
-	{
-		public static GameManager instance;
+    public class GameManager : Singleton<GameManager>
+    {
+        public static GameManager instance;
 
-		[HideInInspector]
-		public bool playerTurn = true;
+        public static int level;
 
-		private MapManager mapScript;
+        [HideInInspector] public bool playerTurn = true;
 
-		public static int level;
+        private MapManagerbm mapScript;
 
-		private new void Awake()
-		{
-			List<LevelComplete> allLevelComplete = FileManager.GetAllLevelComplete();
-			LevelComplete levelComplete = allLevelComplete[PlayerPrefs.GetInt(FileManager.KEY_CURRENT_LEVEL) - 1];
-			level = levelComplete.mId;
-			Time.timeScale = 1f;
-			if (instance == null)
-			{
-				instance = this;
-			}
-			else if (instance != this)
-			{
-				Object.Destroy(base.gameObject);
-			}
-			Object.DontDestroyOnLoad(base.gameObject);
-			mapScript = GetComponent<MapManager>();
-			InitGame();
-		}
+        private new void Awake()
+        {
+            var allLevelComplete = FileManager.GetAllLevelComplete();
+            var levelComplete = allLevelComplete[PlayerPrefs.GetInt(FileManager.KEY_CURRENT_LEVEL) - 1];
+            level = levelComplete.mId;
+            Time.timeScale = 1f;
+            if (instance == null)
+                instance = this;
+            else if (instance != this) Destroy(gameObject);
+            DontDestroyOnLoad(gameObject);
+            mapScript = GetComponent<MapManagerbm>();
+            InitGame();
+        }
 
-		private void Start()
-		{
-		}
-
-		public void InitGame()
-		{
-			mapScript.SetupScene(level);
-		}
-
-		public void GameOver()
-		{
-			base.enabled = false;
-		}
-	}
+        public void InitGame()
+        {
+            mapScript.SetupScene(level);
+        }
+    }
 }

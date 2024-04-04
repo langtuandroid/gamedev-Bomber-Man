@@ -7268,8 +7268,8 @@ MonoBehaviour:
   player: {fileID: 20}
   easy: {fileID: 220}
   allButton: []
-  mScriptChangeMusic: {fileID: 180}
-  mScriptChangeSound: {fileID: 216}
+  mScriptChangebmMusic: {fileID: 180}
+  mScriptChangebmSound: {fileID: 216}
 --- !u!114 &191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7664,7 +7664,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 20}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce460a624d3740e7a1b3de7509fb5b6, type: 3}
+  m_Script: {fileID: 11500000, guid: aa00d4946c60649f5a3cbf7235ba33f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
@@ -7676,7 +7676,7 @@ MonoBehaviour:
   point_Down: 0
   point_Right: 0
   point_Left: 1
-  point_Up2: 0
+  point_Up2: 1
   point_Down2: 0
   point_Right2: 0
   point_Left2: 0
@@ -8584,8 +8584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99106e61fed44afaee890851a0aafa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualWidth: 1920
-  virtualHeight: 1080
+  virtualWidthbm: 1920
+  virtualHeightbm: 1080
 --- !u!114 &233
 MonoBehaviour:
   m_ObjectHideFlags: 0

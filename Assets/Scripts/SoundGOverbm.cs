@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class SoundGOverbm : MonoBehaviour
 {
-	public AudioSource audioPlayerDie;
+    public AudioSource audioPlayerDie;
 
-	private void Start()
-	{
-		audioPlayerDie.Play();
-	}
+    private void Start()
+    {
+        audioPlayerDie.Play();
+    }
 }
