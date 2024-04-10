@@ -1,4 +1,5 @@
 using GamePlay;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -31,7 +32,7 @@ namespace XX
                 if (levelComplete.mCompleted)
                 {
                     var componentsInChildren = allButton[i].GetComponentsInChildren<Image>();
-                    var levelNumber = allButton[i].GetComponentInChildren<Text>();
+                    var levelNumber = allButton[i].GetComponentInChildren<TextMeshProUGUI>();
                     levelNumber.text = levelComplete.mId.ToString();
                     componentsInChildren[0].enabled = true;
                     componentsInChildren[1].enabled = false;

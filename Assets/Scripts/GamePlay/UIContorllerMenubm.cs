@@ -17,10 +17,6 @@ namespace GamePlay
 
         public Sprite soundOffSprite;
 
-        public Sprite musicOnSprite;
-
-        public Sprite musicOffSprite;
-
         public Button soundButton;
 
         public Button musicButton;
@@ -40,7 +36,7 @@ namespace GamePlay
             PlayerPrefs.SetInt("dem", 0);
             PlayerPrefs.Save();
             Setup1();
-            Setup2();
+            //Setup2();
         }
 
         public void LoadPlay()
@@ -79,7 +75,7 @@ namespace GamePlay
 
         public void clickQuit(bool check)
         {
-            mScriptChangebmSound.PlayAudio();
+            //mScriptChangebmSound.PlayAudio();
             if (check)
             {
                 bgExit.SetActive(true);
@@ -106,7 +102,7 @@ namespace GamePlay
 
         public void SoundClick()
         {
-            mScriptChangebmSound.PlayAudio();
+            //mScriptChangebmSound.PlayAudio();
             var @int = PlayerPrefs.GetInt(Constains.KEY_SOUND, 1);
             if (@int == 1)
             {
@@ -120,24 +116,26 @@ namespace GamePlay
                 PlayerPrefs.Save();
                 soundButton.GetComponent<Image>().sprite = soundOnSprite;
             }
+
+            MusicClick();
         }
 
         public void MusicClick()
         {
-            mScriptChangebmSound.PlayAudio();
+            //mScriptChangebmSound.PlayAudio();
             var @int = PlayerPrefs.GetInt(Constains.KEY_MUSIC, 1);
             if (@int == 1)
             {
                 PlayerPrefs.SetInt(Constains.KEY_MUSIC, 0);
                 PlayerPrefs.Save();
-                musicButton.GetComponent<Image>().sprite = musicOffSprite;
+                //musicButton.GetComponent<Image>().sprite = musicOffSprite;
                 mScriptChangebmMusic.StopAudio();
             }
             else
             {
                 PlayerPrefs.SetInt(Constains.KEY_MUSIC, 1);
                 PlayerPrefs.Save();
-                musicButton.GetComponent<Image>().sprite = musicOnSprite;
+                //musicButton.GetComponent<Image>().sprite = musicOnSprite;
                 mScriptChangebmMusic.PlayAudio();
             }
         }
@@ -151,13 +149,13 @@ namespace GamePlay
                 soundButton.GetComponent<Image>().sprite = soundOffSprite;
         }
 
-        public void Setup2()
-        {
-            var @int = PlayerPrefs.GetInt(Constains.KEY_MUSIC, 1);
-            if (@int == 1)
-                musicButton.GetComponent<Image>().sprite = musicOnSprite;
-            else
-                musicButton.GetComponent<Image>().sprite = musicOffSprite;
-        }
+        // public void Setup2()
+        // {
+        //     var @int = PlayerPrefs.GetInt(Constains.KEY_MUSIC, 1);
+        //     if (@int == 1)
+        //         musicButton.GetComponent<Image>().sprite = musicOnSprite;
+        //     else
+        //         musicButton.GetComponent<Image>().sprite = musicOffSprite;
+        // }
     }
 }
