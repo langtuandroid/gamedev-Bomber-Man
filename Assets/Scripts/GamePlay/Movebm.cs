@@ -52,20 +52,47 @@ namespace GamePlay
         private bool _isRightbm;
 
         private bool _isUpbm;
-
-        private readonly float _maxXbm = 17.6f;
-
-        private readonly float _maxYbm = 11.6f;
-
-        private readonly float _minXbm = 9.4f;
-
-        private readonly float _minYbm = 5.36f;
+        [Header("PhoneSettings")]
+        [SerializeField]
+        private readonly float _maxSXbm = 17.6f;
+        [SerializeField]
+        private readonly float _maxSYbm = 11.5f;
+        [SerializeField]
+        private readonly float _minSXbm = 9.4f;
+        [SerializeField]
+        private readonly float _minSYbm = 5.35f;
+        
+        [Header("TabletSettings")]
+        [SerializeField]
+        private readonly float _maxTXbm = 21f;
+        [SerializeField]
+        private readonly float _maxTYbm = 11.5f;
+        [SerializeField]
+        private readonly float _minTXbm = 6f;
+        [SerializeField]
+        private readonly float _minTYbm = 5.35f;
+        
+        private float _maxXbm = 17.6f;
+        private float _maxYbm = 11.5f;
+        private float _minXbm = 9.4f;
+        private float _minYbm = 5.35f;
 
         private Soldierbm _soldierbm;
 
         private PolygonCollider2D cir2dbm;
 
         private readonly float spbm = 20f;
+        
+        // Ограничения по осям, выраженные в процентах относительно ширины и высоты экрана
+        private readonly float minXPercentage = 0.54f; // Минимальное положение по X (54% от ширины)
+        private readonly float maxXPercentage = 1.0f;  // Максимальное положение по X (100% от ширины)
+        private readonly float minYPercentage = 0.46f; // Минимальное положение по Y (46% от высоты)
+        private readonly float maxYPercentage = 1.0f;  // Максимальное положение по Y (100% от высоты)
+
+        private void Awake()
+        {
+            CheckDeviceInches();
+        }
 
         private void Start()
         {
@@ -77,7 +104,28 @@ namespace GamePlay
             _soldierbm = GameObject.Find("Soldier").GetComponent<Soldierbm>();
             cir2dbm = gameObject.GetComponent<PolygonCollider2D>();
         }
-
+        
+        private void CheckDeviceInches()
+        {
+            float screenSizeInchessr = Mathf.Sqrt(Mathf.Pow(Screen.width / Screen.dpi, 2) + Mathf.Pow(Screen.height / Screen.dpi, 2));
+            float aspectRatio = (float)Screen.width / Screen.height; 
+           
+            if (screenSizeInchessr >= 7.0f)
+            {
+                _maxXbm = Mathf.Approximately(aspectRatio, 3f / 5f) ? _maxSXbm : _maxTXbm;
+                _maxYbm = Mathf.Approximately(aspectRatio, 3f / 5f) ? _maxSYbm : _maxTYbm;
+                _minXbm = Mathf.Approximately(aspectRatio, 3f / 5f) ? _minSXbm : _minTXbm;
+                _minYbm = Mathf.Approximately(aspectRatio, 3f / 5f) ? _minSYbm : _minTYbm;
+            }
+            else
+            {
+                _maxXbm = _maxSXbm;
+                _maxYbm = _maxSYbm;
+                _minXbm = _minSXbm;
+                _minYbm = _minSYbm;
+            }
+        }
+        
         private void Update()
         {
             setOrderLayer();
@@ -116,9 +164,11 @@ namespace GamePlay
             cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, -10f);
             cam.transform.position = Vector3.MoveTowards(cam.transform.position, gameObject.transform.position,
                 spbm * Time.deltaTime);
+            
             cam.transform.position = new Vector3(Mathf.Clamp(cam.transform.position.x, _minXbm, _maxXbm),
                 Mathf.Clamp(cam.transform.position.y, _minYbm, _maxYbm), -10f);
         }
+        
 
         private void OnTriggerEnter2D(Collider2D coll)
         {

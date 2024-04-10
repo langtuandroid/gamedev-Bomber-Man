@@ -99,14 +99,15 @@ namespace GamePlay
         {
             obj = GameObject.Find("Level");
             var num = Random.Range(minimum, maximum + 1);
-            zombieCount = num;
+            
+            //zombieCount = num;
             for (var i = 0; i < num; i++)
             {
                 var position = RandomPostion();
                 var gameObject = tileArray[Random.Range(0, tileArray.Length)];
                 gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(100f - position.y);
                 var gameObject2 = Instantiate(gameObject, position, Quaternion.identity);
-                Debug.Log("Zombie" + gameObject2);
+                
                 gameObject2.transform.SetParent(obj.transform);
                 if (gameObject.gameObject.CompareTag("Zombie"))
                 {

@@ -58,6 +58,8 @@ namespace GamePlay
         private float x;
 
         private GameObject xx;
+        
+        private bool _buttonsEnabled = false;
 
         private void Awake()
         {
@@ -97,6 +99,7 @@ namespace GamePlay
 
         public void gameOver()
         {
+            
             if (Singleton<Soldierbm>.Instance.heart < 1)
             {
                 Singleton<Soldierbm>.Instance.gameObject.SetActive(false);
@@ -122,6 +125,11 @@ namespace GamePlay
 
         public void loadMenu()
         {
+            if (_buttonsEnabled)
+            {
+                return;
+            }
+            _buttonsEnabled = true;
             Destroy(xx.gameObject);
             Time.timeScale = 1f;
             var @int = PlayerPrefs.GetInt("dem");
@@ -179,6 +187,7 @@ namespace GamePlay
             }
             else
             {
+                Destroy(xx.gameObject);
                 Application.LoadLevel("Menu");
             }
            
@@ -186,6 +195,11 @@ namespace GamePlay
 
         public void ReTry()
         {
+            if (_buttonsEnabled)
+            {
+                return;
+            }
+            _buttonsEnabled = true;
             mScriptChangebmSound.PlayAudio();
             Destroy(xx.gameObject);
             Application.LoadLevel("GamePlay");
