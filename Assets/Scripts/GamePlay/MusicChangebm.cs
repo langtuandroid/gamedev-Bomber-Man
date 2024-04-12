@@ -14,7 +14,7 @@ namespace GamePlay
                 audio.Play();
         }
 
-        public void StopAudio()
+        public void StopAudiobm()
         {
             audio.Stop();
         }

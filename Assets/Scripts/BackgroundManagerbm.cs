@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BackgroundManager : MonoBehaviour
+public class BackgroundManagerbm : MonoBehaviour
 { 
     
         [SerializeField]
@@ -16,12 +16,12 @@ public class BackgroundManager : MonoBehaviour
         private Sprite _bgTabletsr;
         private void Start()
         {
-            CheckDeviceInches();
+            CheckDeviceInchesbm();
         }
-        private void CheckDeviceInches()
+        private void CheckDeviceInchesbm()
         {
             float screenSizeInchessr = Mathf.Sqrt(Mathf.Pow(Screen.width / Screen.dpi, 2) + Mathf.Pow(Screen.height / Screen.dpi, 2));
-            float aspectRatio = (float)Screen.width / Screen.height; // Вычисляем соотношение сторон
+            float aspectRatio = (float)Screen.width / Screen.height; 
             Sprite backgroundSpritesr;
             if (screenSizeInchessr >= 7.0f)
             {

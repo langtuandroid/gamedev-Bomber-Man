@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace MainManagers
 {
-    public class UrlManager : MonoBehaviour
+    public class UrlManagerиь : MonoBehaviour
     {
         [SerializeField]
         private string _urlForPrivacyPolicy;
@@ -22,30 +22,30 @@ namespace MainManagers
         private void Awake()
         {
             if (_termsButton != null)
-                _termsButton.onClick.AddListener(() => OpenUrl(_urlForTermsOfUse));
+                _termsButton.onClick.AddListener(() => OpenUrlbm(_urlForTermsOfUse));
 
             if (_privacyButton != null)
-                _privacyButton.onClick.AddListener(() => OpenUrl(_urlForPrivacyPolicy));
+                _privacyButton.onClick.AddListener(() => OpenUrlbm(_urlForPrivacyPolicy));
         }
 
         private void OnDestroy()
         {
             if (_termsButton != null)
-                _termsButton.onClick.RemoveListener(() => OpenUrl(_urlForTermsOfUse));
+                _termsButton.onClick.RemoveListener(() => OpenUrlbm(_urlForTermsOfUse));
 
             if (_privacyButton != null)
-                _privacyButton.onClick.RemoveListener(() => OpenUrl(_urlForPrivacyPolicy));
+                _privacyButton.onClick.RemoveListener(() => OpenUrlbm(_urlForPrivacyPolicy));
         }
 
-        private async void OpenUrl(string url)
+        private async void OpenUrlbm(string url)
         {
             if (_externalOpeningUrlDelayFlag) return;
             _externalOpeningUrlDelayFlag = true;
-            await OpenURLAsync(url);
-            StartCoroutine(WaitForSeconds(1, () => _externalOpeningUrlDelayFlag = false));
+            await OpenURLAsyncиь(url);
+            StartCoroutine(WaitForSecondsиь(1, () => _externalOpeningUrlDelayFlag = false));
         }
     
-        private async Task OpenURLAsync(string url)
+        private async Task OpenURLAsyncиь(string url)
         {
             await Task.Delay(1); // Ждем один кадр, чтобы избежать блокировки основного потока
             try
@@ -58,7 +58,7 @@ namespace MainManagers
             }
         }
 
-        private IEnumerator WaitForSeconds(float seconds, Action callback)
+        private IEnumerator WaitForSecondsиь(float seconds, Action callback)
         {
             yield return new WaitForSeconds(seconds);
             callback?.Invoke();

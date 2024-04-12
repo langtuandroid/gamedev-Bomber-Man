@@ -37,22 +37,5 @@ public class GhostTrailbm : MonoBehaviour
         _trailPartsbm.Remove(trailPart);
         Destroy(trailPart);
     }
-
-    private void Flip()
-    {
-        var localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
-        FlipTrail();
-    }
-
-    private void FlipTrail()
-    {
-        foreach (var trailPart in _trailPartsbm)
-        {
-            var localScale = trailPart.transform.localScale;
-            localScale.x *= -1f;
-            trailPart.transform.localScale = localScale;
-        }
-    }
+    
 }

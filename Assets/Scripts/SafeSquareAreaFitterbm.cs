@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SafeSquareAreaFitter : MonoBehaviour
+public class SafeSquareAreaFitterbm : MonoBehaviour
 {
     public bool dontSafeBottom;
     RectTransform fittedRectTransform;

@@ -129,7 +129,7 @@ namespace GamePlay
                 PlayerPrefs.SetInt(Constains.KEY_MUSIC, 0);
                 PlayerPrefs.Save();
                 //musicButton.GetComponent<Image>().sprite = musicOffSprite;
-                mScriptChangebmMusic.StopAudio();
+                mScriptChangebmMusic.StopAudiobm();
             }
             else
             {
