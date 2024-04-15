@@ -53,6 +53,7 @@ namespace GamePlay
             mapObjectWall = new GameObject[columns, rows];
             mapObjectItems = new GameObject[columns, rows];
         }
+        
 
         private void Start()
         {

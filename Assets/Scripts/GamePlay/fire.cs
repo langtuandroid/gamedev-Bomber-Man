@@ -5,11 +5,10 @@ namespace GamePlay
     public class fire : Singleton<fire>
     {
         public GameObject gm;
-        private MapManagerbm _mapManagerbm;
+      
 
         private void Start()
         {
-            _mapManagerbm = GameObject.Find("GameManager(Clone)").GetComponent<MapManagerbm>();
             Destroy(gameObject, 0.3f);
         }
 
@@ -18,9 +17,10 @@ namespace GamePlay
             var component = collision.gameObject.GetComponent<Soldierbm>();
             if (collision.gameObject.tag == "Zombie")
             {
-                _mapManagerbm.zombieCount--;
-                Debug.Log("Key: " + _mapManagerbm.zombieCount);
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<Zombie>().DieZombie();
+                //_mapManagerbm.zombieCount--;
+                //Debug.Log("Key: " + _mapManagerbm.zombieCount);
+                //Destroy(collision.gameObject);
             }
             else if (collision.gameObject.tag != "Zombie" && collision.gameObject.tag != "Player")
             {

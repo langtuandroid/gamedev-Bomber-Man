@@ -193,6 +193,24 @@ namespace GamePlay
            
         }
 
+        public void HomeAfterWin()
+        {
+            var allLevelComplete = FileManager.GetAllLevelComplete();
+            var levelComplete = allLevelComplete[PlayerPrefs.GetInt(FileManager.KEY_CURRENT_LEVEL) - 1];
+            var mId = levelComplete.mId;
+            if (mId < 60)
+            {
+                FileManager.UpdateLevel(PlayerPrefs.GetInt(FileManager.KEY_CURRENT_LEVEL) + 1);
+                if (allLevelComplete[mId - 1].mCompleted)
+                {
+                    PlayerPrefs.SetInt(FileManager.KEY_CURRENT_LEVEL, mId + 1);
+                    PlayerPrefs.Save();
+                }
+            }
+            Destroy(xx.gameObject);
+            Application.LoadLevel("Menu");
+        }
+
         public void ReTry()
         {
             if (_buttonsEnabled)

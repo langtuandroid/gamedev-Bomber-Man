@@ -1604,7 +1604,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1666666, y: 1.6666666}
+    oldSize: {x: 1.1666666, y: 1.5666667}
     newSize: {x: 1.1666666, y: 1.6666666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7363,8 +7363,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 190}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: loadMenu
+        m_TargetAssemblyTypeName: GamePlay.UIControllerPlayerbm, Assembly-CSharp
+        m_MethodName: HomeAfterWin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

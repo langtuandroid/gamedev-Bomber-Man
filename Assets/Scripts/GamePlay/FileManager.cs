@@ -11,6 +11,7 @@ namespace XX
 
         private void Awake()
         {
+            //DelLevel();
             InitializeFile();
         }
 

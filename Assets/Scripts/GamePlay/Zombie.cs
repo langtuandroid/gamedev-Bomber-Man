@@ -16,53 +16,65 @@ namespace GamePlay
 
         private Animator anim;
 
-        private Rigidbody2D rb2d;
+        private Rigidbody2D rb2dbm;
 
-        private Vector2 vt;
+        private Vector2 vectobmr;
 
+        private MapManagerbm _mapManagerbm;
         private void Start()
         {
             a = 0;
             anim = GetComponent<Animator>();
             listVT = new Vector2[5];
             speed = 1f;
-            rb2d = GetComponent<Rigidbody2D>();
+            rb2dbm = GetComponent<Rigidbody2D>();
             listVT[0] = new Vector2(1f, 0f);
             listVT[1] = new Vector2(-1f, 0f);
             listVT[2] = new Vector2(0f, 1f);
             listVT[3] = new Vector2(0f, -1f);
-            vt = listVT[x];
+            vectobmr = listVT[x];
+            _mapManagerbm = GameObject.Find("GameManager(Clone)").GetComponent<MapManagerbm>();
         }
 
         private void Update()
         {
             setOrderLayer();
-            if (vt == listVT[0])
+            if (vectobmr == listVT[0])
             {
                 anim.SetBool("isRun", true);
                 anim.SetBool("isPlay", true);
                 change(1f, 0f);
             }
-            else if (vt == listVT[1])
+            else if (vectobmr == listVT[1])
             {
                 anim.SetBool("isRun", true);
                 anim.SetBool("isPlay", true);
                 change(-1f, 0f);
             }
-            else if (vt == listVT[2])
+            else if (vectobmr == listVT[2])
             {
                 anim.SetBool("isRun", true);
                 anim.SetBool("isPlay", true);
                 change(0f, 1f);
             }
-            else if (vt == listVT[3])
+            else if (vectobmr == listVT[3])
             {
                 anim.SetBool("isRun", true);
                 anim.SetBool("isPlay", true);
                 change(0f, -1f);
             }
 
-            transform.Translate(vt * speed * Time.deltaTime);
+            transform.Translate(vectobmr * speed * Time.deltaTime);
+        }
+
+        public void DieZombie()
+        {
+            if (_mapManagerbm.zombieCount > 0)
+            {
+                _mapManagerbm.zombieCount--;
+                print("_mapManagerbm.zombieCount = " + _mapManagerbm.zombieCount);
+            }
+            Destroy(gameObject);
         }
 
         private void OnTriggerEnter2D(Collider2D coll)
@@ -73,49 +85,49 @@ namespace GamePlay
             //Debug.Log("A: " + a);
             if (a % 3 == 0)
             {
-                if (vt == listVT[1])
-                    vt = listVT[2];
-                else if (vt == listVT[2])
-                    vt = listVT[0];
-                else if (vt == listVT[0])
-                    vt = listVT[3];
-                else if (vt == listVT[3]) vt = listVT[1];
+                if (vectobmr == listVT[1])
+                    vectobmr = listVT[2];
+                else if (vectobmr == listVT[2])
+                    vectobmr = listVT[0];
+                else if (vectobmr == listVT[0])
+                    vectobmr = listVT[3];
+                else if (vectobmr == listVT[3]) vectobmr = listVT[1];
             }
             else if (a % 10 == 0)
             {
-                if (vt == listVT[1])
-                    vt = listVT[2];
-                else if (vt == listVT[0])
-                    vt = listVT[2];
-                else if (vt == listVT[2])
-                    vt = listVT[0];
-                else if (vt == listVT[3]) vt = listVT[0];
+                if (vectobmr == listVT[1])
+                    vectobmr = listVT[2];
+                else if (vectobmr == listVT[0])
+                    vectobmr = listVT[2];
+                else if (vectobmr == listVT[2])
+                    vectobmr = listVT[0];
+                else if (vectobmr == listVT[3]) vectobmr = listVT[0];
             }
             else if (a % 20 == 0)
             {
-                if (vt == listVT[1])
-                    vt = listVT[3];
-                else if (vt == listVT[0])
-                    vt = listVT[3];
-                else if (vt == listVT[2])
-                    vt = listVT[1];
-                else if (vt == listVT[3]) vt = listVT[1];
+                if (vectobmr == listVT[1])
+                    vectobmr = listVT[3];
+                else if (vectobmr == listVT[0])
+                    vectobmr = listVT[3];
+                else if (vectobmr == listVT[2])
+                    vectobmr = listVT[1];
+                else if (vectobmr == listVT[3]) vectobmr = listVT[1];
             }
-            else if (vt == listVT[0])
+            else if (vectobmr == listVT[0])
             {
-                vt = listVT[1];
+                vectobmr = listVT[1];
             }
-            else if (vt == listVT[1])
+            else if (vectobmr == listVT[1])
             {
-                vt = listVT[0];
+                vectobmr = listVT[0];
             }
-            else if (vt == listVT[2])
+            else if (vectobmr == listVT[2])
             {
-                vt = listVT[3];
+                vectobmr = listVT[3];
             }
-            else if (vt == listVT[3])
+            else if (vectobmr == listVT[3])
             {
-                vt = listVT[2];
+                vectobmr = listVT[2];
             }
         }
 
