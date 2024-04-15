@@ -309,7 +309,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -367,7 +367,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -380,7 +380,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -393,2881 +393,2384 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 65
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 65
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_blue_bot_0001
+      name: wwwwSpriteAtlasTexture-sprite-2048x1024-fmt47_0wwwww
       rect:
         serializedVersion: 2
-        x: 384.0761
-        y: 530
-        width: 57.897133
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51684564, y: 0.5677728}
+        x: 3
+        y: 941
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12.024685, y: -36.986626}
-        - {x: -29.024685, y: -23.986626}
-        - {x: -29.024685, y: 8.013374}
-        - {x: -27.024685, y: 21.013374}
-        - {x: -13.024685, y: 37.013374}
-        - {x: 10.975315, y: 37.013374}
-        - {x: 15.975315, y: 36.013374}
-        - {x: 28.975315, y: 26.013374}
-        - {x: 28.975315, y: -29.986626}
-        - {x: 13.975315, y: -36.986626}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: fa6b9e6776d654f5b9e3e891eddc734b
+      internalID: -1763767619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_left_0003 copy
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_1
       rect:
         serializedVersion: 2
-        x: 192.07613
-        y: 551.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
+        x: 129
+        y: 939
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.000002, y: -36.995235}
-        - {x: -27.000002, y: -29.995235}
-        - {x: -27.000002, y: 21.004765}
-        - {x: -26.000002, y: 30.004765}
-        - {x: -17.000002, y: 37.004765}
-        - {x: 8.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -36.995235}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: 6ac736509558f455d89daa63bdd908df
+      internalID: 2071861973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_left_0004
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_2
       rect:
         serializedVersion: 2
-        x: 190.07613
-        y: 873.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
+        x: 192
+        y: 874
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: 08da7bd30a319499fb76f23e4dca4134
+      internalID: 1625968327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0004
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_3
       rect:
         serializedVersion: 2
-        x: 418.0761
-        y: 82.07612
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
+        x: 254
+        y: 872
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 204bd1d46ccfe43598c19fb49b24097d
+      internalID: 1795130712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_bot_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_4
       rect:
         serializedVersion: 2
-        x: 438.0429
-        y: 934
-        width: 57.880974
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.48301005, y: 0.5677728}
+        x: 440
+        y: 932
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.983395, y: -36.986626}
-        - {x: -28.983395, y: -27.986626}
-        - {x: -28.983395, y: 37.013374}
-        - {x: 20.016605, y: 37.013374}
-        - {x: 25.016605, y: 25.013374}
-        - {x: 29.016605, y: 12.013374}
-        - {x: 29.016605, y: -29.986626}
-        - {x: 15.016605, y: -36.986626}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: 99832cf9286f1466fa1c01671fd3b3d1
+      internalID: 1721593685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0002
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_8
       rect:
         serializedVersion: 2
-        x: 130.07613
-        y: 627.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 2
+        y: 865
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: b4637fe3d8c7e437c8624a7aebc15436
+      internalID: 1712891360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0004
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_9
       rect:
         serializedVersion: 2
-        x: 62.07612
-        y: 699.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 68
+        y: 865
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: 4543fd0b55a6245d988f2586b725c785
+      internalID: 581938367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boom_woodbox_0005
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 865
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a2221a0eced4f7088ed8512fea0cdb
+      internalID: -601123375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 860
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7114f72a169b34a718e12def6d08a7dd
+      internalID: -663200079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 862
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527f6fa3f1215467d88f46a290bb696a
+      internalID: 1213549158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 793
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd59e968d14fb4f9cbd50ba6ee50a5e5
+      internalID: -1612371677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_15
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 793
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac9b16b7b73c4115a7604197f60b415
+      internalID: -1148771361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 793
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c076bbfc61564a13b96293dc1106ef8
+      internalID: -213303920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 783
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4aa18b338f145e695061544d5661c7
+      internalID: -931085488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 783
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0752f29111a184a839a2ce1c7598d557
+      internalID: -538688911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 789
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568b6107483fa4f559be49c29ec7ac85
+      internalID: -915238515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_20
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 777
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80285a695365940468ad294683bb70b4
+      internalID: -1686519541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 701
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ebbe6c6b508426a9b5477b93968dd9
+      internalID: 529636719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 701
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f484b557195745429bea3515d761c1e
+      internalID: -313870887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 713
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cedbbea406284e9193e8b001e7fea07
+      internalID: 1513170939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_25
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 717
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285048685d3f54cee95f3bc2d44a0038
+      internalID: -1080710476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 708
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca77454599674a2ea7e0485e646d8de
+      internalID: -1964229546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_27
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 696
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231add9d2c5434fd18d41699014c0dde
+      internalID: 1878402693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_28
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 692
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc44f3f973ca4c9dba304e53c26549e
+      internalID: 103136747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 696
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4d6b26cee8e4a06b878258609ea9da
+      internalID: -1846433917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 616
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b57bde1836c4c4caefd5faf38fe2ae
+      internalID: -1780299671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 613
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf614b7ac73e4581a20b29c3c1b1abb
+      internalID: 157165690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 629
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445d27a3e4ad94e2ba2708050a3c762c
+      internalID: -1861412187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 635
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a5b645bda7c4de18646fa7d08338dd
+      internalID: -618565909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 635
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecba13d53cf194f40b5af099d761a23e
+      internalID: 832776176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_37
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 612
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6032197ff02c846eab016d194c47be95
+      internalID: 36211279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_38
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 614
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b335453fe5828429abd32beceeace860
+      internalID: 539879621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_39
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 614
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd73cd0df0da437ca8be4866b86302a
+      internalID: -1217639559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_41
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 537
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4746bd715295547f7b0e101fdda73a12
+      internalID: -1263609233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 537
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845fa36f2e9944e368b8597fdd07efda
+      internalID: -472472151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 554
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239b205b628764acbba7508b3070069a
+      internalID: 868306904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_44
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 553
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54312a2fe026f4a829143603c3b0aba1
+      internalID: 914106657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 559
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0eba69fcf4049ecac4ab49c978d14b
+      internalID: -859136614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_46
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 528
+        width: 56
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7395a9ca8e5d0449988af44716cae87a
+      internalID: -1855221865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_47
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 528
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1027be9027d4d4e9c878f0a9203210ab
+      internalID: 582808177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 395
+        width: 142
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868ec9c440efb4f319e24c69f1d47fd0
+      internalID: -625549194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_50
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 477
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d149fa90ca6e2498c979eb6374648b58
+      internalID: -198954194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_51
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 477
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dacc96ed7c742108713521364ff859
+      internalID: 1839471051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_52
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 449
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc24d3440b472463886350a21c41506a
+      internalID: -120208347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_53
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 450
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727d8f02b475e4c9190ab3948625052a
+      internalID: -312787835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_54
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 448
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8277ac06f16a422fa778edd89304821
+      internalID: 91721201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_55
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 395
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052a2540c47cd45da8f0d66850fd6ad8
+      internalID: 1436873195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_56
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 394
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a418d2ae1d1f496d9e6c5f3d3c4ed4f
+      internalID: -2131893350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_57
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 337
+        width: 119
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e9ebf6c9c6848ee8d1f78cf8c60f12
+      internalID: -1535317347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_58
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 406
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402c1d26b13eb4587a42b057804bd990
+      internalID: 676433020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_59
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 222
+        width: 120
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f03b1c599ade4cc28d6a1f31e50ed96
+      internalID: 611238992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_60
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 211
+        width: 178
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c116cc5ae20f4e15b5cc3a36b54e515
+      internalID: 17244061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_61
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 211
+        width: 121
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b19b14676d2458a98fb623ebeadc68
+      internalID: 1839411380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_62
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 324
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0305b9de18d43809bcc0c80ad0f0d0
+      internalID: 1827793214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_63
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 324
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca59e4c32b23648708f202b07205627c
+      internalID: 371180697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_64
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 241
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3adcde6151f43cea00c1c10128b0f8
+      internalID: 571575990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_66
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 160
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66deb19ccfe0246a4ad807bd9846d081
+      internalID: -733912001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_67
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 160
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d6b4f9775fd4717ad10655e9df1dd3
+      internalID: -1488768263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_68
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.076120496
-        width: 201
-        height: 199.92387
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4973087}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 98.5, y: -100.038055}
-        - {x: 3.5, y: -100.038055}
-        - {x: -93.5, y: -79.038055}
-        - {x: -98.5, y: -60.03806}
-        - {x: -100.5, y: -48.038055}
-        - {x: -100.5, y: 83.961945}
-        - {x: -75.5, y: 99.961945}
-        - {x: 100.5, y: 99.961945}
-        - {x: 100.5, y: -96.038055}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_woodbox_0007
-      rect:
-        serializedVersion: 2
-        x: 0.026752472
-        y: 208.07613
-        width: 122.897125
-        height: 139.89713
-      alignment: 9
-      pivot: {x: 0.49206397, y: 0.38187975}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -47.475315, y: -35.024685}
-        - {x: -61.475315, y: -17.024685}
-        - {x: -61.475315, y: 46.975315}
-        - {x: -52.475315, y: 69.97531}
-        - {x: 14.524685, y: 69.97531}
-        - {x: 61.524685, y: 47.975315}
-        - {x: 61.524685, y: -33.024685}
-        - {x: 33.524685, y: -46.02468}
-        - {x: 7.524685, y: -49.024685}
-        - {x: 4.524685, y: -49.024685}
-        - {x: 4.524685, y: -52.024685}
-        - {x: 3.524685, y: -53.024685}
-        - {x: -0.4753151, y: -53.024685}
-        - {x: -2.475315, y: -52.024685}
-        - {x: -2.475315, y: -49.024685}
-        - {x: -22.475315, y: -49.024685}
-        - {x: -21.475315, y: -51.024685}
-        - {x: -21.475315, y: -56.024685}
-        - {x: -25.475315, y: -58.024685}
-        - {x: -29.475315, y: -58.024685}
-        - {x: -29.475315, y: -49.024685}
-        - {x: -37.475315, y: -49.024685}
-        - {x: -46.475315, y: -37.024685}
-        - {x: -46.475315, y: -44.024685}
-        - {x: -53.47531, y: -44.024685}
-        - {x: -54.47532, y: -42.024685}
-        - {x: -54.47532, y: -36.024685}
-        - {x: -51.475315, y: -35.024685}
-      - - {x: 30.524685, y: -57.024685}
-        - {x: 28.524683, y: -54.024685}
-        - {x: 28.524683, y: -51.024685}
-        - {x: 32.524685, y: -48.024685}
-        - {x: 36.524685, y: -48.024685}
-        - {x: 37.524685, y: -50.024685}
-        - {x: 37.524685, y: -55.024685}
-        - {x: 33.524685, y: -57.024685}
-      - - {x: -6.475315, y: -70.02469}
-        - {x: -8.475315, y: -65.02469}
-        - {x: -6.475315, y: -63.024685}
-        - {x: -2.475315, y: -63.024685}
-        - {x: -0.4753151, y: -65.02469}
-        - {x: -0.4753151, y: -68.02469}
-        - {x: -2.475315, y: -70.02469}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0001
-      rect:
-        serializedVersion: 2
-        x: 128.07613
-        y: 937.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 19.004765}
-        - {x: -13.000002, y: 37.004765}
-        - {x: 19.999998, y: 37.004765}
-        - {x: 26.999998, y: 27.004765}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0002
-      rect:
-        serializedVersion: 2
-        x: 486.0761
-        y: 0.026751041
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70418627ce510cb60800000000000000
-      internalID: 7764229862862623751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0004
-      rect:
-        serializedVersion: 2
-        x: 254.07613
-        y: 475.02676
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8444d86f0e35d9d90800000000000000
-      internalID: -7089418012737059768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0004
-      rect:
-        serializedVersion: 2
-        x: 0.0362854
-        y: 617
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0001
-      rect:
-        serializedVersion: 2
-        x: 62.07612
-        y: 781.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -22.000002, y: 36.98662}
-        - {x: 14.999998, y: 36.98662}
-        - {x: 26.999998, y: 32.98662}
-        - {x: 26.999998, y: -22.013378}
-        - {x: 11.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0002
-      rect:
-        serializedVersion: 2
-        x: 382.0363
-        y: 694
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3305410000000000800000000000000
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0001
-      rect:
-        serializedVersion: 2
-        x: 0.07612038
-        y: 781.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 19.004765}
-        - {x: -13.000002, y: 37.004765}
-        - {x: 19.999998, y: 37.004765}
-        - {x: 26.999998, y: 27.004765}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bc0d895df32182f0800000000000000
-      internalID: -972456473499202382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0002
-      rect:
-        serializedVersion: 2
-        x: 441.0761
-        y: 612.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04305410000000000800000000000000
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0001
-      rect:
-        serializedVersion: 2
-        x: 154.07613
-        y: 393.02676
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 19.004765}
-        - {x: -13.000002, y: 37.004765}
-        - {x: 19.999998, y: 37.004765}
-        - {x: 26.999998, y: 27.004765}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bc0d895df32182f0800000000000000
-      internalID: -972456473499202382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0001
-      rect:
-        serializedVersion: 2
-        x: 252.07613
-        y: 791.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -22.000002, y: 36.98662}
-        - {x: 14.999998, y: 36.98662}
-        - {x: 26.999998, y: 32.98662}
-        - {x: 26.999998, y: -22.013378}
-        - {x: 11.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9807fe1e69a7492d0800000000000000
-      internalID: -3272856240737259383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_woodbox_0008
-      rect:
-        serializedVersion: 2
-        x: 321.02676
-        y: 209.07611
-        width: 122.897125
-        height: 117.89713
-      alignment: 9
-      pivot: {x: 0.49206397, y: 0.21564461}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 28.524683, y: 58.975315}
-        - {x: 59.524685, y: 33.975315}
-        - {x: 61.524685, y: 8.975315}
-        - {x: 61.524685, y: -44.024685}
-        - {x: 41.524685, y: -59.024685}
-        - {x: -37.475315, y: -59.024685}
-        - {x: -61.475315, y: -34.024685}
-        - {x: -61.475315, y: 43.975315}
-        - {x: -56.475315, y: 51.975315}
-        - {x: -38.475315, y: 58.975315}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64305410000000000800000000000000
-      internalID: 21300038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0003
-      rect:
-        serializedVersion: 2
-        x: 672.0429
         y: 0
-        width: 57.880974
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.48301005, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.983395, y: -36.986626}
-        - {x: -28.983395, y: -27.986626}
-        - {x: -28.983395, y: 37.013374}
-        - {x: 20.016605, y: 37.013374}
-        - {x: 25.016605, y: 25.013374}
-        - {x: 29.016605, y: 12.013374}
-        - {x: 29.016605, y: -29.986626}
-        - {x: 15.016605, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dee7bba43ebc448f0800000000000000
-      internalID: -557096276815282451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0004
-      rect:
-        serializedVersion: 2
-        x: 68.07612
-        y: 611.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8444d86f0e35d9d90800000000000000
-      internalID: -7089418012737059768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_woodbox_0002
-      rect:
-        serializedVersion: 2
-        x: 321.0761
-        y: 335.0761
-        width: 122.84775
-        height: 104.84775
-      alignment: 9
-      pivot: {x: 0.5244205, y: 0.5381506}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -52.5, y: -49.5}
-        - {x: -55.499996, y: 0.5000038}
-        - {x: -47.5, y: 2.5000038}
-        - {x: -57.5, y: 2.5000038}
-        - {x: -61.5, y: 4.500004}
-        - {x: -61.5, y: 28.500004}
-        - {x: -47.5, y: 52.500004}
-        - {x: 61.499996, y: 52.500004}
-        - {x: 61.499996, y: -52.499996}
-        - {x: -32.5, y: -52.499996}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4305410000000000800000000000000
-      internalID: 21300044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0004
-      rect:
-        serializedVersion: 2
-        x: 0.07612038
-        y: 535.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8444d86f0e35d9d90800000000000000
-      internalID: -7089418012737059768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0004
-      rect:
-        serializedVersion: 2
-        x: 452.0761
-        y: 158.02675
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fe38d8f78156dd60800000000000000
-      internalID: 7914603039587581686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0004
-      rect:
-        serializedVersion: 2
-        x: 124.07612
-        y: 709.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af0bf0cd0ec7cdbd0800000000000000
-      internalID: -2604069179320454918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0001
-      rect:
-        serializedVersion: 2
-        x: 186.07613
-        y: 715.05133
-        width: 54.847763
-        height: 67.87257
-      alignment: 9
-      pivot: {x: 0.47265154, y: 0.6033172}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.500002, y: -33.987595}
-        - {x: -27.500002, y: -8.987595}
-        - {x: -27.500002, y: 27.012405}
-        - {x: -12.500002, y: 34.012405}
-        - {x: 16.499998, y: 34.012405}
-        - {x: 27.499998, y: 23.012405}
-        - {x: 27.499998, y: -18.987595}
-        - {x: 15.499998, y: -33.987595}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45305410000000000800000000000000
-      internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0002
-      rect:
-        serializedVersion: 2
-        x: 438.0761
-        y: 858.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65305410000000000800000000000000
-      internalID: 21300054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0003
-      rect:
-        serializedVersion: 2
-        x: 444.0761
-        y: 448.02676
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.000002, y: -36.995235}
-        - {x: -27.000002, y: -29.995235}
-        - {x: -27.000002, y: 21.004765}
-        - {x: -26.000002, y: 30.004765}
-        - {x: -17.000002, y: 37.004765}
-        - {x: 8.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -36.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85305410000000000800000000000000
-      internalID: 21300056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0001
-      rect:
-        serializedVersion: 2
-        x: 452.0761
-        y: 322.02676
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -22.000002, y: 36.98662}
-        - {x: 14.999998, y: 36.98662}
-        - {x: 26.999998, y: 32.98662}
-        - {x: 26.999998, y: -22.013378}
-        - {x: 11.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9807fe1e69a7492d0800000000000000
-      internalID: -3272856240737259383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0001
-      rect:
-        serializedVersion: 2
-        x: 320.0761
-        y: 694.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 19.004765}
-        - {x: -13.000002, y: 37.004765}
-        - {x: 19.999998, y: 37.004765}
-        - {x: 26.999998, y: 27.004765}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bc0d895df32182f0800000000000000
-      internalID: -972456473499202382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0004
-      rect:
-        serializedVersion: 2
-        x: 190.07613
-        y: 791.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fe38d8f78156dd60800000000000000
-      internalID: 7914603039587581686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_blue_bot_0002
-      rect:
-        serializedVersion: 2
-        x: 418.0363
-        y: 0
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06305410000000000800000000000000
-      internalID: 21300064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0004
-      rect:
-        serializedVersion: 2
-        x: 452.0363
-        y: 240
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa249a4ea5bb10430800000000000000
-      internalID: 3747482364006711983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0003
-      rect:
-        serializedVersion: 2
-        x: 548.0761
-        y: 0.026751041
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.000002, y: -36.995235}
-        - {x: -27.000002, y: -29.995235}
-        - {x: -27.000002, y: 21.004765}
-        - {x: -26.000002, y: 30.004765}
-        - {x: -17.000002, y: 37.004765}
-        - {x: 8.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -36.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f00382a779a832a70800000000000000
-      internalID: 8801030480006230031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvccc_0
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 692
-        width: 66
-        height: 95
-      alignment: 9
+        width: 207
+        height: 202
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66305410000000000800000000000000
-      internalID: 21300070
+      spriteID: dfd1719ed86534e5c8ea3d17b92d6121
+      internalID: -837633485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0001
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_69
       rect:
         serializedVersion: 2
-        x: 378.0761
-        y: 612.05133
-        width: 54.847763
-        height: 67.87257
-      alignment: 9
-      pivot: {x: 0.47265154, y: 0.6033172}
+        x: 420
+        y: 85
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.500002, y: -33.987595}
-        - {x: -27.500002, y: -8.987595}
-        - {x: -27.500002, y: 27.012405}
-        - {x: -12.500002, y: 34.012405}
-        - {x: 16.499998, y: 34.012405}
-        - {x: 27.499998, y: 23.012405}
-        - {x: 27.499998, y: -18.987595}
-        - {x: 15.499998, y: -33.987595}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b52bda9e2fcf7f3e0800000000000000
-      internalID: -2019867787619618213
+      spriteID: a52118ee4956a4f15a90e052f98fb761
+      internalID: 1599800560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_70
       rect:
         serializedVersion: 2
-        x: 154.07613
-        y: 475.0761
-        width: 57.876175
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.53431106, y: 0.6031721}
+        x: 482
+        y: 84
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.014208, y: -34.000004}
-        - {x: -29.014208, y: -21.000004}
-        - {x: -29.014208, y: 14.999996}
-        - {x: -17.014208, y: 33.999996}
-        - {x: 23.985792, y: 33.999996}
-        - {x: 28.985792, y: 20.999996}
-        - {x: 28.985792, y: -20.000004}
-        - {x: 24.985792, y: -34.000004}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6305410000000000800000000000000
-      internalID: 21300074
+      spriteID: 1265b12cb66374fd2a84c182fb26dfee
+      internalID: -2057681533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0002
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_71
       rect:
         serializedVersion: 2
-        x: 506.0761
-        y: 404.02676
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 578
+        y: 84
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70418627ce510cb60800000000000000
-      internalID: 7764229862862623751
+      spriteID: 94347e3e09e614e8eb214701cb7480c2
+      internalID: -1098272273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_bot_0001
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_72
       rect:
         serializedVersion: 2
-        x: 254.07613
-        y: 709
-        width: 57.897133
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51684564, y: 0.5677728}
+        x: 639
+        y: 83
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12.024685, y: -36.986626}
-        - {x: -29.024685, y: -23.986626}
-        - {x: -29.024685, y: 8.013374}
-        - {x: -27.024685, y: 21.013374}
-        - {x: -13.024685, y: 37.013374}
-        - {x: 10.975315, y: 37.013374}
-        - {x: 15.975315, y: 36.013374}
-        - {x: 28.975315, y: 26.013374}
-        - {x: 28.975315, y: -29.986626}
-        - {x: 13.975315, y: -36.986626}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6305410000000000800000000000000
-      internalID: 21300078
+      spriteID: f6319a748470b45b68738c71dcc47bf8
+      internalID: 243717144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_75
       rect:
         serializedVersion: 2
-        x: 376.0761
-        y: 858.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 422
+        y: 1
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.000002, y: -37.01338}
-        - {x: -27.000002, y: -24.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -16.000002, y: 36.98662}
-        - {x: 19.999998, y: 36.98662}
-        - {x: 26.999998, y: 19.986622}
-        - {x: 26.999998, y: -29.013378}
-        - {x: 23.999998, y: -34.01338}
-        - {x: 17.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07305410000000000800000000000000
-      internalID: 21300080
+      spriteID: d18c0ea2d9f8749b4a43252d873b4bb0
+      internalID: -873892472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boom_woodbox_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_76
       rect:
         serializedVersion: 2
-        x: 0.051317215
-        y: 393.0761
-        width: 145.89737
-        height: 133.84775
-      alignment: 9
-      pivot: {x: 0.48286468, y: 0.52614915}
+        x: 488
+        y: 2
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -58, y: -66.99999}
-        - {x: -73, y: -40.999992}
-        - {x: -73, y: 50.000008}
-        - {x: -44, y: 67.00001}
-        - {x: 28, y: 67.00001}
-        - {x: 73, y: 46.000008}
-        - {x: 73, y: -20.999992}
-        - {x: 66, y: -52.999992}
-        - {x: 29, y: -66.99999}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27305410000000000800000000000000
-      internalID: 21300082
+      spriteID: b67b1644c973d4aa9837b13dc6b30025
+      internalID: 550290730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0004
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_77
       rect:
         serializedVersion: 2
-        x: 254.07613
-        y: 633.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
+        x: 550
+        y: 0
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0bf0cd0ec7cdbd0800000000000000
-      internalID: -2604069179320454918
+      spriteID: 52e101d534e5449d3ba71a7a01ef7aa7
+      internalID: -75181339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_left_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_78
       rect:
         serializedVersion: 2
-        x: 0.07612038
-        y: 699.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
+        x: 612
+        y: 2
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.000002, y: -36.995235}
-        - {x: -27.000002, y: -29.995235}
-        - {x: -27.000002, y: 21.004765}
-        - {x: -26.000002, y: 30.004765}
-        - {x: -17.000002, y: 37.004765}
-        - {x: 8.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -36.995235}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f00382a779a832a70800000000000000
-      internalID: 8801030480006230031
+      spriteID: b204ee5f145f74c54815b3ddae02efc6
+      internalID: -312538240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0003
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_79
       rect:
         serializedVersion: 2
-        x: 610.0761
-        y: 0.026751041
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 674
+        y: 1
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.000002, y: -37.01338}
-        - {x: -27.000002, y: -24.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -16.000002, y: 36.98662}
-        - {x: 19.999998, y: 36.98662}
-        - {x: 26.999998, y: 19.986622}
-        - {x: 26.999998, y: -29.013378}
-        - {x: 23.999998, y: -34.01338}
-        - {x: 17.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b3ca4d39d14be40800000000000000
-      internalID: 5671190351531752284
+      spriteID: b606ce2a245d04c8e85cf0ef9aba6900
+      internalID: -1762389454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0003
-      rect:
-        serializedVersion: 2
-        x: 62.07612
-        y: 535.0761
-        width: 57.876175
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.53431106, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.014208, y: -34.000004}
-        - {x: -29.014208, y: -21.000004}
-        - {x: -29.014208, y: 14.999996}
-        - {x: -17.014208, y: 33.999996}
-        - {x: 23.985792, y: 33.999996}
-        - {x: 28.985792, y: 20.999996}
-        - {x: 28.985792, y: -20.000004}
-        - {x: 24.985792, y: -34.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a9f9c6387a21a040800000000000000
-      internalID: 4657050185481451945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0003
-      rect:
-        serializedVersion: 2
-        x: 252.04291
-        y: 873
-        width: 57.880974
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.48301005, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.983395, y: -36.986626}
-        - {x: -28.983395, y: -27.986626}
-        - {x: -28.983395, y: 37.013374}
-        - {x: 20.016605, y: 37.013374}
-        - {x: 25.016605, y: 25.013374}
-        - {x: 29.016605, y: 12.013374}
-        - {x: 29.016605, y: -29.986626}
-        - {x: 15.016605, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dee7bba43ebc448f0800000000000000
-      internalID: -557096276815282451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0002
-      rect:
-        serializedVersion: 2
-        x: 514.0761
-        y: 322.02676
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70418627ce510cb60800000000000000
-      internalID: 7764229862862623751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0002
-      rect:
-        serializedVersion: 2
-        x: 316.0363
-        y: 530
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f24e50ddf05d7db60800000000000000
-      internalID: 7770913946160456751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_bot_0004
-      rect:
-        serializedVersion: 2
-        x: 376.0363
-        y: 776
-        width: 59.936966
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.49992046, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.004768, y: -36.986626}
-        - {x: -30.004768, y: -25.986626}
-        - {x: -30.004768, y: 8.013374}
-        - {x: -27.004768, y: 37.013374}
-        - {x: 24.995232, y: 37.013374}
-        - {x: 29.995232, y: 21.013374}
-        - {x: 29.995232, y: -29.986626}
-        - {x: 16.995232, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa249a4ea5bb10430800000000000000
-      internalID: 3747482364006711983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0003
-      rect:
-        serializedVersion: 2
-        x: 514.0761
-        y: 158.02675
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.000002, y: -37.01338}
-        - {x: -27.000002, y: -24.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -16.000002, y: 36.98662}
-        - {x: 19.999998, y: 36.98662}
-        - {x: 26.999998, y: 19.986622}
-        - {x: 26.999998, y: -29.013378}
-        - {x: 23.999998, y: -34.01338}
-        - {x: 17.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b3ca4d39d14be40800000000000000
-      internalID: 5671190351531752284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0003
-      rect:
-        serializedVersion: 2
-        x: 382.0761
-        y: 448.02676
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.000002, y: -36.995235}
-        - {x: -27.000002, y: -29.995235}
-        - {x: -27.000002, y: 21.004765}
-        - {x: -26.000002, y: 30.004765}
-        - {x: -17.000002, y: 37.004765}
-        - {x: 8.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -36.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f00382a779a832a70800000000000000
-      internalID: 8801030480006230031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0001
-      rect:
-        serializedVersion: 2
-        x: 0.07612038
-        y: 939.05133
-        width: 54.847763
-        height: 67.87257
-      alignment: 9
-      pivot: {x: 0.47265154, y: 0.6033172}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.500002, y: -33.987595}
-        - {x: -27.500002, y: -8.987595}
-        - {x: -27.500002, y: 27.012405}
-        - {x: -12.500002, y: 34.012405}
-        - {x: 16.499998, y: 34.012405}
-        - {x: 27.499998, y: 23.012405}
-        - {x: 27.499998, y: -18.987595}
-        - {x: 15.499998, y: -33.987595}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b52bda9e2fcf7f3e0800000000000000
-      internalID: -2019867787619618213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0003
-      rect:
-        serializedVersion: 2
-        x: 0.07612038
-        y: 863.0761
-        width: 57.876175
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.53431106, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.014208, y: -34.000004}
-        - {x: -29.014208, y: -21.000004}
-        - {x: -29.014208, y: 14.999996}
-        - {x: -17.014208, y: 33.999996}
-        - {x: 23.985792, y: 33.999996}
-        - {x: 28.985792, y: 20.999996}
-        - {x: 28.985792, y: -20.000004}
-        - {x: 24.985792, y: -34.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a9f9c6387a21a040800000000000000
-      internalID: 4657050185481451945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0003
-      rect:
-        serializedVersion: 2
-        x: 66.07612
-        y: 863.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23.000002, y: -37.01338}
-        - {x: -27.000002, y: -24.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -16.000002, y: 36.98662}
-        - {x: 19.999998, y: 36.98662}
-        - {x: 26.999998, y: 19.986622}
-        - {x: 26.999998, y: -29.013378}
-        - {x: 23.999998, y: -34.01338}
-        - {x: 17.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b3ca4d39d14be40800000000000000
-      internalID: 5671190351531752284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_woodbox_0006
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_5
       rect:
         serializedVersion: 2
         x: 209
         y: 0
-        width: 201
-        height: 201
+        width: 207
+        height: 202
       alignment: 9
+      pivot: {x: 1.3628945, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77171d247174a4237b246958ae4d60af
+      internalID: 1342547701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_6
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 83
+        width: 68
+        height: 93
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -80.5, y: 86.5}
-        - {x: -68.5, y: 72.5}
-        - {x: -46.5, y: 100.5}
-        - {x: 69.5, y: 100.5}
-        - {x: 100.5, y: 36.5}
-        - {x: 100.5, y: -100.5}
-        - {x: -100.5, y: -100.5}
-        - {x: -100.5, y: 31.5}
-        - {x: -84.5, y: 52.499996}
-        - {x: -88.5, y: 53.500004}
-        - {x: -100.5, y: 72.5}
-        - {x: -100.5, y: 88.5}
-        - {x: -87.5, y: 88.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8305410000000000800000000000000
-      internalID: 21300110
+      spriteID: 7ceea20dda42642339648e1ac1e5a38a
+      internalID: 1470232277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_right_0004
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_7
       rect:
         serializedVersion: 2
-        x: 316.0761
-        y: 612.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
+        x: 796
+        y: 100
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 28.986622}
-        - {x: -19.000002, y: 36.98662}
-        - {x: 17.999998, y: 36.98662}
-        - {x: 26.999998, y: 25.986622}
-        - {x: 26.999998, y: -28.013378}
-        - {x: 21.999998, y: -37.01338}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fe38d8f78156dd60800000000000000
-      internalID: 7914603039587581686
+      spriteID: cd3da7f0c79e5455c89fe308b7622d0c
+      internalID: 1495966615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_bot_0001
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_13
       rect:
         serializedVersion: 2
-        x: 316.0761
-        y: 448
-        width: 57.897133
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51684564, y: 0.5677728}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12.024685, y: -36.986626}
-        - {x: -29.024685, y: -23.986626}
-        - {x: -29.024685, y: 8.013374}
-        - {x: -27.024685, y: 21.013374}
-        - {x: -13.024685, y: 37.013374}
-        - {x: 10.975315, y: 37.013374}
-        - {x: 15.975315, y: 36.013374}
-        - {x: 28.975315, y: 26.013374}
-        - {x: 28.975315, y: -29.986626}
-        - {x: 13.975315, y: -36.986626}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81f4396269117b030800000000000000
-      internalID: 3510293771148545816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0001
-      rect:
-        serializedVersion: 2
-        x: 450.0761
-        y: 694.05133
-        width: 54.847763
-        height: 67.87257
-      alignment: 9
-      pivot: {x: 0.47265154, y: 0.6033172}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.500002, y: -33.987595}
-        - {x: -27.500002, y: -8.987595}
-        - {x: -27.500002, y: 27.012405}
-        - {x: -12.500002, y: 34.012405}
-        - {x: 16.499998, y: 34.012405}
-        - {x: 27.499998, y: 23.012405}
-        - {x: 27.499998, y: -18.987595}
-        - {x: 15.499998, y: -33.987595}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b52bda9e2fcf7f3e0800000000000000
-      internalID: -2019867787619618213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_0
-      rect:
-        serializedVersion: 2
-        x: 786
+        x: 785
         y: 0
-        width: 66
-        height: 95
-      alignment: 9
+        width: 70
+        height: 94
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69305410000000000800000000000000
-      internalID: 21300118
+      spriteID: 8ac939cababda466fa07dbf10d47befa
+      internalID: -1276703720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_green_top_0002
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_21
       rect:
         serializedVersion: 2
-        x: 128.07613
-        y: 861.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1baadc71f9882f780800000000000000
-      internalID: -8650701717344769359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_right_0001
-      rect:
-        serializedVersion: 2
-        x: 192.07613
-        y: 633.02673
-        width: 53.847763
-        height: 73.97325
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.52685595}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.000002, y: -37.01338}
-        - {x: -27.000002, y: -27.013378}
-        - {x: -27.000002, y: 30.986622}
-        - {x: -22.000002, y: 36.98662}
-        - {x: 14.999998, y: 36.98662}
-        - {x: 26.999998, y: 32.98662}
-        - {x: 26.999998, y: -22.013378}
-        - {x: 11.999998, y: -37.01338}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9807fe1e69a7492d0800000000000000
-      internalID: -3272856240737259383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0002
-      rect:
-        serializedVersion: 2
-        x: 314.0761
-        y: 791.02673
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78e31e5929a63fc70800000000000000
-      internalID: 9003657257856089735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0002
-      rect:
-        serializedVersion: 2
-        x: 254.07613
-        y: 557.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1baadc71f9882f780800000000000000
-      internalID: -8650701717344769359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0004
-      rect:
-        serializedVersion: 2
-        x: 124.07612
-        y: 785.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af0bf0cd0ec7cdbd0800000000000000
-      internalID: -2604069179320454918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0002
-      rect:
-        serializedVersion: 2
-        x: 216.07613
-        y: 393.02676
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78e31e5929a63fc70800000000000000
-      internalID: 9003657257856089735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0002
-      rect:
-        serializedVersion: 2
-        x: 130.07613
-        y: 551.0761
-        width: 53.880974
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.48113236, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.016607, y: -13.000004}
-        - {x: -17.016607, y: -12.000004}
-        - {x: -19.016607, y: -11.000004}
-        - {x: -23.016607, y: -11.000004}
-        - {x: -27.016607, y: -6.000004}
-        - {x: -27.016607, y: 31.999996}
-        - {x: -20.016607, y: 33.999996}
-        - {x: 21.983393, y: 33.999996}
-        - {x: 26.983393, y: 19.999996}
-        - {x: 26.983393, y: -10.000004}
-        - {x: 17.983393, y: -32.000004}
-        - {x: 8.983393, y: -34.000004}
-        - {x: -13.016607, y: -34.000004}
-        - {x: -24.016607, y: -25.000004}
-        - {x: -22.016607, y: -18.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1baadc71f9882f780800000000000000
-      internalID: -8650701717344769359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_left_0002
-      rect:
-        serializedVersion: 2
-        x: 576.0761
-        y: 82.02675
-        width: 53.847763
-        height: 73.936966
-      alignment: 9
-      pivot: {x: 0.51857084, y: 0.5271145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.999998, y: -36.995235}
-        - {x: -27.000002, y: -36.995235}
-        - {x: -27.000002, y: 37.004765}
-        - {x: 9.999998, y: 37.004765}
-        - {x: 26.999998, y: 31.004765}
-        - {x: 26.999998, y: -33.995235}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78e31e5929a63fc70800000000000000
-      internalID: 9003657257856089735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_green_top_0003
-      rect:
-        serializedVersion: 2
-        x: 480.0761
-        y: 82.07612
-        width: 57.876175
-        height: 67.84776
-      alignment: 9
-      pivot: {x: 0.53431106, y: 0.6031721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.014208, y: -34.000004}
-        - {x: -29.014208, y: -21.000004}
-        - {x: -29.014208, y: 14.999996}
-        - {x: -17.014208, y: 33.999996}
-        - {x: 23.985792, y: 33.999996}
-        - {x: 28.985792, y: 20.999996}
-        - {x: 28.985792, y: -20.000004}
-        - {x: 24.985792, y: -34.000004}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a9f9c6387a21a040800000000000000
-      internalID: 4657050185481451945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_woodbox_0004
-      rect:
-        serializedVersion: 2
-        x: 131.04291
-        y: 209.02675
-        width: 181.89497
-        height: 175.89713
-      alignment: 9
-      pivot: {x: 0.48081094, y: 0.49161264}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 60.009605, y: -70.97531}
-        - {x: 51.009605, y: -78.97531}
-        - {x: 23.009604, y: -87.97531}
-        - {x: -4.9903946, y: -87.97531}
-        - {x: -86.990395, y: -68.97531}
-        - {x: -90.990395, y: -57.97531}
-        - {x: -90.990395, y: 74.02469}
-        - {x: -82.990395, y: 88.02469}
-        - {x: 91.009605, y: 88.02469}
-        - {x: 91.009605, y: -51.97531}
-        - {x: 85.009605, y: -55.97531}
-        - {x: 56.00961, y: -63.97531}
-        - {x: 60.009605, y: -67.97531}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa305410000000000800000000000000
-      internalID: 21300138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_1
-      rect:
-        serializedVersion: 2
-        x: 580
-        y: 391
-        width: 66
-        height: 95
-      alignment: 9
+        x: 860
+        y: 0
+        width: 65
+        height: 93
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.000002, y: -47.5}
-        - {x: -33, y: -26.5}
-        - {x: -33, y: 16.5}
-        - {x: -29, y: 25.5}
-        - {x: -16, y: 47.5}
-        - {x: 16, y: 47.5}
-        - {x: 33, y: 41.5}
-        - {x: 33, y: -42.5}
-        - {x: 27, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca305410000000000800000000000000
-      internalID: 21300140
+      spriteID: bfb5f57835ce646fca8c28eff325bbcc
+      internalID: 664588207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_30
       rect:
         serializedVersion: 2
-        x: 798
-        y: 103
-        width: 66
-        height: 95
-      alignment: 9
+        x: 934
+        y: 0
+        width: 64
+        height: 92
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea305410000000000800000000000000
-      internalID: 21300142
+      spriteID: fb5ffbeac42474dfb8bf60b29abbac30
+      internalID: -52344399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_3
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_40
       rect:
         serializedVersion: 2
-        x: 654
-        y: 391
-        width: 66
-        height: 95
-      alignment: 9
+        x: 1076
+        y: 0
+        width: 70
+        height: 100
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b305410000000000800000000000000
-      internalID: 21300144
+      spriteID: e4658a2238fd64708981e28127fcd2ab
+      internalID: -851330009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_4
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_48
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 0
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa01fd4b7d8b94bc484cc559ac7f461e
+      internalID: -1842540485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_65
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 101
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057186845deeb45fd8e53988c967dd23
+      internalID: -849339392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_73
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 101
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252a0c483ca6e47b4833bead9459bd71
+      internalID: 961850964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_80
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 202
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea77f0e4ecb84771aaf7508d2bfdc50
+      internalID: -1354973868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_81
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 204
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6889e2afffa134c01ac8513c02effa24
+      internalID: -1943091060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_83
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 182
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eaa6297c0a442dd850349b0b3dbb98
+      internalID: 1118460114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_84
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 180
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb25d9e5403c48158c580578337eec9
+      internalID: -2103726002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_85
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 284
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722632440f44d499a9bdcdede062c67b
+      internalID: -1103858529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_86
       rect:
         serializedVersion: 2
         x: 650
-        y: 185
-        width: 66
+        y: 285
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3fd2b9b39004242b10203b6f03ca13
+      internalID: 1325542535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_87
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 286
+        width: 68
         height: 95
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b305410000000000800000000000000
-      internalID: 21300146
+      spriteID: 8a1284a370d6e4c02a086371ed78dc11
+      internalID: 484183219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_5
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_88
       rect:
         serializedVersion: 2
-        x: 724
-        y: 185
-        width: 66
-        height: 95
-      alignment: 9
+        x: 799
+        y: 304
+        width: 68
+        height: 94
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b305410000000000800000000000000
-      internalID: 21300148
+      spriteID: 1dfb58e7cdad54ebeb017c9783ae5ec1
+      internalID: 503473903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_6
-      rect:
-        serializedVersion: 2
-        x: 650
-        y: 288
-        width: 66
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -47.5}
-        - {x: -33, y: -30.5}
-        - {x: -33, y: 17.5}
-        - {x: -19, y: 47.5}
-        - {x: 26, y: 47.5}
-        - {x: 33, y: 44.5}
-        - {x: 33, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b305410000000000800000000000000
-      internalID: 21300150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvccc_7
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 607
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b305410000000000800000000000000
-      internalID: 21300152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_7
-      rect:
-        serializedVersion: 2
-        x: 1083
-        y: 0
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab305410000000000800000000000000
-      internalID: 21300154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_8
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 203
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb305410000000000800000000000000
-      internalID: 21300156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb305410000000000800000000000000
-      internalID: 21300158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_11
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 916
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c305410000000000800000000000000
-      internalID: 21300160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_12
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 813
-        width: 61
-        height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: -47.5}
-        - {x: -30.5, y: -43.5}
-        - {x: -30.5, y: 37.5}
-        - {x: -15.5, y: 47.5}
-        - {x: 17.5, y: 47.5}
-        - {x: 30.5, y: 26.5}
-        - {x: 30.5, y: -18.5}
-        - {x: 26.5, y: -36.5}
-        - {x: 19.5, y: -47.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c305410000000000800000000000000
-      internalID: 21300162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_14
-      rect:
-        serializedVersion: 2
-        x: 733
-        y: 610
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 32.5, y: -46.5}
-        - {x: -32.5, y: -46.5}
-        - {x: -32.5, y: 42.5}
-        - {x: -31.5, y: 46.5}
-        - {x: 25.5, y: 46.5}
-        - {x: 32.5, y: 44.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c305410000000000800000000000000
-      internalID: 21300164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_15
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 811
-        width: 65
-        height: 92
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 23.5, y: -46}
-        - {x: -32.5, y: -46}
-        - {x: -32.5, y: 46}
-        - {x: 32.5, y: 46}
-        - {x: 32.5, y: -38}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c305410000000000800000000000000
-      internalID: 21300166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_16
-      rect:
-        serializedVersion: 2
-        x: 733
-        y: 509
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 32.5, y: -46.5}
-        - {x: -32.5, y: -46.5}
-        - {x: -32.5, y: 42.5}
-        - {x: -31.5, y: 46.5}
-        - {x: 25.5, y: 46.5}
-        - {x: 32.5, y: 44.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c305410000000000800000000000000
-      internalID: 21300168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_17
-      rect:
-        serializedVersion: 2
-        x: 646
-        y: 797
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 32.5, y: -46.5}
-        - {x: -32.5, y: -46.5}
-        - {x: -32.5, y: 42.5}
-        - {x: -31.5, y: 46.5}
-        - {x: 25.5, y: 46.5}
-        - {x: 32.5, y: 44.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac305410000000000800000000000000
-      internalID: 21300170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_18
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 711
-        width: 65
-        height: 92
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 24.5, y: -46}
-        - {x: -32.5, y: -46}
-        - {x: -32.5, y: 46}
-        - {x: 17.5, y: 46}
-        - {x: 32.5, y: 41}
-        - {x: 32.5, y: -44}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc305410000000000800000000000000
-      internalID: 21300172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_19
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 303
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 32.5, y: -46.5}
-        - {x: -32.5, y: -46.5}
-        - {x: -32.5, y: 42.5}
-        - {x: -31.5, y: 46.5}
-        - {x: 25.5, y: 46.5}
-        - {x: 32.5, y: 44.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec305410000000000800000000000000
-      internalID: 21300174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_20
-      rect:
-        serializedVersion: 2
-        x: 801
-        y: 307
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 32.5, y: -46.5}
-        - {x: -32.5, y: -46.5}
-        - {x: -32.5, y: 42.5}
-        - {x: -31.5, y: 46.5}
-        - {x: 25.5, y: 46.5}
-        - {x: 32.5, y: 44.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d305410000000000800000000000000
-      internalID: 21300176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_21
-      rect:
-        serializedVersion: 2
-        x: 646
-        y: 696
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: -39.5}
-        - {x: -32.5, y: -32.5}
-        - {x: -32.5, y: 41.5}
-        - {x: -17.5, y: 46.5}
-        - {x: 15.5, y: 46.5}
-        - {x: 24.5, y: 37.5}
-        - {x: 32.5, y: 13.5}
-        - {x: 32.5, y: -38.5}
-        - {x: 29.5, y: -46.5}
-        - {x: -20.5, y: -46.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d305410000000000800000000000000
-      internalID: 21300178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_22
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 595
-        width: 65
-        height: 93
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: -39.5}
-        - {x: -32.5, y: -32.5}
-        - {x: -32.5, y: 41.5}
-        - {x: -17.5, y: 46.5}
-        - {x: 15.5, y: 46.5}
-        - {x: 24.5, y: 37.5}
-        - {x: 32.5, y: 13.5}
-        - {x: 32.5, y: -38.5}
-        - {x: 29.5, y: -46.5}
-        - {x: -20.5, y: -46.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d305410000000000800000000000000
-      internalID: 21300180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_23
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 811
-        width: 65
-        height: 92
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 31.5, y: -46}
-        - {x: -32.5, y: -46}
-        - {x: -32.5, y: 41}
-        - {x: -17.5, y: 46}
-        - {x: 21.5, y: 46}
-        - {x: 31.5, y: 40}
-        - {x: 32.5, y: 26}
-        - {x: 32.5, y: -45}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d305410000000000800000000000000
-      internalID: 21300182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nvcc_24
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_89
       rect:
         serializedVersion: 2
         x: 872
-        y: 202
-        width: 65
-        height: 93
-      alignment: 9
+        y: 302
+        width: 68
+        height: 95
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: -39.5}
-        - {x: -32.5, y: -32.5}
-        - {x: -32.5, y: 41.5}
-        - {x: -17.5, y: 46.5}
-        - {x: 15.5, y: 46.5}
-        - {x: 24.5, y: 37.5}
-        - {x: 32.5, y: 13.5}
-        - {x: 32.5, y: -38.5}
-        - {x: 29.5, y: -46.5}
-        - {x: -20.5, y: -46.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d305410000000000800000000000000
-      internalID: 21300184
+      spriteID: 0d8dd1b3497df4b3099e5364eb4c5388
+      internalID: 1639114986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_25
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_90
       rect:
         serializedVersion: 2
-        x: 801
-        y: 408
-        width: 65
-        height: 93
-      alignment: 9
+        x: 872
+        y: 402
+        width: 70
+        height: 94
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: -39.5}
-        - {x: -32.5, y: -32.5}
-        - {x: -32.5, y: 41.5}
-        - {x: -17.5, y: 46.5}
-        - {x: 15.5, y: 46.5}
-        - {x: 24.5, y: 37.5}
-        - {x: 32.5, y: 13.5}
-        - {x: 32.5, y: -38.5}
-        - {x: 29.5, y: -46.5}
-        - {x: -20.5, y: -46.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad305410000000000800000000000000
-      internalID: 21300186
+      spriteID: ce54b03df271b40de961afa54dbfecd4
+      internalID: 531383233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_26
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_91
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 405
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debd1c8a0a64047599efefccabe374ae
+      internalID: -761861850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_92
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 387
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737dc5522929a4a4880be35703925329
+      internalID: 201031449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_93
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 386
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff20dcf63855d4e9ebdfc7b83f3bcdf6
+      internalID: -1039969595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_94
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 386
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044ddb76bde8f45b4afb022ceb6fb0c6
+      internalID: 1901724033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_95
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 483
+        width: 69
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4f9ad14a7884a348fbac201ea4002d
+      internalID: -2008236455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_96
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 494
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbb3924ad05f4b0f90c43473b733456
+      internalID: 1143825105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_97
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 492
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7c5be86a0a04d32a7223314ba75bb1
+      internalID: -1491878540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_98
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 507
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ba6db1231d74c4b86dc00899880b3e
+      internalID: -1510420087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_99
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 507
+        width: 66
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ae0edb870214363b73b4e648d1da70
+      internalID: 632445926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_100
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 503
+        width: 66
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1be1f97bed247c0a28202d8a3bdbba
+      internalID: 763885323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_101
       rect:
         serializedVersion: 2
         x: 933
-        y: 0
-        width: 65
-        height: 92
-      alignment: 9
+        y: 610
+        width: 63
+        height: 91
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31.5, y: -43}
-        - {x: -32.5, y: -39}
-        - {x: -32.5, y: 41}
-        - {x: -17.5, y: 46}
-        - {x: 21.5, y: 46}
-        - {x: 31.5, y: 40}
-        - {x: 32.5, y: 26}
-        - {x: 32.5, y: -41}
-        - {x: 22.5, y: -45}
-        - {x: 17.5, y: -46}
-        - {x: -20.5, y: -46}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd305410000000000800000000000000
-      internalID: 21300188
+      spriteID: e4c949cd840bb4e878764dbb6ab54eb0
+      internalID: -1887664245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nvcc_27
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_102
       rect:
         serializedVersion: 2
-        x: 872
-        y: 101
+        x: 930
+        y: 815
         width: 65
-        height: 93
-      alignment: 9
+        height: 94
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: -39.5}
-        - {x: -32.5, y: -32.5}
-        - {x: -32.5, y: 41.5}
-        - {x: -17.5, y: 46.5}
-        - {x: 15.5, y: 46.5}
-        - {x: 24.5, y: 37.5}
-        - {x: 32.5, y: 13.5}
-        - {x: 32.5, y: -38.5}
-        - {x: 29.5, y: -46.5}
-        - {x: -20.5, y: -46.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed305410000000000800000000000000
-      internalID: 21300190
+      spriteID: 6fa76520d6d504828b6c769403a4c480
+      internalID: 1864541235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_103
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 815
+        width: 61
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253cb5275233c4746acb5f25e49b99d8
+      internalID: -593650065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_104
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 708
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eccb9ac14d944c86b1c90d2ad0517b2
+      internalID: -1329391484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_107
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 894
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d5179b8dfdd47b8a8fee308f0d4801
+      internalID: 1071690414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_108
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 894
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae2f2a17d87d44dca1789b9312b34c4
+      internalID: -1477517129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_109
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 794
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95222d0859d4e4546b029d98dc264413
+      internalID: -1790858653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_110
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 794
+        width: 67
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71207c971b8a45f7b5cb7eaeedc1e97
+      internalID: 185444198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_111
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 796
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d33a03da564744f7b5cb44d3b073f74
+      internalID: 832586353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_112
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 810
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f724cb1e0de74d098b45903c8ef73d0
+      internalID: 23580938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_113
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 810
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8df109f421348579de5133d95d8f3d
+      internalID: 1791457738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_115
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 693
+        width: 69
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38908da1dc87b493a8a3e9a5bf9a0352
+      internalID: -1351184205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_116
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 691
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb667be1212b465ab93fb4399dcccc2
+      internalID: -904278187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-sprite-2048x1024-fmt47_117
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 585
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dd1fece82b74cf281f85be46f0e249
+      internalID: 575915709
       vertices: []
       indices: 
       edges: []
@@ -3275,7 +2778,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dcc07be6d50104d08a6fd37c23b171b3
     internalID: 0
     vertices: []
     indices: 
@@ -3283,60 +2786,126 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      boom_woodbox_0002: 21300044
-      boom_woodbox_0003: 21300082
-      boom_woodbox_0004: 21300138
-      boom_woodbox_0005: 21300014
-      boom_woodbox_0006: 21300110
-      boom_woodbox_0007: 21300016
-      boom_woodbox_0008: 21300038
-      nvcc_0: 21300118
-      nvcc_1: 21300140
-      nvcc_11: 21300160
-      nvcc_12: 21300162
-      nvcc_14: 21300164
-      nvcc_15: 21300166
-      nvcc_16: 21300168
-      nvcc_17: 21300170
-      nvcc_18: 21300172
-      nvcc_19: 21300174
-      nvcc_2: 21300142
-      nvcc_20: 21300176
-      nvcc_21: 21300178
-      nvcc_22: 21300180
-      nvcc_23: 21300182
-      nvcc_24: 21300184
-      nvcc_25: 21300186
-      nvcc_26: 21300188
-      nvcc_27: 21300190
-      nvcc_3: 21300144
-      nvcc_4: 21300146
-      nvcc_5: 21300148
-      nvcc_6: 21300150
-      nvcc_7: 21300154
-      nvcc_8: 21300156
-      nvcc_9: 21300158
-      nvccc_0: 21300070
-      nvccc_7: 21300152
-      zombie_blue_bot_0001: 21300000
-      zombie_blue_bot_0002: 21300064
-      zombie_green_bot_0001: 21300078
-      zombie_green_bot_0002: 21300028
-      zombie_green_bot_0003: 21300008
-      zombie_green_bot_0004: 21300024
-      zombie_green_left_0001: 21300018
-      zombie_green_left_0002: 21300032
-      zombie_green_left_0003: 21300056
-      zombie_green_left_0003 copy: 21300002
-      zombie_green_left_0004: 21300004
-      zombie_green_right_0001: 21300026
-      zombie_green_right_0002: 21300010
-      zombie_green_right_0003: 21300080
-      zombie_green_right_0004: 21300012
-      zombie_green_top_0001: 21300052
-      zombie_green_top_0002: 21300054
-      zombie_green_top_0003: 21300074
-      zombie_green_top_0004: 21300006
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_0: -1763767619
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_1: 2071861973
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_10: -601123375
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_100: 763885323
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_101: -1887664245
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_102: 1864541235
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_103: -593650065
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_104: -1329391484
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_105: -681946488
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_106: -519458880
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_107: 1466212322
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_108: 1071690414
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_109: -1477517129
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_11: -663200079
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_110: -1790858653
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_111: 185444198
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_112: 832586353
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_113: 23580938
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_114: 1791457738
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_115: 1168565834
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_116: -1351184205
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_117: -904278187
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_118: 575915709
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_119: 777388626
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_12: 1213549158
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_13: -1276703720
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_14: -1612371677
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_15: -1148771361
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_16: -213303920
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_17: -931085488
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_18: -538688911
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_19: -915238515
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_2: 1625968327
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_20: -1686519541
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_21: 664588207
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_22: 529636719
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_23: -313870887
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_24: 1513170939
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_25: -1080710476
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_26: -1964229546
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_27: 1878402693
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_28: 103136747
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_29: -1846433917
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_3: 1795130712
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_30: -52344399
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_31: -1038506472
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_32: -1780299671
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_33: 157165690
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_34: -1861412187
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_35: -618565909
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_36: 832776176
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_37: 36211279
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_38: 539879621
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_39: -1217639559
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_4: 1721593685
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_40: -851330009
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_41: -1263609233
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_42: -472472151
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_43: 868306904
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_44: 914106657
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_45: -859136614
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_46: -1855221865
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_47: 582808177
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_48: -1842540485
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_49: -625549194
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_5: 1342547701
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_50: -198954194
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_51: 1839471051
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_52: -120208347
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_53: -312787835
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_54: 91721201
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_55: 1436873195
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_56: -2131893350
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_57: -1535317347
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_58: 676433020
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_59: 611238992
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_6: 1470232277
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_60: 17244061
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_61: 1839411380
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_62: 1827793214
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_63: 371180697
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_64: 571575990
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_65: -849339392
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_66: -733912001
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_67: -1488768263
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_68: -837633485
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_69: 1599800560
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_7: 1495966615
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_70: -2057681533
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_71: -1098272273
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_72: 243717144
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_73: 961850964
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_74: -1018148392
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_75: -873892472
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_76: 550290730
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_77: -75181339
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_78: -312538240
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_79: -1762389454
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_8: 1712891360
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_80: -1354973868
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_81: -1943091060
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_82: -320656248
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_83: 1118460114
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_84: -2103726002
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_85: -1103858529
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_86: 1325542535
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_87: 484183219
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_88: 503473903
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_89: 1639114986
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_9: 581938367
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_90: 531383233
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_91: -761861850
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_92: 201031449
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_93: -1039969595
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_94: 1901724033
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_95: -2008236455
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_96: 1143825105
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_97: -1491878540
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_98: -1510420087
+      SpriteAtlasTexture-sprite-2048x1024-fmt47_99: 632445926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
