@@ -89,13 +89,11 @@ namespace GamePlay
         private readonly float minYPercentage = 0.46f; // Минимальное положение по Y (46% от высоты)
         private readonly float maxYPercentage = 1.0f;  // Максимальное положение по Y (100% от высоты)
 
-        private void Awake()
-        {
-            CheckDeviceInches();
-        }
+       
 
         private void Start()
         {
+            CheckDeviceInches();
             _isUpbm = _isDownbm = _isRightbm = _isLeftbm = false;
             speed = 2.2f;
             PlayerPrefs.SetFloat("speed", speed);
