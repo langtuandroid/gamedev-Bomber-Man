@@ -18662,8 +18662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 1750, y: 580}
+  m_AnchoredPosition: {x: 0, y: -350}
+  m_SizeDelta: {x: 1600, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &92
 RectTransform:
@@ -19094,7 +19094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b078706f50cd4cc1984dad671991e86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16d865ab5ceb14408a49762fc5ffd912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19989,8 +19989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9d52c337a294e3f873101138cb59d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _urlForPrivacyPolicy: https://www.google.com
-  _urlForTermsOfUse: https://www.google.com
+  _urlForPrivacyPolicy: https://docs.google.com/document/d/11tlpHTvWR2Q8ub3s7W1V0ePEYe0aGgW7/edit?usp=sharing&ouid=101204207249069986994&rtpof=true&sd=true
+  _urlForTermsOfUse: https://docs.google.com/document/d/10fA3ROX5EcXab3p2x-peT1gGDw7T57FT/edit#heading=h.gjdgxs
   _privacyButton: {fileID: 1703087621}
   _termsButton: {fileID: 1718637021}
 --- !u!114 &143
