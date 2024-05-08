@@ -1,8 +1,10 @@
+using Integration;
 using Managers;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using XX;
+using Zenject;
 
 namespace GamePlay
 {
