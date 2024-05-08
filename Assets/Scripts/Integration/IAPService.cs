@@ -40,11 +40,13 @@ namespace Integration
         private string _buy3000Id;
         
         private AdMobController _adMobController;
+        private GoldController _goldController;
 
         [Inject]
-        private void Construct (AdMobController adMobController)
+        private void Construct (AdMobController adMobController,GoldController goldController)
         {
             _adMobController = adMobController;
+            _goldController = goldController;
         }
 
         private void Awake()
@@ -264,22 +266,22 @@ namespace Integration
             }
             if (product.definition.id == _buy100Id)
             {
-                //ToDo: Add Your Purchasing Logic
+                _goldController.AddGold(100);
                 Debug.Log($"ProcessPurchase: PASS. Product: '{product.definition.id}'");
             }
             if (product.definition.id == _buy300Id)
             {
-                //ToDo: Add Your Purchasing Logic
+                _goldController.AddGold(300);
                 Debug.Log($"ProcessPurchase: PASS. Product: '{product.definition.id}'");
             }
             if (product.definition.id == _buy1000Id)
             {
-                //ToDo: Add Your Purchasing Logic
+                _goldController.AddGold(1000);
                 Debug.Log($"ProcessPurchase: PASS. Product: '{product.definition.id}'");
             }
             if (product.definition.id == _buy3000Id)
             {
-                //ToDo: Add Your Purchasing Logic
+                _goldController.AddGold(3000);
                 Debug.Log($"ProcessPurchase: PASS. Product: '{product.definition.id}'");
             }
             
